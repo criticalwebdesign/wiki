@@ -3,7 +3,7 @@ title: Chapter 4 On the Grid
 description: Links, references, and footnotes
 ---
 
-
+<!-- ![test](../../../assets/houston.webp) -->
 
 
 ## Context 
@@ -32,7 +32,7 @@ Here we share notes from our own response to the above questions, using the “T
 
 > [on the Apple home page] *“Apple spends billions of dollars on marketing each year, and it is evident in their product photography. All of these images are beautiful, especially the product close-ups and details.”*
 >
->![The Apple Watch Ultra home page](images/04/04-01-apple-watch-comp.png)
+>![The Apple Watch Ultra home page](../../../assets/images/04/04-01-apple-watch-comp.png)
 > Figure 4.1 The Apple Watch Ultra home page
 >
 > [clicks the Apple Watch Ultra page] *“Isn't it interesting how the color chosen for the text that describes the watch features on the web page (Figure 4.0.1) matches the color on the actual watch crown and band? All the typefaces and type treatments on the page are equally consistent. Body text about the product is always left-aligned, making it easy to scan.”*
@@ -45,17 +45,17 @@ So, what is the answer to the question presented above? If there is one solid pr
 
 
 
-![A screenshot of Apple's design template for iOS 17 published on Figma](images/04/04-03-appleHomeScreens.png)
-![A screenshot of Apple's design template published on Figma](images/04/04-03-apple-template.png)
+![A screenshot of Apple's design template for iOS 17 published on Figma](../../../assets/images/04/04-03-appleHomeScreens.png)
+![A screenshot of Apple's design template published on Figma](../../../assets/images/04/04-03-apple-template.png)
 Figure 4.3 A Figma design template published in the Apple Design Resources for iOS 17 and iPadOS 17 https://developer.apple.com/design/resources/ to help designers and developers ensure consistency with all Apple interfaces.
 
 
 
-![Screenshot of the online game Kern Type.](images/04/04-02-kerntype.png)
+![Screenshot of the online game Kern Type.](../../../assets/images/04/04-02-kerntype.png)
 Figure 4.2 Kern Type challenges players to adjust the kerning between letters so that the negative space between them is consistent. See https://type.method.ac 
 
 
-![A four-column spread across two pages with illustrative flourishes in the gutter and margins on parchment.](images/04/04-05-Gutenburg.png)
+![A four-column spread across two pages with illustrative flourishes in the gutter and margins on parchment.](../../../assets/images/04/04-05-Gutenburg.png)
 Figure 4.5 A spread from the Gutenberg Bible, c.1450s.
 
 
@@ -63,7 +63,7 @@ Figure 4.5 A spread from the Gutenberg Bible, c.1450s.
 ### Exercise 4.0.2 Explore Style Guides
 Explore style guides of organizations to see how they plan for design consistency.
 
-![xxxxx](images/04/04-04-nasastandards.png)
+![xxxxx](../../../assets/images/04/04-04-nasastandards.png)
 Figure 4.4 The NASA Graphics Standards Manual (1976) shows how to produce consistent designs across everything that represents this iconic organization. ©Danne & Blackburn / NASA, Standards Manual.
 
 1. In the 220 page [NASA Graphics Standards Manual](https://standardsmanual.com/products/nasa-graphics-standards-manual) (1976), Richard Danne and Bruce Blackburn show how the NASA logo, U.S. flag, and classic Helvetica typeface should be used on vans, confidential documents, and even the space shuttle (Figure 4.4).
@@ -80,36 +80,36 @@ Figure 4.4 The NASA Graphics Standards Manual (1976) shows how to produce consis
 
 
 
-![Jan Robert Leegte](images/04/04-06-scrollbars-screenshot-win-win98.jpeg)
+![Jan Robert Leegte](../../../assets/images/04/04-06-scrollbars-screenshot-win-win98.jpeg)
 Figure 4.6 Internet artists have long embraced the grid as a defining feature for commentary and aesthetic disturbances. Jan Robert Leegte, Scrollbar Composition, 2000 website collection Stedelijk Museum Amsterdam http://www.scrollbarcomposition.com/ 
 
-![Left aligned text](images/04/04-07-alignment.png)
+![Left aligned text](../../../assets/images/04/04-07-alignment.png)
 Figure 4.7 Left aligned text has a straight edge and each line starts at the same horizontal origin. Center-aligned text has a ragged left edge and each line originates from a different location.
 
-![An example of Swiss design with bold headings and organized columns.](images/04/04-08-swiss-design-stadttheater-comp.png)
+![An example of Swiss design with bold headings and organized columns.](../../../assets/images/04/04-08-swiss-design-stadttheater-comp.png)
 Figure 4.8 The text and graphic elements of the grid form invisible “leading lines” that move viewers' eyes around the page in our reproduction of a poster by Josef Müller-Brockmann, 1959.
 
 
 
-![DevTools revealing the underlying grid of HTML elements in the Apple Watch Ultra page.](images/04/04-09-applewatch-grids.png)
+![DevTools revealing the underlying grid of HTML elements in the Apple Watch Ultra page.](../../../assets/images/04/04-09-applewatch-grids.png)
 Figure 4.9 DevTools revealing the underlying grid of HTML elements in the Apple Watch Ultra page.
 
 
-![Wireframes demonstrate changes, especially noticeable in column number and width, in a responsive layout across device sizes. ](images/04/04-10-responsive-breakpoints-color.png)
+![Wireframes demonstrate changes, especially noticeable in column number and width, in a responsive layout across device sizes. ](../../../assets/images/04/04-10-responsive-breakpoints-color.png)
 Figure 4.10 These wireframes show how a responsive layout changes across device sizes. 
 
 
 
-![xxxxx](images/04/04-11-caseStudy-Lena-comp-1page.png)
+![xxxxx](../../../assets/images/04/04-11-caseStudy-Lena-comp-1page.png)
 Figure 4.11 Jan Diehm’s design for The Pudding’s “Does Data Die?” incorporates an interactive grid and explosive image boxes that follow the cursor as the viewer scrolls through the article. The text consistently flows in an easy to read, high contrast single column on the right while graphics animate throughout the page. Just as pixels combine to form an image, the reader combines these elements to understand the history of Lenna's image. Read and interact with this piece at https://pudding.cool/2021/10/lenna/ 
 
 
-![xxxxx](images/04/04-13-caseStudy-waffleBoards.png)
+![xxxxx](../../../assets/images/04/04-13-caseStudy-waffleBoards.png)
 Figure 4.13 Jan Diehm’s skateboard chart graphic for The Pudding’s “The Good, The Rad, and The Gnarly” appears in an evenly-spaced  8-column grid to visualize music genres that appear in skate company commercials. 
 ALT: Screenshot of the article showing the data visualization as the primary page content. Article text appears below the chart, centered on the page in a single column.
 
 
-![xxxxx](images/04/04-12-caseStudy-Kissed-comp-2pages.png)
+![xxxxx](../../../assets/images/04/04-12-caseStudy-Kissed-comp-2pages.png)
 Figure 4.12 Jan Diehm’s design for The Pudding’s “I Kissed a Girl to Call Me By Your Name” featuring Lil Nas X sliding down a pole as a scrolling interaction.
 ALT: Screenshot of The Pudding with a yellow background and graphic scrolling vertically on the right side of the page. 
 
@@ -125,7 +125,7 @@ ALT: Screenshot of The Pudding with a yellow background and graphic scrolling ve
 ## 4.1 Responsive Design in Figma
 
 
-![xxxxx](images/04/04-15-grid-figma.png)
+![xxxxx](../../../assets/images/04/04-15-grid-figma.png)
 Figure 4.15 Change the layout grid to a 12-column grid in Figrma using the layout grid settings. 
 ALT Layout grid interface in Figma
 
@@ -140,7 +140,7 @@ ALT Layout grid interface in Figma
 
 
 
-![Screenshot of the New York Times website on a 12-column grid.](images/04/04-16-Desktop-12-grid-columns.png)
+![Screenshot of the New York Times website on a 12-column grid.](../../../assets/images/04/04-16-Desktop-12-grid-columns.png)
 Figure 4.16 The New York Times home page screenshot scaled so the width matches the 12-column grid in Figma.
 
 
@@ -148,7 +148,7 @@ Figure 4.16 The New York Times home page screenshot scaled so the width matches 
 5. Similar to the mockup you created for the prompts in Chapter 3, use the screenshot as a reference, and begin laying out the wireframe of the page using the Rectangle (creating placeholders for images) and Text (using Lorem Ipsum for text) tools. The goal is to preserve the spirit of the design without trying to replicate their precise grid structure. The home page design of a news website changes often, and it is also possible they are not using a 12-column grid as their base structure. This is a work of interpretation.
 6. When the desktop wireframe is complete, create a new frame based on the tablet grid and develop a wireframe for the tablet breakpoint. Start with either a twelve- or six-column grid. Then repeat for a mobile breakpoint. The grid you make for mobile can be four- or two-columns. You should have three wireframes when you are finished for the desktop, tablet, and mobile experience.
 
-![xxxxx](images/04/04-17-figma-grid-settings.png)
+![xxxxx](../../../assets/images/04/04-17-figma-grid-settings.png)
 Figure 4.17 The grid column settings for the Desktop (12), Tablet (6), and Phone (2 columns) that will match the Bootstrap grid system code used later in the chapter.
 
 
@@ -156,17 +156,17 @@ Figure 4.17 The grid column settings for the Desktop (12), Tablet (6), and Phone
 
 
 
-![xxxxx](images/04/04-18-colorpalette.jpg)
+![xxxxx](../../../assets/images/04/04-18-colorpalette.jpg)
 Figure 4.18 For this color palette generated on Coolors.co we chose a much lighter shade of the blue that was automatically generated to counterbalance the deep blue, bright pink, and vibrant green in the palette. Consider having two light and/or neutral shades in your palette so you can make contrast between your dark and light values in your design. 
 ALT Screenshot of a color palette created on Coolors.co. 
 
 
-![xxxxx](images/04/04-19-visualizeColors-needPermission.png)
+![xxxxx](../../../assets/images/04/04-19-visualizeColors-needPermission.png)
 Figure 4.19 See your color palette in action! The Visualize Colors button leads you to a new web page that applies your color palette to vector art, type, and information design. 
 ALT: Screenshot of the results of pressing the “Visualize Colors” button.
 
 
-![xxxxx](images/04/04-20-nyFelines.png)
+![xxxxx](../../../assets/images/04/04-20-nyFelines.png)
 Figure 4.20 Use the Text tool and replace images with a genre of your choice. Recreate the masthead with a Blackletter font such as UnifrakturMaguntia.
 ALT: A screenshot of our New York Felines redesign.
 
@@ -204,12 +204,12 @@ In short, when you write DRY code you will be more efficient and encounter fewer
 
 
 
-![xxxxx](images/04/04-21-bootstrapRoot.png)
+![xxxxx](../../../assets/images/04/04-21-bootstrapRoot.png)
 Figure 4.21 Use DevTools to inspect the CSS breakpoint and color classes that Bootstrap adds to the root element
 ALT: Using the styles tab in DevTools to inspect the CSS classes that Bootstrap adds
 
 
-![xxxxx](images/04/04-22-bootsstrapPrimary.png)
+![xxxxx](../../../assets/images/04/04-22-bootsstrapPrimary.png)
 Figure 4.2.2 Use DevTools to see Bootstrap’s btn-primary class custom properties.
 ALT: Use DevTools to see Bootstrap's btn-primary class custom properties
 
@@ -242,12 +242,12 @@ There are generally two ways to override Bootstrap styles. The Bootstrap documen
 }
 ```
 
-![xxxxx](images/04/04-23-bootstrap-primary-slateblue.png)
+![xxxxx](../../../assets/images/04/04-23-bootstrap-primary-slateblue.png)
 Figure 4.23 The code and results from updating the background color of btn-primary.
 
 6. This works, but you still have to enter the same color name several times because some of the color values in this rule are being reused. To avoid repetition and make the code easier to update let’s do this using the DRY principle. You’ll need to just define seven custom properties, several of which are reused across all the interaction states. Add a `:root` rule above the `.btn-primary` rule. Then type the following seven custom properties. These properties could be any name and color. We named them using a fruit followed by the name of the first time it was used in the class. The first two colors are for the text and the five following colors are variations of orange that are progressively darker to match how Bootstrap’s hover effect works on other button classes. It was easy to create these variations with the color picker tool in Visual Studio by adding the first orange color to all of them and then selecting and slightly dragging the color picker interface to find one just a tad darker in value each time (Figure 4.24). Experiment as needed.
 
-![xxxxx](images/04/04-24-colorPicker.png)
+![xxxxx](../../../assets/images/04/04-24-colorPicker.png)
 Figure 4.24 You can select a color with a color picker tool in Visual Studio Code by clicking on the color chip next to its hex value or name in the stylesheet. 
 ALT: A screenshot for the color picker tool in Visual Studio Code. 
 
@@ -284,7 +284,7 @@ ALT: A screenshot for the color picker tool in Visual Studio Code.
 }
 ```
 
-![xxxxx](images/04/04-25-bootstrap-colors-override.png)
+![xxxxx](../../../assets/images/04/04-25-bootstrap-colors-override.png)
 Figure 4.2.5 This screenshot shows our custom properties in DevTools.
 ALT: A screenshot of DevTools with custom properties in place.
 
@@ -294,7 +294,7 @@ ALT: A screenshot of DevTools with custom properties in place.
 
 
 
-![xxxxx](images/04/04-26-bootstrap-headings.png)
+![xxxxx](../../../assets/images/04/04-26-bootstrap-headings.png)
 Figure 4.26 The headings in the Bootstrap framework scale at consistent values.
 ALT: An image showing the headings in the Bootstrap framework. 
 
@@ -307,45 +307,45 @@ ALT: An image showing the headings in the Bootstrap framework.
 Bootstrap demo https://codepen.io/owenmundy/pen/oNLZpWM
 
 
-![xxxxx](images/04/04-27-coolors-export-comp.png)
+![xxxxx](../../../assets/images/04/04-27-coolors-export-comp.png)
 Figure 4.27 [Coolors.co](https://coolors.co/) export options and CSS formats.
 ALT: Coolors.co export options and CSS formats
 
 
-![xxxxx](images/04/04-28-bootstrap-containers-w-text.png)
+![xxxxx](../../../assets/images/04/04-28-bootstrap-containers-w-text.png)
 Figure 4.28 Bootstrap's container-fluid class always expands to the full width of the window, while the container class has a maximum width. The .col class will expand to fill the width of the row on that container.
 ALT: Diagram showing the container and container-fluid classes.
 
 
-![xxxxx](images/04/04-29-bootstrap-columns-w-text.png)
+![xxxxx](../../../assets/images/04/04-29-bootstrap-columns-w-text.png)
 Figure 4.29 A design with Bootstrap grid system showing one, two, three, four, six, or twelve equally-sized columns per row. 
 ALT: A design with Bootstrap grid system showing one, two, three, four, six, or twelve equally-sized columns per row.
 
 
-![xxxxx](images/04/04-30-bootstrap-columns-mixed-w-text.png)
+![xxxxx](../../../assets/images/04/04-30-bootstrap-columns-mixed-w-text.png)
 Figure 4.30 You can mix and match Bootstrap column sizes however you like, including the offset set class which can center the columns in a container. The only rule is that the column and offset spans together add up to 12. 
 
-![xxxxx](images/04/04-31-VS%20Code%20auto%20complete.png)
+![xxxxx](../../../assets/images/04/04-31-VS%20Code%20auto%20complete.png)
 Figure 4.31 The Emmet package in VS Code lets you type the beginning of an HTML element and press tab to add the open and close tag you want. This feature also lets you add HTML elements with their class names by typing the full name of the selector.
 ALT A screenshot showing code autocompletion in VS Code.
 
 
-![xxxxx](images/04/04-32-divs.png)
+![xxxxx](../../../assets/images/04/04-32-divs.png)
 Figure 4.32 Your code should contain five divisions in total, as well as headers and an image. 
 ALT A screenshot showing code completed so far.
 
 
-![xxxxx](images/04/04-33-secondColumn.png)
+![xxxxx](../../../assets/images/04/04-33-secondColumn.png)
 Figure 4.33 The image in the second column is not scaling or reflowing like the text.
 ALT A screenshot of the image in the second column.
 
 
-![xxxxx](images/04/04-34-addedTopMargin.png)
+![xxxxx](../../../assets/images/04/04-34-addedTopMargin.png)
 Figure 4.34 Notice the difference in negative space before and after we added top margin to the heading.
 ALT A screenshot showing before and after adding spacing above the heading
 
 
-![xxxxx](images/04/04-35-final-exercise-mobile-comps-new.jpg)
+![xxxxx](../../../assets/images/04/04-35-final-exercise-mobile-comps-new.jpg)
 Figure 4.35 Our final composition https://criticalwebdesign.github.io/book/04-on-the-grid/examples/the-new-york-felines/module4.3-finish.html for multiple breakpoints seen in the browser with DevTools. The Toggle Device Toolbar (see the cursor in the upper right corner of the top image) enables you to view your work across multiple devices in the Chrome browser.
 
 

@@ -9,42 +9,42 @@ In Chapter 8 we explore generative design, looking at the loop as a computationa
 
 
 
-![xxxxx](images/08/08-01-jean-arp-moma.png)
+![xxxxx](../../../assets/images/08/08-01-jean-arp-moma.png)
 Untitled (Collage with Squares Arranged according to the Law of Chance) on the Museum of Modern Art’s website: https://www.moma.org/collection/works/37013
 
 
-![xxxxx](images/08/08-01-arp-controls.png)
+![xxxxx](../../../assets/images/08/08-01-arp-controls.png)
 Figure 8.1 A screenshot from our Generative Arp https://criticalwebdesign.github.io#8-2-live
 
 
 
 
 
-![xxxxx](images/08/08-02-architecture.jpg)
+![xxxxx](../../../assets/images/08/08-02-architecture.jpg)
 Figure 8.2 Heydar Aliyev Centre by Zaha Hadid Architects. The studio for the late architect, Zaha Hadid, incorporates systems to produce outputs that are then filtered and improved by humans. The computer is not the producer of the design, but used to automate and save time in the iterative process. 
 
 
-![xxxxx](images/08/08-03-regenerative-design-diagram.png)
+![xxxxx](../../../assets/images/08/08-03-regenerative-design-diagram.png)
 Figure 8.3 Our version of a diagram showing the flow of the algorithmic project from concept to execution is inspired by Hartmut Bohnacker, Julia Laub, Benedikt Groß, and Claudius Lazzeroni’s 2009 infographic in Generative Gestaltung. Our version places the designer at the center of the process. None of the rules, code, or outputs would be initiated or further extended into action without the human putting the idea into play and making decisions following the iterative process.
 
 
-![xxxxx](images/08/08-04-Web-Leegte-Superposition-comp.png)
+![xxxxx](../../../assets/images/08/08-04-Web-Leegte-Superposition-comp.png)
 Figure 8.4 Jan Robert Leegte and Superposition, Web, 2023. *Web* https://opensea.io/collection/web-2023, is a generative cross-linked network of 1000 web pages. The entire network of pages can be explored using the links on any page as a starting point. In addition to each unique generated composition, including its color palette, interface, and even favicon, each document is “on the chain”, making the code for the generated network accessible from any single blockchain record. 
 ALT Four screenshots of Web by Leegte and Superposition
 
 
-![xxxxx](images/08/cloudFlare.webp)
+![xxxxx](../../../assets/images/08/cloudFlare.webp)
 Figure 8.5 To be truly secure, the seed for a PRNG must use entropy, like the half-life of radioactive material, or some other unpredictable source. Cloudflare, a web performance and security company, uses pixel data from photographs of a wall of constantly flowing lava lamps to ensure their encryption algorithms cannot be reverse-engineered. Photo courtesy of Wiki author [HaeB](https://commons.wikimedia.org/wiki/File:Lava_lamp_wall_at_Cloudflare_office_-2.jpg).
 
 
-![xxxxx](images/08/08-06-alexander.jpg)
+![xxxxx](../../../assets/images/08/08-06-alexander.jpg)
 Figure 8.6 Amy Alexander’s Deep Hysteria (2023) reveals gender bias in artificial intelligence by laying bare how AI describes, and therefore understands or “sees,” a series of neutral facial expressions. Alexander writes that the series “repurposes algorithmic bias in the service of unraveling a deep human bias” (https://amy-alexander.com/projects/deep-hysteria/). In conversation with historical renderings of female patients diagnosed with hysteria, Alexander created this AI rendering of “distressed women” using Stable Diffusion to illustrate reflective texts that accompany her project.
 ALT Six portraits of women with distressed and contorted faces expressing the concept of hysteria.
 
-![xxxxx](images/08/08-Aaronson-Oracle-comp.png)
+![xxxxx](../../../assets/images/08/08-Aaronson-Oracle-comp.png)
 Aaronson Oracle (2019) by Adam Pearce https://roadtolarissa.com/
 
-![xxxxx](images/08/08-07-caseStudy-mccarthy.jpg)
+![xxxxx](../../../assets/images/08/08-07-caseStudy-mccarthy.jpg)
 Figure 8.7 Lauren Lee McCarthy, Autonomous, 2024. Photography by David Leonard.
 
 
@@ -55,26 +55,26 @@ Figure 8.7 Lauren Lee McCarthy, Autonomous, 2024. Photography by David Leonard.
 
 
 
-![xxxxx](images/08/08-08-visual-generative-arp-pseudo-code.png)
+![xxxxx](../../../assets/images/08/08-08-visual-generative-arp-pseudo-code.png)
 Figure 8.8 A visual flowchart showing the flow of the program described by the pseudocode.
 
 
-![xxxxx](images/08/08-09-endlesshorse.png)
+![xxxxx](../../../assets/images/08/08-09-endlesshorse.png)
 Figure 8.9 endless.horse (2015) by Colleen Josephson and Kyle Miller, created during the Stupid Shit No One Needs & Terrible Ideas Hackathon https://stupidhackathon.com, depicts an ASCII art horse with legs that automatically extend as users scroll. 
 ALT ASCI art fills a browser with a horse with long legs
 
 
-![xxxxx](images/08/08-10-randomOutputs.jpg)
+![xxxxx](../../../assets/images/08/08-10-randomOutputs.jpg)
 Figure 8.10 Four examples of outputs producing a random number of divisions that would hold polygons in later exercises.
 ALT 8.10 Four screenshots showing random numbers of boxes.
 
 
-![xxxxx](images/08/08-11-boxes-2-red.png)
+![xxxxx](../../../assets/images/08/08-11-boxes-2-red.png)
 Figure 8.11 Two instances of Generative Arp show a random number of rectangles in red.
 ALT Screenshots demonstrating Generative Arp so far.
 
 
-![xxxxx](images/08/08-12-boxes-3-colors.png)
+![xxxxx](../../../assets/images/08/08-12-boxes-3-colors.png)
 Figure 8.12 Two instances of Generative Arp with various colors and rotations.
 ALT Side-by-side screenshots showing a random number of polygons filled with a variety of colors.
 
@@ -92,50 +92,50 @@ The `randomInt` function in Exercise 8.2.2 is an example of a **pure function**.
 ## 8.2 SVGs & Color Arrays
 
 
-![xxxxx](images/08/08-13-svg-basic.png)
+![xxxxx](../../../assets/images/08/08-13-svg-basic.png)
 Figure 8.13 SVG images https://www.w3schools.com/graphics/svg_intro.asp are created using XML (eXtensible Markup Language), making their code easy to understand like HTML. 
 ALT A cyan triangle, magenta square, and yellow circle next to the letters “svg” in black above a block of code that renders the image.
 
 
-![xxxxx](images/08/08-14-svg-devTools.png)
+![xxxxx](../../../assets/images/08/08-14-svg-devTools.png)
 Fig 8.14 The SVG appears as an image in the Chrome browser, but a closer look at its source code shows how this image is composed of coordinates between the open and close <svg> tags.
 ALT Screenshot of an SVG in Chrome with DevTools showing its code.
 
 
-![xxxxx](images/08/08-15-quadsInbrowser.png)
+![xxxxx](../../../assets/images/08/08-15-quadsInbrowser.png)
 Figure 8.15 The polygons in the browser. Click or reload the page to see their color, size, and position change.
 ALT Myriad shapes in a variety of colors, sizes, and positions on a dark background.
 
 
-![xxxxx](images/08/08-16-svg-polygon-math.png)
+![xxxxx](../../../assets/images/08/08-16-svg-polygon-math.png)
 Figure 8.16 This diagram illustrates how the polygon points are selected. Each magenta circle defines the area within which the x or y values could be created.
 
-![xxxxx](images/08/08-17-polygonsInBrowser.png)
+![xxxxx](../../../assets/images/08/08-17-polygonsInBrowser.png)
 Figure 8.17 SVG Polygons generated for the browser. Click or refresh the page to see a new composition of polygons.
 ALT Multi-colored polygons on a dark background.
 
 
-![xxxxx](images/08/08-18-jevbratt-new.gif)
+![xxxxx](../../../assets/images/08/08-18-jevbratt-new.gif)
 Figure 8.18 The colors in 1:1 (1999) by Lisa Jevbratt are based on rules she created using data collected via web crawlers. She assigned colors to groups of IP addresses that were accessible on the internet at the time, yet a degree of randomness exists in the outcome thanks to the many uncontrollable factors that contribute to the state of each address, such as dynamic software and databases, glitches and system errors, access to technology, and inclination to contribute to the growth by millions of people, to name a few. 
 
 
-![xxxxx](images/08/08-19-coolors.png)
+![xxxxx](../../../assets/images/08/08-19-coolors.png)
 Figure 8.19 Export the code from a trending color palette on https://coolors.co/palettes/trending 
 ALT Screenshot of the export interface on coolors.co. 
 
 
 
-![xxxxx](images/08/08-20-random-color-values-from-array.png)
+![xxxxx](../../../assets/images/08/08-20-random-color-values-from-array.png)
 Figure 8.20 A diagram showing how a PRNG can be used to select random colors from an array. Each color is stored at an index number starting at 0. 
 
-![xxxxx](images/08/08-21-boxes-5-svg-custom-palette.png)
+![xxxxx](../../../assets/images/08/08-21-boxes-5-svg-custom-palette.png)
 Figure 8.21 Two palettes from Coolors.co in our Generative Arp project.
 ALT Side-by-side screenshots of the project expressed with two color palettes: blue and purple hues on the left and orange and yellow hues on the right.
 
 
 
 
-![xxxxx](images/08/08-24-boxes-6-inputs.png)
+![xxxxx](../../../assets/images/08/08-24-boxes-6-inputs.png)
 Figure 8.24 When you complete the exercises in 8.2 your version of the Generative Arp project will include controls for the number of polygons and their height values.
 
 
@@ -197,7 +197,7 @@ function draw() {
 }
 ```
 
-![xxxxx](images/08/08-32-p5-line-segment.png)
+![xxxxx](../../../assets/images/08/08-32-p5-line-segment.png)
 Figure 8.32 The line() function accepts four parameters representing numeric coordinates of the starting and ending x and y positions in the canvas.
 ALT Screenshot of the P5.js editor showing a black line drawn from the top left corner towards the middle of the canvas.
 
@@ -210,7 +210,7 @@ function draw() {
 }
 ```
 
-![xxxxx](images/08/08-33-p5-line-width-height.png)
+![xxxxx](../../../assets/images/08/08-33-p5-line-width-height.png)
 Figure 8.33 Use the `width` and `height` variables to extend the line from the first position `(0,0)` to the opposing corner `(400, 400)`.
 ALT Screenshot of the p5.js editor using width and height variables in the line function.
 
@@ -240,7 +240,7 @@ function draw() {
 }
 ```
 
-![xxxxx](images/08/08-34-quad.png)
+![xxxxx](../../../assets/images/08/08-34-quad.png)
 Figure 8.34 A new quadrilateral is redrawn with a random fill color every two seconds.
 ALT Screenshot of the p5.js editor with the quad method.
 
@@ -258,7 +258,7 @@ function draw() {
 }
 ```
 
-![xxxxx](images/08/08-35-for-loop.png)
+![xxxxx](../../../assets/images/08/08-35-for-loop.png)
 Figure 8.35 Our code includes a for loop where a quadrilateral is drawn with a randomized fill color.
 ALT Screenshot of p5.js code with for loop.
 
@@ -284,10 +284,10 @@ for (let i = 0; i < 30; i++) {
 }
 ```
 
-![xxxxx](images/08/08-36-quads-parameters.png)
+![xxxxx](../../../assets/images/08/08-36-quads-parameters.png)
 Figure 8.36 Quadrilaterals using several random parameters to match Jean Arp’s using a variable d, which constrains the amount of change to the position of the vertices.
 
-![xxxxx](images/08/08-37-p5-translate-commented.png)
+![xxxxx](../../../assets/images/08/08-37-p5-translate-commented.png)
 Figure 8.37 Comment out the translate function to see how the polygons are drawn on top of each other, in the same canvas position without the aid of translate(). Then, don’t forget to remove your comment slashes!
 ALT Screenshot of p5.js editor with comments removing the translate function.
 
@@ -315,7 +315,7 @@ for (let i = 0; i < 30; i++) {
 }
 ```
 
-![xxxxx](images/08/08-39-p5-final-gen-arp.png)
+![xxxxx](../../../assets/images/08/08-39-p5-final-gen-arp.png)
 Figure 8.38 We replaced the max value of w and h with 55 to show how transformations add up in p5.js.
 ALT Screenshot of p5.js editor and preview window displaying stacks of quadrilaterals in various colors.
 
@@ -335,14 +335,14 @@ More info
 ### Generative Art and Design
 
 
-![xxxxx](images/08/08-25-schwartz.png)
+![xxxxx](../../../assets/images/08/08-25-schwartz.png)
 Figure 8.25 Lillian Schwartz & Kenneth Knowlton, Pixillation HD, 1970. In this film, Schwartz developed an editing technique that synthesized computer code, black and white pixels, and hand-drawn colored animation to create abstracted pixel-like movement with a seemingly saturated color palette. See https://archive.org/details/1970LillianSchwartzPixillation.
 
-![xxxxx](images/08/08-26-nake.png)
+![xxxxx](../../../assets/images/08/08-26-nake.png)
 Figure 8.26 Frieder Nake, 13/9/65 Nr. 2 (“Homage to Paul Klee”), 1965.
 
 
-![xxxxx](images/08/08-27-reas.png)
+![xxxxx](../../../assets/images/08/08-27-reas.png)
 Figure 8.27 Casey Reas created 923 EMPTY ROOMS #874 using P5.js, see https://arttab.xyz/?id=114. 
 ALT Screenshot of an artful browser filled with patterning, contrasting colors, and fluid, organic shapes.
 
@@ -357,7 +357,7 @@ More inspiring examples of generative art and design
 -   Google Experiments https://experiments.withgoogle.com/
 -   https://www.rightclicksave.com/article/an-interview-with-frieder-nake
 
-![xxxxx](images/08/arttab-asendorf-4.png)
+![xxxxx](../../../assets/images/08/arttab-asendorf-4.png)
 Work by Kim Asendorf https://naz.cx/ available in ArtTab https://arttab.xyz/ a chrome extension that features a vast collection of dynamic artworks https://arttab.xyz/explore
 
 
@@ -376,15 +376,15 @@ Examples related to computational, electronic, or generative literature/poetry
 
 <table>
 <tr>
-<td valign="top"><a href="images/08/sample-two-moji-1.png"><img src="images/08/sample-two-moji-1.png" alt="ALT"></a>
+<td valign="top"><a href="../../../assets/images/08/sample-two-moji-1.png"><img src="../../../assets/images/08/sample-two-moji-1.png" alt="ALT"></a>
 </td>
-<td valign="top"><a href="images/08/sample-two-moji-2.png"><img src="images/08/sample-two-moji-2.png" alt="ALT"></a>
+<td valign="top"><a href="../../../assets/images/08/sample-two-moji-2.png"><img src="../../../assets/images/08/sample-two-moji-2.png" alt="ALT"></a>
 </td>
 </tr>
 <tr>
-<td valign="top"><a href="images/08/sample-two-moji-3.png"><img src="images/08/sample-two-moji-3.png" alt="ALT"></a>
+<td valign="top"><a href="../../../assets/images/08/sample-two-moji-3.png"><img src="../../../assets/images/08/sample-two-moji-3.png" alt="ALT"></a>
 </td>
-<td valign="top"><a href="images/08/sample-two-moji-4.png"><img src="images/08/sample-two-moji-4.png" alt="ALT"></a>
+<td valign="top"><a href="../../../assets/images/08/sample-two-moji-4.png"><img src="../../../assets/images/08/sample-two-moji-4.png" alt="ALT"></a>
 </td>
 </tr>
 </table>
@@ -392,7 +392,7 @@ Two Moji: A Modern Epic of Love and Betrayal https://taper.badquar.to/2/two_moji
 
 
 
-![xxxxx](images/08/08-28-nonsenseLabComp.png)
+![xxxxx](../../../assets/images/08/08-28-nonsenseLabComp.png)
 Figure 8.28 Allison Parrish, The Nonsense Laboratory, 2021, https://experiments.withgoogle.com/nonsense-laboratory. 
 ALT: Two screenshots of Parrish’s The Nonsense Laboratory displays the Mixer and Explorer portions of the Laboratory’s interface. 
 
@@ -400,10 +400,10 @@ ALT: Two screenshots of Parrish’s The Nonsense Laboratory displays the Mixer a
 
 <table>
 <tr>
-<td valign="top"><a href="images/08/08-storyland1.png"><img src="images/08/08-storyland1.png" alt="ALT"></a>
+<td valign="top"><a href="../../../assets/images/08/08-storyland1.png"><img src="../../../assets/images/08/08-storyland1.png" alt="ALT"></a>
 
 </td>
-<td valign="top"><a href="images/08/08-storyland2.png"><img src="images/08/08-storyland2.png" alt="ALT"></a>
+<td valign="top"><a href="../../../assets/images/08/08-storyland2.png"><img src="../../../assets/images/08/08-storyland2.png" alt="ALT"></a>
 </td>
 </tr>
 </table>
@@ -419,11 +419,11 @@ A pioneering work demonstrating these connections is Nanette Wylde’s [Storylan
 ### Generative Design in Games
 
 
-![xxxxx](images/08/Fractal_weeds.jpg)
+![xxxxx](../../../assets/images/08/Fractal_weeds.jpg)
 Figure 8.10 An example of procedural generation using the symbols, rules, and recursive nature (fractals) of an L-system to “grow” 3D models of weeds. Image uploaded to Wikipedia by user [Solkoll](https://en.m.wikipedia.org/wiki/File:Fractal_weeds.jpg). 
 
 
-![xxxxx](images/08/08-29-no-mans-sky.png)
+![xxxxx](../../../assets/images/08/08-29-no-mans-sky.png)
 Figure 8.29 Four screenshots from No Man’s Sky (2016) which used procedural generation to create over 18 quintillion planets, each with their own ecosystem and unique flora, fauna, and alien species.
 
 Related examples found in video games
@@ -454,13 +454,13 @@ Example generative art and design web interfaces
 -   https://galaxykate0.tumblr.com/post/139774965871/so-you-want-to-build-a-generator
 
 
-![xxxxx](images/08/08-30-emoji-simulator-3.png)
+![xxxxx](../../../assets/images/08/08-30-emoji-simulator-3.png)
 Figure 8.30 Nicky Case’s Emoji Simulator https://ncase.me/sim/ creates generative emoji “worlds” using Conway’s Game of Life and other systems. 
 
-![xxxxx](images/08/08-22-NSynth-2017-Yotam-Mann.png)
+![xxxxx](../../../assets/images/08/08-22-NSynth-2017-Yotam-Mann.png)
 Figure 8.22 The NSynth Sound Maker (2017) https://experiments.withgoogle.com/sound-maker by Yotam Mann uses machine learning trained with a neural network of over 300,000 instrument sounds. 
 
-![xxxxx](images/08/08-23-pixel-dudes.png)
+![xxxxx](../../../assets/images/08/08-23-pixel-dudes.png)
 Figure 8.23 Pixeldudesmaker by 0x72 https://0x72.itch.io/pixeldudesmaker lets you modify your preferences after an initial completely random output. See other procedural generator interfaces on the Chapter 8 wiki.
 
 

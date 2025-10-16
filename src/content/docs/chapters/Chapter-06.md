@@ -11,28 +11,28 @@ Chapter 6 takes the reader “off the grid,” introducing them to historical ex
 
 
 
-![xxxxx](images/06/06-01-netartdiagram.gif) 
+![xxxxx](../../../assets/images/06/06-01-netartdiagram.gif) 
 
 Figure 6.1 MTAA, Simple Net Art Diagram, 1997. This punchy illustration alludes to the reconstitution of meaning that happens in the communication system between the artist (that is, the art work) and viewer. CC BY MTAA
 
-![xxxxx](images/06/06-02-lowres.png)
+![xxxxx](../../../assets/images/06/06-02-lowres.png)
 Figure 6.2 On the left, “Multiple Interaction Team : an exhibition-event to travel (cover image),” MIT Libraries, Cambridge, Massachusetts, 1972. Call no. N6493 1972.M37. This 1973 exhibition was organized by Gyorgy Kepes and prepared by the Center for Advanced Visual Studies at MIT. The catalog is credited to designer Jacqueline Casey, who worked with Murial Cooper in the Design Services office. 
 
-![xxxxx](images/06/06-03-mrkeedy.jpg)
+![xxxxx](../../../assets/images/06/06-03-mrkeedy.jpg)
 Figure 6.3 Mr. Keedy, “OK Identity” (1999) is an exciting yet pluralistic take on brand identity that neither accepts nor denies the constraints of corporate logo designing.
 ALT: Mr. Keedy's OK Identity 
 
 
-![xxxxx](images/06/06-04-greimain-Think-About-What-You-Think-About.jpg)
+![xxxxx](../../../assets/images/06/06-04-greimain-Think-About-What-You-Think-About.jpg)
 Figure 6.4 April Greiman, Think About What You Think About, Cal State Sacramento Lecture Poster, 2004. 
 
 
 <table>
 <tr>
-<td valign="top"><a href="images/06/06-05a.png"><img src="images/06/06-05a.png" alt="ALT"></a><br>
+<td valign="top"><a href="../../../assets/images/06/06-05a.png"><img src="../../../assets/images/06/06-05a.png" alt="ALT"></a><br>
 Left: David Carson, 2023 Redesign of Raygun Issue 6 cover featuring PJ Harvey. 
 </td>
-<td valign="top"><a href="images/06/06-05-b.png"><img src="images/06/06-05-b.png" alt="ALT"></a><br>
+<td valign="top"><a href="../../../assets/images/06/06-05-b.png"><img src="../../../assets/images/06/06-05-b.png" alt="ALT"></a><br>
 David Carson, 2023 fashion design collaboration with Takahiromiyashita The Soloist.
 </td>
 </tr>
@@ -40,17 +40,17 @@ David Carson, 2023 fashion design collaboration with Takahiromiyashita The Soloi
 
 
 
-![xxxxx](images/06/06-06-glitterAndgoldjpg.jpg)
+![xxxxx](../../../assets/images/06/06-06-glitterAndgoldjpg.jpg)
 Figure 6.6 Émilie Brout & Maxime Marion, Gold and Glitter, Installation, website, found GIF and objects, 30 x 30 x 130 cm, 2015. This work was presented on and offline, where the unique frame counts of each found GIF file made the whole composition feel alive and more present than most things we view on the flat screens used to access the internet.
 
-![xxxxx](images/06/06-07-sendRequest.png)
+![xxxxx](../../../assets/images/06/06-07-sendRequest.png)
 Figure 6.7 Herdimas Anggara, Ritual Engineer, 2023.
 
 
-![xxxxx](images/06/06-08-traceryszine-01.jpg)
+![xxxxx](../../../assets/images/06/06-08-traceryszine-01.jpg)
 Figure 6.8 Kate Compton, Tracery zine used as a teaching tool.
 
-![xxxxx](images/06/06-09-traceryScreenshot-NEW-NEW.png)
+![xxxxx](../../../assets/images/06/06-09-traceryScreenshot-NEW-NEW.png)
 Figure 6.9 Kate Compton, Tracery user interface (editor) used to build most of the bots on Twitter. See: https://artbot.club/demo.
 
 
@@ -59,11 +59,11 @@ Figure 6.9 Kate Compton, Tracery user interface (editor) used to build most of t
 ## 6.1 Brainstorming and Experimentation
 
 
-![xxxxx](images/06/06-10-baldwin-iterations.png)
+![xxxxx](../../../assets/images/06/06-10-baldwin-iterations.png)
 Figure 6.10 Owen used a quote from the poet and author, James Baldwin, to create four distinct grid layouts. The Figma layout grid is hidden in this figure, but it is clear the columns and rows provide structure to the text.
 
 
-![xxxxx](images/06/06-11-moodboard.png)
+![xxxxx](../../../assets/images/06/06-11-moodboard.png)
 Figure 6.11 This mood board includes a selection of text and image works made by women. While some present easily-found grid structures, all of these works use intentional expressive typographic design or juxtapose text and image to animate their ideas. 
 
 
@@ -75,23 +75,23 @@ Figure 6.11 This mood board includes a selection of text and image works made by
 
 
 
-![xxxxx](images/06/06-12-css-grid-examples.png)
+![xxxxx](../../../assets/images/06/06-12-css-grid-examples.png)
 Figure 6.12 The CSS grid module enables a wide variety of column and row configurations and sizes. 
 
 
-![xxxxx](images/06/06-13-grid-1.png)
+![xxxxx](../../../assets/images/06/06-13-grid-1.png)
 Figure 6.13 The lines of the poem presented in rows and columns thanks to the CSS grid.
 ALT: The lines of the poem presented in rows and columns thanks to the CSS grid.
 
 
 
-![xxxxx](images/06/06-14-grid-2.png)
+![xxxxx](../../../assets/images/06/06-14-grid-2.png)
 Figure 6.14 The background image is centered in the browser. It appears only once, and the text is juxtaposed on top of it as a well-organized series of divs controlled by CSS grid.
 ALT: Screenshot of the web page at the end of Section 6.1.2. The background covers the web page and text sits neatly on top of it. 
 
 
 
-![xxxxx](images/06/06-15-CSS-transformations.png)
+![xxxxx](../../../assets/images/06/06-15-CSS-transformations.png)
 Figure 6.15 The CSS transform property allows for several fundamental geometric transformations. See this Codepen to experiment with these examples https://bit.ly/cwd-codepen-css-transform 
 
 
@@ -105,15 +105,15 @@ Figure 6.15 The CSS transform property allows for several fundamental geometric 
 ## 6.3 Javascript Functions, Arrays, & Loops
 
 
-![xxxxx](images/06/06-16-JS-function-anatomy.png)
+![xxxxx](../../../assets/images/06/06-16-JS-function-anatomy.png)
 Figure 6.16 Use the function keyword to declare a function, one or more parameters to customize its task, and return to send data back to the location where it was called. ​​To use a function, call it with the function's name and two parentheses (). 
 
-![xxxxx](images/06/06-17-for-loop.png)
+![xxxxx](../../../assets/images/06/06-17-for-loop.png)
 Figure 6.17 A loop is a kind of control structure that will repeat until a condition is met.
 ALT: Diagram showing how a loop repeats until a condition is met.
 
 
-![xxxxx](images/06/06-18-js-for-loop-anatomy.png)
+![xxxxx](../../../assets/images/06/06-18-js-for-loop-anatomy.png)
 Figure 6.18 A Javascript for loop includes a control variable, loop condition, and iterator. If the condition is true then the code in the statement block will run.
 
 
@@ -273,24 +273,24 @@ See this Codepen for more information about bookmarklets, including instructions
 
 
 
-![xxxxx](images/06/06-explodeTheWeb-laTimes.png)
-![xxxxx](images/06/06-19-nyt-explode.png)
+![xxxxx](../../../assets/images/06/06-explodeTheWeb-laTimes.png)
+![xxxxx](../../../assets/images/06/06-19-nyt-explode.png)
 Figure 6.19 The LA Times and The New York Times websites get a redesign with two lines of code in the Console. 
 
-![xxxxx](images/06/ch6-haiku-xtine-1.gif)
+![xxxxx](../../../assets/images/06/ch6-haiku-xtine-1.gif)
 https://criticalwebdesign.github.io/book/06-off-the-grid/examples/module6.3-finish.html 
 
 
-![xxxxx](images/06/ch6-birds-1.gif)
+![xxxxx](../../../assets/images/06/ch6-birds-1.gif)
 https://criticalwebdesign.github.io/book/06-off-the-grid/examples/birds.html 
 
 
 
-![xxxxx](images/06/ch6-maintenance-3.gif)
+![xxxxx](../../../assets/images/06/ch6-maintenance-3.gif)
 https://criticalwebdesign.github.io/book/06-off-the-grid/examples/maintenance.html
 
 
-![xxxxx](images/06/ch6-baldwin-1.gif)
+![xxxxx](../../../assets/images/06/ch6-baldwin-1.gif)
 https://criticalwebdesign.github.io/book/06-off-the-grid/examples/baldwin.html
 
 

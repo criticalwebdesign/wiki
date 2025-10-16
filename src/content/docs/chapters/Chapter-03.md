@@ -9,49 +9,34 @@ description: Links, references, and footnotes
 Chapter 3 includes a contextual discussion of critical design and culture jamming to initiate a prompt for readers to create their own subversive logo redesign. The resulting web page allows viewers to hover over an image in the page and watch it change to its subversive form. Modules show how to use custom fonts via Google Fonts and incorporate additional styling through CSS. 
 
 
+![Adbusters Corporate American Flag](../../../assets/images/03/03-01-NEW_Corporate%20American%20Flag%202022_2X3ft.png)
 
-<table>
-<tr>
-<td valign="top"><a href="images/03/03-01-NEW_Corporate%20American%20Flag%202022_2X3ft.png"><img src="images/03/03-01-NEW_Corporate%20American%20Flag%202022_2X3ft.png" alt="Adbusters Corporate American Flag"></a><br>
-Figure 3.1 The Adbusters Corporate American Flag transforms the stars and stripes into a symbol of patriotism for a field of corporations. In money we trust. Search online to see many variations and updates to the corporate logos over the years.</td>
-<td valign="top"><a href="images/03/03-02-marlboro.png"><img src="images/03/03-02-marlboro.png" alt="spoof cigarette ad from Adbusters Magazine"></a><br>
-Figure 3.2 This spoof cigarette ad from Adbusters Magazine reinterprets the Marlboro Man as a wistful cowboy who shares nostalgia and regretful longing for his healthy lung.  </td>
-</tr>
-</table>
-
-<!-- 
-![Adbusters Corporate American Flag](images/03/03-01-NEW_Corporate%20American%20Flag%202022_2X3ft.png)
 Figure 3.1 The Adbusters Corporate American Flag transforms the stars and stripes into a symbol of patriotism for a field of corporations. In money we trust. Search online to see many variations and updates to the corporate logos over the years.
 
+![spoof cigarette ad from Adbusters Magazine](../../../assets/images/03/03-02-marlboro.png)
 
-![spoof cigarette ad from Adbusters Magazine](images/03/03-02-marlboro.png)
 Figure 3.2 This spoof cigarette ad from Adbusters Magazine reinterprets the Marlboro Man as a wistful cowboy who shares nostalgia and regretful longing for his healthy lung.  
--->
 
 
+![](../../../assets/images/03/03-03-NYTimes-SE.png)
 
-
-<table>
-<tr>
-<td valign="top"><a href="images/03/03-03-NYTimes-SE.png"><img src="images/03/03-03-NYTimes-SE.png" alt="ALT"></a><br>
-Figure 3.3 The Yes Men, Steve Lambert, Les Liens Invisibles, along with 30 writers, 50 advisors, approximately 1000 volunteer distributors, CODEPINK, May First/People Link, Evil Twin, Improv Everywhere and Not An Alternative produced and/or distributed the <a href="image/03/03-03-NYTimes-SE.pdf">New York Times Special Edition</a> (2008). <a href="https://news.artnet.com/art-world/yes-men-new-york-time-special-edition-brooklyn-museum-490466">Ref</a>
+Figure 3.3 The Yes Men, Steve Lambert, Les Liens Invisibles, along with 30 writers, 50 advisors, approximately 1000 volunteer distributors, CODEPINK, May First/People Link, Evil Twin, Improv Everywhere and Not An Alternative produced and/or distributed the <a href="../../../assets/images/03/03-03-NYTimes-SE.pdf">New York Times Special Edition</a> (2008). <a href="https://news.artnet.com/art-world/yes-men-new-york-time-special-edition-brooklyn-museum-490466">Ref</a>
 ALT The fake New York Times cover page by The Yes Men and others
-</td>
-<td valign="top"><a href="images/03/03-04-binky-comp.png"><img src="images/03/03-04-binky-comp.png" alt="Screenshots of the real, fake Binky app"></a><br>
+
+
+![Screenshots of the real, fake Binky app](../../../assets/images/03/03-04-binky-comp.png)
+
 Figure 3.4 Binky by Dan Kurtz is a real, fake mobile app that lets users, like other social media apps, scroll, like, and comment on posts. Like an infant’s binky (or pacifier), it satisfies the need to use social media, except it doesn't allow users to upload or save files, and it will not monetize your data. See https://www.binky.rocks/
-</td>
-</tr>
-</table>
 
 
 
 
-![Dunne & Raby’s A/B](images/03/03-05-dunne-raby-ab.png)
+![Dunne & Raby’s A/B](../../../assets/images/03/03-05-dunne-raby-ab.png)
 Figure 3.5 Dunne & Raby’s A/B, 2009 and ongoing. See https://dunneandraby.co.uk/content/projects/476/0 
 
 
 
-[![Great design is serious, not solemn](images/03/03-06-tedTalk-orig.jpg)](https://youtu.be/atn22-bmTPU)
+[![Great design is serious, not solemn](../../../assets/images/03/03-06-tedTalk-orig.jpg)](https://youtu.be/atn22-bmTPU)
 Figure 3.6 Two still images from Paula Scher’s 2008 talk, “Great Design is Serious, Not Solemn,” TED Talk, 2008, accessed August 16, 2023, https://www.ted.com/talks/paula_scher_great_design_is_serious_not_solemn 
 
 
@@ -59,14 +44,14 @@ Figure 3.6 Two still images from Paula Scher’s 2008 talk, “Great Design is S
 
 ## 3.1 Design with Figma
 
-![A t-shirt with the word “branding” in HTML close tag syntax next to a dark canvas-style shoe with a white circle where the brand’s logo would typically appear.](images/03/03-07-branding.jpg)
+![A t-shirt with the word “branding” in HTML close tag syntax next to a dark canvas-style shoe with a white circle where the brand’s logo would typically appear.](../../../assets/images/03/03-07-branding.jpg)
 Figure 3.7 Examples of un-branding from Adbusters include Owen’s t-shirt (left) and one of xtine’s Blackspot Unswoosher shoes (right).
 
 
-![Graphic showing examples of Ben & Jerry's logo, wordmark, and other graphics.](images/03/03-08-BenJerry-marks.png)
+![Graphic showing examples of Ben & Jerry's logo, wordmark, and other graphics.](../../../assets/images/03/03-08-BenJerry-marks.png)
 Figure 3.8 Ben & Jerry's uses several graphics to express their identity including 1) the simple “Arch” logo; 2) the U.S. “Arch” logo with “flavor cloud;” 3) a wordmark, “for when the ‘Arch’ cannot be used;” 4) a stacked wordmark; and 5) an icon to represent their brand on social media.
 
-![Delocator.net logo variations ](images/03/03-09-delocator-logos.png)
+![Delocator.net logo variations ](../../../assets/images/03/03-09-delocator-logos.png)
 Figure 3.9 Delocator.net logo variations (2005, 2009) include the distressed type reference to Starbucks, and in later versions stars to emphasize wayfinding. https://web.archive.org/web/20050408030457/http://delocator.net/
 
 
@@ -88,16 +73,16 @@ Create a free Figma account before starting this exercise. As software tools lik
 5. We are creating a spoof of an IKEA advertisement in this example, so we will sample colors from their website. Create a screenshot from https://ikea.com and place the image file in your Figma composition by navigating to the Main Menu > File > Place Image. Alternatively, you can copy and paste or drag the image to your Figma canvas. 
 6. Set the background color of the frame to match the yellow in the company’s brand. Select the frame and click on the color chip in the Fill area of the right side panel. Use the eyedropper to select the yellow color in the IKEA logo (Figure 3.11). It is simple to copy the hexadecimal or RGB color values from Figma to your CSS file. 
 
-![A screenshot showing how to use the eyedropper tool to select a color in a graphic.](images/03/03-11-sampleIkeaYellowFigma.png)
+![A screenshot showing how to use the eyedropper tool to select a color in a graphic.](../../../assets/images/03/03-11-sampleIkeaYellowFigma.png)
 Figure 3.11 Use the eyedropper to find the CSS, RGB, or Hex values of colors in Figma. 
 
 7. Select the Rectangle tool from the Shapes drop down (Figure 3.12) and draw a box to hold space for the image on the page. Our design only includes one image that changes on mouse interaction. For this mock-up we simply need to suggest roughly where that image should appear on the page (Figure 3.13).
 
-![The Rectangle tool selected in Figma.](images/03/03-12-Figma%20shape%20menu.png)
+![The Rectangle tool selected in Figma.](../../../assets/images/03/03-12-Figma%20shape%20menu.png)
 Figure 3.12 The Figma Shapes menu.
 
 
-![Screenshot of our Figma file with a yellow background and a gray square.](images/03/03-13-addImagePlaceholder.png)
+![Screenshot of our Figma file with a yellow background and a gray square.](../../../assets/images/03/03-13-addImagePlaceholder.png)
 Figure 3.13 Continue to build a mock-up that loosely shows where elements are placed in the composition. We used the Rectangle tool to draw a placeholder for the image that appears towards the top center of the web page.
 
 
@@ -108,28 +93,28 @@ Figure 3.13 Continue to build a mock-up that loosely shows where elements are pl
 
 
 
-![screenshot of our Figma file](images/03/03-14-EverythingYouNeedMockup.png)
+![screenshot of our Figma file](../../../assets/images/03/03-14-EverythingYouNeedMockup.png)
 Figure 3.14 This screenshot of our Figma file shows a rough sketch of the web page we will construct in the next modules. The image is not yet selected or made, nor has the typeface has not yet been selected. However, you can begin to see the colors included in the design, the placement of design elements on the page, and how the eye might move across the compositional space. 
 
 
 
 
-![Screenshot of mockup design](images/03/03-15-ikeaMockups.png)
+![Screenshot of mockup design](../../../assets/images/03/03-15-ikeaMockups.png)
 Figure 3.15 This layout shows a screenshot of an original advertisement (left) with mock-up images showing how the company name and graphics might change when the user interacts with the page. Notice that the typeface for the company does not match the original (we’ll discuss that in the next section), but the background color and overall layout helps convey the similarities between the original and its transformation. 
 
 
-![Examples of variations in the type family Roboto examples showing display versus body fonts.](images/03/03-16-typography-display-fonts.png)
+![Examples of variations in the type family Roboto examples showing display versus body fonts.](../../../assets/images/03/03-16-typography-display-fonts.png)
 Figure 3.16 At top, a typeface (also called a type family) is a collection of related fonts, while a font is any variation in weight, width, or style of the characters in the typeface. Below, Which paragraph is easier to read? Which heading grabs your attention? These examples illustrate proper and improper use of display and body fonts. For more explore the typeface categories at fonts.google.com
 
 
 
-![A diagram showing defining characteristics of a typeface.](images/03/03-18-typography-anatomy.png)
+![A diagram showing defining characteristics of a typeface.](../../../assets/images/03/03-18-typography-anatomy.png)
 Figure 3.18 An overview of aspects of a typeface, including the names given to those parts in print (e.g. KERNING) and the CSS property names of their online counterparts (e.g. letter-spacing).
 
 
 
 
-![Design iterations showing Owen's subversion of the Adobe logo](images/03/03-19-logo-variations.png)
+![Design iterations showing Owen's subversion of the Adobe logo](../../../assets/images/03/03-19-logo-variations.png)
 Figure 3.19 Owen tried several sans serif font faces before selecting one for his subversion of the Adobe logo.
 
 
@@ -147,7 +132,7 @@ Alternately, in the additive color model used by computer screens and digital ca
 
 The hexadecimal number system is another popular way to denote colors in CSS. Each character in the hexadecimal system uses 16 possible values, from 0-9, followed by alphabetic characters A-F. With hexadecimal color, characters 1-2 represent red, 3-4 are green, and 5-6 are blue. 
 
-![Color values](images/03/03-10-color-models.png)
+![Color values](../../../assets/images/03/03-10-color-models.png)
 Color values expressed in RGB, Hex, and CSS. Each rule in the CSS column will create the same color in the browser.
 
 The colors discussed so far are all opaque. To control transparency of your color you can add a fourth alpha channel to the RGB colors. To do this in CSS use either the rgba() function (the fourth channel is a value from 0-1) or the HEXA notation which adds a 7th and 8th character to your hexadecimal color values.
@@ -178,7 +163,7 @@ With typeface fundamentals in mind, select a typeface that matches the IKEA iden
 
 
 
-![xxxxx](images/03/03-21-raster-vs-vector.png)
+![xxxxx](../../../assets/images/03/03-21-raster-vs-vector.png)
 Figure 3.21 Vector graphics contain points and line art defined mathematically. Raster graphics are created using a matrix of square pixels.
 ALT: Graphic showing difference between vector and raster graphics.
 
@@ -187,10 +172,10 @@ ALT: Graphic showing difference between vector and raster graphics.
 
 <table>
 <tr>
-<td valign="top"><a href="images/03/03-20-paths-hierarchy.png"><img src="images/03/03-20-paths-hierarchy.png" alt="Diagram of a relative path to the stylesheet from the index.html file."></a><br>
+<td valign="top"><a href="../../../assets/images/03/03-20-paths-hierarchy.png"><img src="../../../assets/images/03/03-20-paths-hierarchy.png" alt="Diagram of a relative path to the stylesheet from the index.html file."></a><br>
 Figure 3.20 This graphic shows two relative paths. The light blue line indicates the path that index.html would use to reference styles.css and the purple line shows the path to get from styles.css to cat.jpg.
 </td>
-<td valign="top"><a href="images/03/03-22-figma-image-export.png"><img src="images/03/03-22-figma-image-export.png" alt="Screenshot of Figma interface."></a><br>
+<td valign="top"><a href="../../../assets/images/03/03-22-figma-image-export.png"><img src="../../../assets/images/03/03-22-figma-image-export.png" alt="Screenshot of Figma interface."></a><br>
 Figure 3.22 Image export options in Figma.
 </td>
 </tr>
@@ -204,17 +189,17 @@ Figure 3.22 Image export options in Figma.
 
 
 
-![xxxxx](images/03/03-23-img-commented.png)
+![xxxxx](../../../assets/images/03/03-23-img-commented.png)
 Figure 3.23 We commented-out the image source tag that we implemented in the previous exercise. Using comments like this is a common practice and lets you save code snippets to reference later but disables them in the browser.
 ALT: Screenshot with the image source tag commented out in HTML.
 
 
-![xxxxx](images/03/03-24-everythingYouNeed.png)
+![xxxxx](../../../assets/images/03/03-24-everythingYouNeed.png)
 Figure 3.24 This screenshot shows the results of Exercise 3.2.3 in the web browser.
 ALT Screenshot showing the wrench centered in the browser with the tagline, “Everything You Need” below it and two blue links. 
 
 
-![xxxxx](images/03/03-25-figma-crop-image.png)
+![xxxxx](../../../assets/images/03/03-25-figma-crop-image.png)
 Figure 3.25 Cropping an image in Figma 
 ALT The Figma crop interface.
 
@@ -309,12 +294,12 @@ font-family: "Futura Press", Helvetica, Arial, sans-serif;
 
 
 
-![Screenshot of the Google Fonts web page.](images/03/03-26-google-fonts.png)
+![Screenshot of the Google Fonts web page.](../../../assets/images/03/03-26-google-fonts.png)
 Figure 3.26 Select and use custom typefaces in your design with Google Fonts.
 
 
 
-![Diagram of a Javascript variable declaration. ](images/03/03-27-javascript-variable.pdf)
+![Diagram of a Javascript variable declaration. ](../../../assets/images/03/03-27-javascript-variable.pdf)
 Figure 3.27 This code creates a new variable called greeting, and assigns a string of text as the value. 
 
 
@@ -347,13 +332,13 @@ console.log("Hello from main.js");
 
 
 
-![Javascript event listener diagram shows the path from user to event to listener to handler.](images/03/03-28-JS-event-handlers.png)
+![Javascript event listener diagram shows the path from user to event to listener to handler.](../../../assets/images/03/03-28-JS-event-handlers.png)
 Figure 3.28 An event can be initiated by a user (e.g. click, keypress, mouseover, mouseout, scroll, etc.) or something happening on the web page (like when it finishes loading or catches an error). An event listener “listens” for the event to happen, then calls an event handler which runs code in response to the event. Much of the time “listener” and “handler” are interchangeable, since they need to work together to respond to events.
 
 
 
 
-![xxxxx](images/03/03-29-devtools.png)
+![xxxxx](../../../assets/images/03/03-29-devtools.png)
 Figure 3.29 DevTools will highlight a target element if you hover over the line in the Console. This can be handy for debugging when you need to confirm that a selector is working.
 ALT: Screenshot of DevTools highlighting a target element when the mouse is hovering over the line in the Console.
 
@@ -368,22 +353,22 @@ targetElement.addEventListener("mouseover", function(){
 );
 ```
 
-![eventlistener](images/03/03-30-js-eventlistener-anatomy.png)
+![eventlistener](../../../assets/images/03/03-30-js-eventlistener-anatomy.png)
 Figure 3.30 This code shows how to add a click event listener in Javascript. Line 1 creates a new variable to store a reference to the target element. Line 3 attaches an event listener to the target element, designating "mouseover" as the name of the event to listen for. Line 4 is the event handler function that wraps code to run when the event occurs. Note that sometimes the format may be different, since Javascript doesn’t care about whitespace as long as the syntax is correct.
 ALT: A screenshot of the basic anatomy of an event listener.
 
 
-![eventlistener mouseout](images/03/03-30-js-eventlistener-mouseout.png)
+![eventlistener mouseout](../../../assets/images/03/03-30-js-eventlistener-mouseout.png)
 Variation with mouseout
 
-![eventlistener mouseover](images/03/03-30-js-eventlistener-mouseover.png)
+![eventlistener mouseover](../../../assets/images/03/03-30-js-eventlistener-mouseover.png)
 Variation with mouseover
 
-![xxxxx](images/03/ch3-unbrand-comp-ikea.png)
+![xxxxx](../../../assets/images/03/ch3-unbrand-comp-ikea.png)
 Figure 3.31 This outcome https://criticalwebdesign.github.io/book/03-critical-design/examples/ikea-time/module3.3-finish.html uses the CSS :hover pseudoclass to swap the image of the allen wrench with a graphic of an alarm clock. The TIME wordmark is an unbrand of the IKEA logo. 
 
 
-![xxxxx](images/03/ch3-unbrand-comp-adobe.png)
+![xxxxx](../../../assets/images/03/ch3-unbrand-comp-adobe.png)
 Figure 3.32 This outcome https://criticalwebdesign.github.io/book/03-critical-design/examples/adobe-monopoly/ uses Javascript to replace the Adobe logo with an unbranded version. The long list below details all the companies they have purchased since 1990.
 
 

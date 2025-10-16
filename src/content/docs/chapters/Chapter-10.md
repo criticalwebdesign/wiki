@@ -16,7 +16,7 @@ Chapter 10 discusses the power designers have to evoke participation and collect
 ### Optimism
 
 
-![xxxxx](images/10/10-01-low-tech-website.png)
+![xxxxx](../../../assets/images/10/10-01-low-tech-website.png)
 10.1 The first prototype of the solar powered server that runs the Low-tech Magazine website. The solar charge controller (on the right) is powering the server (on the left). This image, like others on the site, is dithered to reduce the file size and make the server more efficient.
 
 
@@ -42,7 +42,7 @@ Other groups who encourage technology companies to consider the public good over
 
 ### Participation
 
-![](images/10/10-02-Greatfire-Analyzer.png)
+![](../../../assets/images/10/10-02-Greatfire-Analyzer.png)
 The https://en.greatfire.org/analyzer shows which domains and keywords are blocked from within the "Great Firewall of China." Enter a website address and watch as the site attempts to access it from servers located within the People's Republic of China, to display a real-time report on the country's elaborate censorship network. The latest statistics about the number of blocked services (17,489 domains!) are saved to their database and displayed on the front page for the world to see. 
 
 Examples that involve crowdsourced information, user contributions, or other shared experiences.
@@ -74,7 +74,7 @@ Speedshow.net was created by Aram Bartoll as a reusable model to transform Inter
 
 
 
-![somebodyapp](images/10/10-03-somebody-app.png)
+![somebodyapp](../../../assets/images/10/10-03-somebody-app.png)
 Figure 10.2 https://somebodyapp.com/ by Miranda July was a short lived but imaginative reconfiguration of critical engagement and interpersonal communication. 
 
 
@@ -83,16 +83,16 @@ Figure 10.2 https://somebodyapp.com/ by Miranda July was a short lived but imagi
 - We Feel Fine (2005) http://wefeelfine.org created by Jonathan Harris and Sepandar Kamvar was an online project that visualized publicly-available text (blogs, social media, etc.) that started with the phrase “I feel …”
 
 
-![wefeelfine](images/10/10-04-wefeelfine-madness-hires.jpg)
+![wefeelfine](../../../assets/images/10/10-04-wefeelfine-madness-hires.jpg)
 Figure 10.3 Jonathan Harris and Sep Kamvar, We Feel Fine, “Madness,” http://wefeelfine.org. 
 
-![wefeelfine](images/10/10-05-wefeelfine-wff-movements.jpg)
+![wefeelfine](../../../assets/images/10/10-05-wefeelfine-wff-movements.jpg)
 Jonathan Harris and Sep Kamvar, We Feel Fine, “Movements,” “Mobs (Age),” “Mobs,” and "Search Panel,” http://wefeelfine.org. 
 
-![wefeelfine](images/10/10-06-wefeelfine-wff-montage.jpg)
+![wefeelfine](../../../assets/images/10/10-06-wefeelfine-wff-montage.jpg)
 Jonathan Harris and Sep Kamvar, We Feel Fine, “Madness,” http://wefeelfine.org. 
 
-![wefeelfine](images/10/10-07-wefeelfine-graph.png)
+![wefeelfine](../../../assets/images/10/10-07-wefeelfine-graph.png)
 Jonathan Harris and Sep Kamvar, We Feel Fine, “Emotional Graph,” http://wefeelfine.org. 
 
 
@@ -106,13 +106,13 @@ Jonathan Harris and Sep Kamvar, We Feel Fine, “Emotional Graph,” http://wefe
 
 
 
-![](images/10/10-08-queering-the-map-1.png)
+![](../../../assets/images/10/10-08-queering-the-map-1.png)
 Figure 10.855 Queering the Map https://queeringthemap.com (2018) is a community-generated cartographic archive of queer experiences. Created by Lucas LaRochelle, the site catalogs, preserves, and locates the experiences of queer life, including encounters, collective action, and stories of coming out.
 
-![](images/10/10-09-exhausting-a-crowd.png)
+![](../../../assets/images/10/10-09-exhausting-a-crowd.png)
 Figure 10.5 Exhausting a Crowd (2015) https://exhaustingacrowd.com by Kyle McDonald is a web application that depicts detailed security camera footage upon which website visitors can add annotations synced with both the imagery and the time code of the video. The crowdsourced text laid over the 12 hours of repeating footage from various sites offers curious commentary which perfectly balances the opposing forces of surveillance vs privacy, looking vs being seen, and control vs pleasure that defines our information culture and public spaces.
 
-![](images/10/10-10-pointerPointer.jpg)
+![](../../../assets/images/10/10-10-pointerPointer.jpg)
 Figure 10.5 https://pointerpointer.com/ (2012) by Studio Moniker and Studio Puckey matches your mouse position to significant locations using a database of images. 
 
 
@@ -135,21 +135,21 @@ Figure 10.5 https://pointerpointer.com/ (2012) by Studio Moniker and Studio Puck
 
 
 
-![client server db](images/10/10-11-big-feelings-diagram.png)
+![client server db](../../../assets/images/10/10-11-big-feelings-diagram.png)
 Figure 10.11 A diagram showing the relationship between client, server, and database for Big Feelings.
 
 
 
 
-![mockups1](images/10/10-12-big-feelings-marker-tests.png)
+![mockups1](../../../assets/images/10/10-12-big-feelings-marker-tests.png)
 Figure 10.6 In our initial conversations about Big Feelings we imagined feelings as colorful bubbles on the map, and we wanted our map to feel mushy, like a bunch of big feelings indefinitely overlapping each other. We experimented with color (1), size (2), opacity and blending modes (3), and gradients (4), of the shapes on top of a map screenshot. 
 
 
-![color tests](images/10/10-13-big-feelings-color-tests.png)
+![color tests](../../../assets/images/10/10-13-big-feelings-color-tests.png)
 Figure 10.6 Once we knew we wanted to represent a list of feelings with associated colors we iterated on what those options would be and placed colored shapes on top of each other with various opacity levels and soft edges. We used common sentiments and selected colors by hand (1). xtine created a new, more contemporary version of the mood language (2). Owen used a gradient in Figma within a mask of circles to create a continuous gradient that spaced-out the color hues (3,4). 
 
 
-![mockups2](images/10/10-14-big-feelings-mockups.png)
+![mockups2](../../../assets/images/10/10-14-big-feelings-mockups.png)
 A few of the mockups for Big Feelings. As you can see, an iterative process helped us to improve and test different layouts.
 
 
@@ -180,19 +180,19 @@ A few of the mockups for Big Feelings. As you can see, an iterative process help
 
 
 
-![xxxxx](images/10/10-15-map-tiles.png)
+![xxxxx](../../../assets/images/10/10-15-map-tiles.png)
 Figure 10.7 Three zoom levels in a map tileset. The labels in our graphic follow the z (zoom), x (longitude position), and y (latitude position) format of tileset templates.
 
 
-![xxxxx](images/10/10-17-geojson.io-options.png)
+![xxxxx](../../../assets/images/10/10-17-geojson.io-options.png)
 Figure 10.8 geojson.io is a user-friendly site for creating and formatting JSON map data.
 
 
-![xxxxx](images/10/10-15-jodi-geogoo-5.png)
+![xxxxx](../../../assets/images/10/10-15-jodi-geogoo-5.png)
 Figure 10.9 GeoGoo https://geogoo.net by Jodi (Joan Heemskerk and Dirk Paesmans) is a wonderfully chaotic series of animations using the default icons of the Google Map API. Users can select from the dropdown options or simply refresh the page to load new iterations that visualize mathematical functions, symbols, or completely random designs across a variety of terrains and lunar surfaces. *While offline for a period, the site (thankfully) is live again.
 
 
-![xxxxx](images/10/10-18-leaflet-map-finished.png)
+![xxxxx](../../../assets/images/10/10-18-leaflet-map-finished.png)
 Figure 10.10 The result of exercises in 10.2 is a map populated with fake data using two libraries, Leaflet (for the map) and Faker.js (for the data). 
 
 
@@ -340,7 +340,7 @@ SELECT * FROM people ORDER BY year DESC;
 ls -la .data
 ```
 
-![xxxxx](images/10/10-19-database-console.png)
+![xxxxx](../../../assets/images/10/10-19-database-console.png)
 Figure 10.19 The results of exercise 10.3.1.
 
 
@@ -385,7 +385,7 @@ server.get("/addTestData", async function (request, reply) {
 ```
 
 
-![xxxxx](images/10/10-20-big-feelings-api.png)
+![xxxxx](../../../assets/images/10/10-20-big-feelings-api.png)
 Figure 10.20 Data in JSON format for our Big Feelings project. 
 
 
@@ -403,16 +403,16 @@ Figure 10.20 Data in JSON format for our Big Feelings project.
 
 
 
-![xxxxx](images/10/10-21-big-feelings-console.png)
+![xxxxx](../../../assets/images/10/10-21-big-feelings-console.png)
 Figure 10.21 Markers appear on the map for each feeling, seen in the console with unique IDs.
 
 
-![xxxxx](images/10/10-22-big-feelings-finished.png)
+![xxxxx](../../../assets/images/10/10-22-big-feelings-finished.png)
 Figure 10.22 The final version of the prompt for Chapter 10 can be found online https://big-feelings.vercel.app
 
 
 
-<!-- ![xxxxx](images/10)
+<!-- ![xxxxx](../../../assets/images/10)
 Figure 10.23 The International Pussycats (in-progress) is a virtual post-punk band made with methods outlined in this chapter.  -->
 
 

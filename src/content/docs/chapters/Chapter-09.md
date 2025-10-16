@@ -11,20 +11,20 @@ description: Links, references, and footnotes
 Chapter 9 focuses on data as part of the networked landscape that is surveilled, bought, and sold, including a discussion of cookies, browser fingerprinting, and advertising business models. 
 
 
-![xxxxx](images/09/09-01-termsandconditions.png)
+![xxxxx](../../../assets/images/09/09-01-termsandconditions.png)
 Figure 9.1 Terms and Conditions Apply was created by Wieden+Kennedy, Jon Plackett, Alex Bellos, Adam Says, https://www.termsandconditions.game/ 
 
-![Five main components of behavioral tracking](images/09/09-02-behavioral-targeting-tech-stack.png)
+![Five main components of behavioral tracking](../../../assets/images/09/09-02-behavioral-targeting-tech-stack.png)
 Figure 9.2 This flowchart shows how behavioral targeting starts with data capture and results in behavioral change.
 
-![xxxxx](images/09/09-03-whitecat.jpg)
+![xxxxx](../../../assets/images/09/09-03-whitecat.jpg)
 Figure 9.3 Owen Mundy, I Know Where Your Cat Lives, 2014. https://iknowwhereyourcatlives.com
 
-![xxxxx](images/09/09-04-ikwycl-map.png)
+![xxxxx](../../../assets/images/09/09-04-ikwycl-map.png)
 Figure 9.3 Owen Mundy, I Know Where Your Cat Lives, 2014. https://iknowwhereyourcatlives.com
 
 
-![xxxxx](images/09/09-05-tally.jpg)
+![xxxxx](../../../assets/images/09/09-05-tally.jpg)
 Figure 9.5 Joelle Dietrick and Owen Mundy, Tally Saves the Internet, 2021. https://tallysavestheinternet.com
 
 
@@ -41,11 +41,11 @@ Figure 9.5 Joelle Dietrick and Owen Mundy, Tally Saves the Internet, 2021. https
 - https://coveryourtracks.eff.org/
 
 
-![Diagram showing the web browser, or client and its requests and responses to and from the server](images/09/09-06-request-response.png)
+![Diagram showing the web browser, or client and its requests and responses to and from the server](../../../assets/images/09/09-06-request-response.png)
 Figure 9.6 Diagram showing just a few of the many requests and responses between client and server when a page loads.
 
 
-![Access log information in white on a black screen.](images/09)
+![Access log information in white on a black screen.](../../../assets/images/09)
 Figure 9.7 Example server access logs from https://iknowwhereyourcatlives.com showing IP addresses, dates, and files requested.
 ALT 9.7 
 
@@ -68,7 +68,7 @@ View a server log file and the corresponding response and request headers inside
 1. Select one of the files from the response list and examine the metadata that appears under the Headers tab on the right. The request headers include the URL, method, status code, and other information, while the response headers tell you the content type, server, and more.
 
 
-![xxxxx](images/09/09-08-glitch-server-logs.png)
+![xxxxx](../../../assets/images/09/09-08-glitch-server-logs.png)
 Figure 9.8 The Glitch server logs (left) and site preview(right) with DevTools showing the server request and response for all the files of the web page. 
 
 -->
@@ -77,36 +77,36 @@ Figure 9.8 The Glitch server logs (left) and site preview(right) with DevTools s
 
 
 
-![Tan map on a blue background showing statistics about users at each location.](images/09/09-09-statcountermap.png)
+![Tan map on a blue background showing statistics about users at each location.](../../../assets/images/09/09-09-statcountermap.png)
 Figure 9.9 User information shown on a map at Statcounter.com.
 
 
 
-![Screenshot of Clickclickclick.click reporting back to the user all of the choices they made.](images/09/09-10-clickclickclick-comp.png)
+![Screenshot of Clickclickclick.click reporting back to the user all of the choices they made.](../../../assets/images/09/09-10-clickclickclick-comp.png)
 Figure 9.10 A wealth of information about users is displayed on the Achievements page of the https://clickclickclick.click website. 
 
 
 
-![Screenshot of Data Dealer website.](images/09/09-11-datadealer_screenshot01_empire.jpg)
+![Screenshot of Data Dealer website.](../../../assets/images/09/09-11-datadealer_screenshot01_empire.jpg)
 Figure 9.11 Data Dealer was a web-based game created by Ivan Averintsev, Wolfie Christl, Pascale Osterwalder, and Ralf Traunsteiner that explored the myriad ways that such companies harvest and sell user information.
 
 
-![xxxxx](images/09/09-12-safebook-index-2880x1510.png)
+![xxxxx](../../../assets/images/09/09-12-safebook-index-2880x1510.png)
 Figure 9.12 Ben Grosser's browser extensions modify the content users see on social media to question their influence. His Safebook extension removes all content from Facebook, reminding users of the importance of their free labor to the company's bottom line. Grosser’s Facebook Demetricator extension removes the metrics on posts that gamify interpersonal communication to drive engagement (and thus ad views). As with all browser extensions, these modifications are performed using Javascript, but only in the browsers (clients) of users who install it.
 
 
-![Screenshot of Google Analytics for Owen’s I Know Where Your Cat Lives page.](images/09/09-13-google-analytics-setup-assistant.png)
+![Screenshot of Google Analytics for Owen’s I Know Where Your Cat Lives page.](../../../assets/images/09/09-13-google-analytics-setup-assistant.png)
 Figure 9.13 Google Analytics (GA) is so much more than website feedback, as can be seen in this figure of the Setup Assistant. Unfortunately, Owen is not an ideal user of Google Analytics and has not completed all the prompts that GA wishes he would have.
 
 
-![Diagram showing a behavioral funnel.](images/09/09-14-behavioral-funnel.png)
+![Diagram showing a behavioral funnel.](../../../assets/images/09/09-14-behavioral-funnel.png)
 Figure 9.14 A typical behavioral funnel converting your online clicks to sales.
 
-![Network diagram with colored circles and gray connectors on a white background.](images/09/09-15-trackermap-2014_09_17.jpg)
+![Network diagram with colored circles and gray connectors on a white background.](../../../assets/images/09/09-15-trackermap-2014_09_17.jpg)
 Figure 9.15 The Ghostery Trackermap is a directed network graph representing how embedded scripts transmit user data for ad auctions that determine which targeted messages are shown to each user. The Trackermap was originally created  to identify and reduce latency and security issues, and has gone through many iterations, including this version by designer Joey Kilrain. https://kilrain.com   
 
 
-![xxxxx](images/09/09-16-surveillance-fonts.png)
+![xxxxx](../../../assets/images/09/09-16-surveillance-fonts.png)
 Figure 9.16 Two typographic projects that explore surveillance. The type specimen poster at the top shows ZXX (2012), a typeface by Sang Mun designed to increase privacy through thwarting Optical Character Recognition (OCR) and automated machine intelligence methods. Project Seen (2015) by Emil Kozole is a typeface that points out content prone to surveillance by automatically striking through trigger words targeted by government agencies. Install the font or use the bookmarklet to explore the project, http://projectseen.com. 
 ALT 9.16 Two custom typefaces presented in black and white.
 
@@ -152,7 +152,7 @@ In this exercise you’ll learn to test APIs. There are hundreds of free APIs th
 2. Install the [JSON Formatter extension](http://criticalwebdesign.github.io#json-formatter) for Chrome criticalwebdesign.github.io#json-formatter to make it easier to read JSON data in the browser, and reload the cat fact API (Figure 9.17).
 
 
-![xxxxx](images/09/09-17-cat-fact-api-1.png)
+![xxxxx](../../../assets/images/09/09-17-cat-fact-api-1.png)
 Figure 9.17 A cat fact in JSON formatted with JSON Formatter. Fascinating.
 
 3. {JSON} Placeholder is a free "realistic" API for testing. For example, access the “users” endpoint to get a list of fake users: [jsonplaceholder.typicode.com/users](https://jsonplaceholder.typicode.com/users)
@@ -180,15 +180,15 @@ https://api.restful-api.dev/objects?id=
 
 
 
-![xxxxx](images/09/09-18-reqbin.png)
+![xxxxx](../../../assets/images/09/09-18-reqbin.png)
 Figure 9.18 Using the POST method we added an entry to the dataset by following the  JSON formatting rules to specify keys and values. In the result, our entry includes a new key for id.
 ALT Screenshot of POST results include an id.
 
 
-![xxxxx](images/09/09-19-paris-schwartz.png)
+![xxxxx](../../../assets/images/09/09-19-paris-schwartz.png)
 Figure 9.19 Tim Schwartz created Paris by writing a data scraper that monitored news and search engines for “paris hilton” and “paris france” and displayed the results in real time.
 
-![xxxxx](images/09/09-20-static-vs-dynamic-v4.png)
+![xxxxx](../../../assets/images/09/09-20-static-vs-dynamic-v4.png)
 Figure 9.20 Static vs. dynamic web page diagram.
 ALT A diagram showing how the contents of a dynamic website arrive in the browser.
 
@@ -276,7 +276,7 @@ new Date()
 
 ### Bad Password API
 
-![Screenshot of the Bad Password API web page.](images/09/09-24-bad-password-api-finished-1.png)
+![Screenshot of the Bad Password API web page.](../../../assets/images/09/09-24-bad-password-api-finished-1.png)
 Figure 9.24 By completing the modules in Chapter 9 you will produce a Bad Password API.
 
 - Async Javascript https://codepen.io/owenmundy/pen/MWRJxjK
@@ -425,17 +425,17 @@ server.get("/api", function (request, reply) {
 ```
 
 
-![Screenshot showing the returned message in JSON format.](images/09/09-21-test-api.png)
+![Screenshot showing the returned message in JSON format.](../../../assets/images/09/09-21-test-api.png)
 Figure 9.21 Our project returns JSON data from the API.
  
 
 
-![Charts showing synchronous vs. asynchronous wait times in bright hues on a black background.](images/09/09-22-sync-async-compared.png)
+![Charts showing synchronous vs. asynchronous wait times in bright hues on a black background.](../../../assets/images/09/09-22-sync-async-compared.png)
 Figure 9.22 The performance benefits from using asynchronous code are visible on these side-by-side charts.
  
 
 
-![Chart showing the concept of a promise chain in planning a meet-up to ride bikes.](images/09/09-23-request-response.png)
+![Chart showing the concept of a promise chain in planning a meet-up to ride bikes.](../../../assets/images/09/09-23-request-response.png)
 Figure 9.23 The work day is almost over and you want to go ride bikes with your friends. You reach out to see who is available (three requests) and wait for a reply. Of the three you ask, Sam cannot ride (promise rejected), Letícia can go at 3:45pm, and Angel can meet at 4:30pm (two promises pending). You do other work while you wait, perhaps finishing the section of a chapter you are writing, and then head out to meet each friend who resolves their promise by arriving at the trailhead.
 
 

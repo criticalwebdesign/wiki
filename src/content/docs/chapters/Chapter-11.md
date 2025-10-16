@@ -98,7 +98,7 @@ Full-stack platforms with a free tier
 
 ### Professional Practices
 
-![fastgoodcheap](images/11/11-fastgoodcheap.png)
+![fastgoodcheap](../../../assets/images/11/11-fastgoodcheap.png)
 
 - The website fastgood.cheap only allows the user to select two of the three options at a time. This commentary on design suggests a more respectful consideration for how clients engage with the design industry. Alas, it’s not possible to deliver on all three objectives.
 - http://www.shouldiworkforfree.com offers a fun but honest take on how you may consider business opportunities.

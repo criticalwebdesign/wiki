@@ -10,29 +10,29 @@ description: Links, references, and footnotes
 Chapter 1 begins with the origins of the internet, factors in the rise of the information age, and how the various impacts of networked computers can be understood by looking at other media revolutions. Likewise, we introduce the foundational components for making websites, the command line, Git version control, and publishing a simple web page on the internet.
 
 
-![networks](images/01/01-01-network-types.png)
+![networks](../../../assets/images/01/01-01-network-types.png)
 Visual representations of centralized, decentralized, and distributed networks.
 
-![“Arpanet](images/01/01-02-arpanetSketch-1972.png) 
+![“Arpanet](../../../assets/images/01/01-02-arpanetSketch-1972.png) 
 “Arpanet 1972 Map” by UCLA and BBN
 
-![packet switching](images/01/01-03-network-packets.png) 
+![packet switching](../../../assets/images/01/01-03-network-packets.png) 
 A diagram showing how packet switching technology allows data to break apart and come together. 
 
 
 You can use the website https://tools.keycdn.com/traceroute to see the path that data takes as it moves across the internet (see callout). The packet switching process occurs at each internet switch, or router (like the one in your home) to connect sub-networks to the internet. Finally, TCP/IP is the packet-switching Transmission Control Protocol (TCP) + Internet Protocol (IP). These standards are the rules that govern how computers connect to the internet.
 
-![CDN](images/01/01-04-traceroute.png) 
+![CDN](../../../assets/images/01/01-04-traceroute.png) 
 Content Delivery Network (CDN) - The online tool at https://tools.keycdn.com/traceroute shows the paths and response time (in milliseconds) taken to retrieve data from Amazon.com, starting from different locations around the world. A Content Delivery Network (CDN) consists of several servers located around the world which each have a copy of the same data. When you visit amazon.com, the network will retrieve the web page from the server that is physically closest to speed the time it takes to load the data.
 
 
-![Content Moderator Sim](images/01/01-05-sample-content-moderator-comp.png) 
+![Content Moderator Sim](../../../assets/images/01/01-05-sample-content-moderator-comp.png) 
 Mark Sample, Content Moderator Sim, Version 2, August 29, 2020. https://samplereality.itch.io/content-moderator-sim 
 
-![markdown](images/01/01-07-Markdown.png) 
+![markdown](../../../assets/images/01/01-07-Markdown.png) 
 Sample markdown code (on the left) showing basic text formatting (on the right). 
 
-![XML](images/01/01-08-XML.png) 
+![XML](../../../assets/images/01/01-08-XML.png) 
 XML (eXtensible Markup Language) is a customizable markup language. It contains no formatting, but provides access to the data it contains through its named elements and hierarchical structure. 
 
 
@@ -91,7 +91,7 @@ https://github.com/criticalwebdesign/book/blob/main/01-networks/examples/example
 
 Code playgrounds like https://github.dev or https://codepen.io make it easy to test and share HTML, CSS, and Javascript in a “web environment.”
 
-![HTML, CSS, and Javascript in a new codepen.](images/00/00-02-code-playground.png)
+![HTML, CSS, and Javascript in a new codepen.](../../../assets/images/00/00-02-code-playground.png)
 Code playgrounds like https://codepen.io make it easy to test and share HTML, CSS, and Javascript in a “web environment.”
 
 
@@ -130,25 +130,25 @@ console.log("Hello, World!");
 
 
 
-![text](images/01/01-17-html-element.png) 
+![text](../../../assets/images/01/01-17-html-element.png) 
 This diagram shows the structure of an HTML element, including the opening tag, content contained within, and the closing tag. Tags use predefined names between a less than and greater than sign. 
 
-![text](images/01/01-10-HTML.png)
+![text](../../../assets/images/01/01-10-HTML.png)
 HTML code and its corresponding text formatting when viewed with a web browser. This page is displayed using only vanilla HTML so its elements appear using the default format of the browser, as no CSS has been applied to change the presentation.
 
 
-![alt text](images/01/01-19-html-doc-structure.png) 
+![alt text](../../../assets/images/01/01-19-html-doc-structure.png) 
 This diagram shows the required structure of an HTML document.
 
 
 
-![HTML code showing incorrect and correct element nesting](images/01/01-20-html-nesting.png)
+![HTML code showing incorrect and correct element nesting](../../../assets/images/01/01-20-html-nesting.png)
 Figure 1.15 The first line shows incorrect nesting (the `<a>` tag is closed before the `<h2>`). The second line shows the proper structure. The third shows how to use whitespace with nesting to make the code readable and easier to see if there are nesting problems.
 
 
 
 
-![HTML code showing how to use attributes in a tag](images/01/01-21-html-attribute.png)
+![HTML code showing how to use attributes in a tag](../../../assets/images/01/01-21-html-attribute.png)
 Figure 1.16 An anchor tag with an href attribute. The attribute value can be wrapped in single or double quotes.
 
 
@@ -215,7 +215,7 @@ For Windows
 1. In this folder, create a new folder called “Sites.” This will be where you save all your files as you work on exercises throughout this book. It's a good idea to pin this new Sites folder to your bookmarks so you can access it easily.
 
 
-![A screenshot of the Finder on MacOS.](images/01/01-17-mac-home-1-comp.png) 
+![A screenshot of the Finder on MacOS.](../../../assets/images/01/01-17-mac-home-1-comp.png) 
 Figure 1.17 A mac Finder window displayed as columns to see the file hierarchy. The Sites folder is created in the user’s home directory. Previous versions of MacOS included this folder, and will still display it with a special icon if you add a folder with this name. Display the path (at the bottom) by choosing View > Show Path Bar from the Finder top menu or by selecting the Sites folder and pressing Command+i to view an information window (left). 
 
 
@@ -241,7 +241,7 @@ Linux: [LXTerminal](https://www.raspberrypi.org/documentation/usage/terminal/) i
 
 With your command line application open (Terminal or Git Bash) you should see a prompt — the $ % or # symbol — which designates where you will type commands (Figure 1.19).
 
-![A screenshot of the MacOS Terminal.](images/01/01-20-Terminal-whoami-SRGB.png) 
+![A screenshot of the MacOS Terminal.](../../../assets/images/01/01-20-Terminal-whoami-SRGB.png) 
 Figure 1.19 A screenshot of the MacOS Terminal showing output from the whoami and pwd commands.
 
 
@@ -303,11 +303,11 @@ Now that you are comfortable using the command line to explore your hard drive, 
 
 ### Why use version control?
 
-![alt text](images/01/01-21-version-control-issues.png) 
+![alt text](../../../assets/images/01/01-21-version-control-issues.png) 
 
 
 
-![alt text](images/01/01-22-git-branches.png) 
+![alt text](../../../assets/images/01/01-22-git-branches.png) 
 
 
 
@@ -380,7 +380,7 @@ git status
 git commit -m "Second commit from the command line"
 ```
 
-<!-- <img src="images/01/01-24-git-diff.png" alt="Terminal screenshot">
+<!-- <img src="../../../assets/images/01/01-24-git-diff.png" alt="Terminal screenshot">
 <div><small>The git diff command is a powerful feature that allows you to see what has changed in a file before or after you commit it to the repository.</small></div> -->
 
 
@@ -421,7 +421,7 @@ git config --global user.email janedoe@example.com
 While all Git tasks can be performed on the command line (see the tutorial in the wiki https://github.com/criticalwebdesign/book/wiki/Chapter-01), we will show you how to streamline the version control process using Github Desktop.
 
 
-<!-- <img src="images/01/01-23-Gource-SRGB.png" alt="A still from a video visualizing the history of the development of the Python programming language.">
+<!-- <img src="../../../assets/images/01/01-23-Gource-SRGB.png" alt="A still from a video visualizing the history of the development of the Python programming language.">
 <div><small>The Gource project https://gource.io/ makes it possible to visualize the work performed in a Git repository over time. This screenshot is from a video (which you can find on their site) visualizing the history of the development of the Python language.</small></div> -->
 
 
@@ -467,7 +467,7 @@ This exercise establishes best practices for setting up a new website project, i
     - In Google Chrome, select File > Open File to locate the `index.html` file.
     - In the Finder, double click the file to open it in Chrome.
 
-<!-- <img src="images/01/01-23-github-desktop-first-commit.png" alt="">
+<!-- <img src="../../../assets/images/01/01-23-github-desktop-first-commit.png" alt="">
 <div><small>
 Github Desktop with changes to the index.html file
 </small></div> -->
@@ -497,7 +497,7 @@ Since you created this project on your computer's hard drive, it only exists “
 > You can also make commits and push/pull your work to Github using VS Code. Choose View > Source Control to open and use the sidebar.
 
 
-![alt text](images/01/01-25-deployPage.png)
+![alt text](../../../assets/images/01/01-25-deployPage.png)
 
 
 
