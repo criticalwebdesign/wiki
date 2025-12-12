@@ -25,6 +25,8 @@ ALT: Graphic showing difference between vector and raster graphics.
 
 
 Figure 3.20 This graphic shows two relative paths. The light blue line indicates the path that index.html would use to reference styles.css and the purple line shows the path to get from styles.css to cat.jpg.
+
+
 </td>
 <td valign="top"><a href="../../../assets/images/03/03-22-figma-image-export.png"><img src="../../../assets/images/03/03-22-figma-image-export.png" alt="Screenshot of Figma interface."></a><br>
 Figure 3.22 Image export options in Figma.
