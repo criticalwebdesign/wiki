@@ -41,11 +41,11 @@ Statcounter Browser Market Share Worldwide Jan 2009 - June 2023”
 
 
 
-## 0.3 Conventions & Resources
+## 0.3 Conventions and Resources
 
 - You can find all our examples and exercise assets in the Critical Web Design book repository https://github.com/criticalwebdesign/book on Github. This includes...
 - An Errata https://github.com/criticalwebdesign/book/blob/main/errata.md with information about and submitting errors
-- A Wiki https://github.com/criticalwebdesign/book/wiki with additional resources
+- A Wiki https://criticalwebdesign.github.io/wiki/ with additional resources
 - Discussions https://github.com/criticalwebdesign/book/discussions where you can share your work and see what other readers have created. 
 
 ![A twitter post naming several essential but fake web development tools](../../../assets/images/00/00-05-popular-frameworks.png)

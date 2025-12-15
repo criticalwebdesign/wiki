@@ -1,5 +1,5 @@
 ---
-title: 3.3 Using Custom Web Fonts
+title: 3.3 Use Custom Web Fonts
 description: Links, references, and footnotes
 layout: default
 # draft: true

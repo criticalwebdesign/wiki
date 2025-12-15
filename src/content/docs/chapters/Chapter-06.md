@@ -102,7 +102,7 @@ Figure 6.15 The CSS transform property allows for several fundamental geometric 
 
 
 
-## 6.3 Javascript Functions, Arrays, & Loops
+## 6.3 Javascript Functions, Arrays, and Loops
 
 
 ![xxxxx](../../../assets/images/06/06-16-JS-function-anatomy.png)
@@ -118,7 +118,7 @@ Figure 6.18 A Javascript for loop includes a control variable, loop condition, a
 
 
 
-### Exercise 6.2.3 Create a Simple Javascript Animation
+## Exercise 6.2.3 Create a Simple Javascript Animation
 
 There are many excellent libraries for animation, like anime.js or p5.js which we will explore later in the book. This simple exercise shows how to use Javascript to create animation by changing CSS properties over time. 
 
@@ -152,7 +152,7 @@ setInterval(function () {
 
 
 
-### Exercise 6.2.4 CSS Animations & CSS Transitions
+## Exercise 6.2.4 CSS Animations and CSS Transitions
 
 While Javascript can change values repeatedly using setInterval(), CSS has two methods that create motion automatically. A CSS animation uses the @keyframes rule to define the start and end values of a tween and the browser renders the frames between. 
 
@@ -192,7 +192,7 @@ document.addEventListener("click", function () {
 ```
 
 
-### 6.3.2 Anonymous Functions & Scope
+## 6.3.2 Anonymous Functions and Scope
 
 Look back at the code in the preceding exercise. Using the function keyword to define the reusable code of `randomNumber()` is called a **function declaration**. However, the function keyword in the second parameter of addEventListener also creates a function (see Module 3.3) to handle the event. Passing the callback function like this as an argument is an example of a **function expression**. Function expressions created without a name are **anonymous functions** but they can also be stored in a variable, which we show below by rewriting `randomNumber()` as a function expression. The "fat arrow" syntax is more concise.
 
@@ -217,7 +217,7 @@ Eric Elliott, “What Is Functional Programming?” JavaScript Scene, August 24,
 
 
 
-### Exercise 6.3.2 Create and Access an Array
+## Exercise 6.3.2 Create and Access an Array
 
 Revisit the data type diagram in Module 5.2. In addition to primitive data types, Javascript can store collections of data. An array is an example of a collection type, letting you store multiple values inside a single variable. You can store any type of data inside an array, even other arrays. Explore a simple array in the DevTools console.
 
@@ -260,7 +260,7 @@ people[0][1] // -> 18
 
 
 
-### Best Practices: Bookmarklets
+## Best Practices: Bookmarklets
 
 A bookmarklet is like a regular browser bookmark except it contains Javascript in the URL field that runs when you click the link. These instructions demonstrate how to create a simple "hello world" bookmarket. 
 

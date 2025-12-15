@@ -29,7 +29,7 @@ Figure 9.5 Joelle Dietrick and Owen Mundy, Tally Saves the Internet, 2021. https
 
 
 
-## 9.1 DevTools & Data
+## 9.1 DevTools and Data
 
 
 - Ghostery Browser https://www.ghostery.com
@@ -52,7 +52,7 @@ ALT 9.7
 
 <!-- 
 
-### Activity: View Requests & Server Logs
+## Activity: View Requests and Server Logs
 
 > Note: While the information in this tutorial generally still holds true, [Glitch has moved on.](https://www.theverge.com/news/673457/glitch-coding-platform-shutting-down) [😢](https://blog.glitch.com/post/changes-are-coming-to-glitch/)
 
@@ -117,13 +117,13 @@ ALT 9.16 Two custom typefaces presented in black and white.
 
 
 
-## 9.2 JSON Data & APIs 
+## 9.2 JSON Data and APIs 
 
 - Tracking the Trackers https://criticalwebdesign.github.io/book/09-data-tracking/examples/trackers.html
 - JS Objects https://codepen.io/owenmundy/pen/OJGWyvL?editors=1011 
 - https://github.com/criticalwebdesign/book/tree/main/09-data-tracking/examples/data-examples
 
-### APIs
+## APIs
 
 
 Examples
@@ -144,7 +144,7 @@ API Tools
 
 
 
-### Exercise 9.2.1 Test an API 
+## Exercise 9.2.1 Test an API 
 
 In this exercise you’ll learn to test APIs. There are hundreds of free APIs that offer a wealth of functionality and data for you to use in your projects. Some APIs require you to register and send requests along with a special key to prevent abuse, but there are plenty of public APIs you can use as well.
 
@@ -196,7 +196,7 @@ ALT A diagram showing how the contents of a dynamic website arrive in the browse
 
 
 
-## 9.3 Async Javascript & Node.js
+## 9.3 Async Javascript and Node.js
 
 
 
@@ -205,7 +205,7 @@ ALT A diagram showing how the contents of a dynamic website arrive in the browse
 
 
 
-### Data Privacy
+## Data Privacy
 
 - Jamie Wilkinson and Greg Leuch (fffff.at) [Google Alarm extension](https://fffff.at/google-alarm/) 
 - Ben Grosser [Facebook Demetricator](https://bengrosser.com/projects/facebook-demetricator/)
@@ -216,7 +216,7 @@ ALT A diagram showing how the contents of a dynamic website arrive in the browse
 - https://pointerpointer.com/ 
 
 
-### Javascript Prototype
+## Javascript Prototype
 
 Objects are commonly used to represent the properties and behaviors of entities in a programming model called **Object Oriented Programming (OOP)**. OOP languages use predefined classes and inheritance to derive behavior. For example, all objects of a car class will have wheels and headlights that turn on, which are inherited by its child classes that define more specific properties. 
 
@@ -274,7 +274,7 @@ new Date()
 
 
 
-### Bad Password API
+## Bad Password API
 
 ![Screenshot of the Bad Password API web page.](../../../assets/images/09/09-24-bad-password-api-finished-1.png)
 Figure 9.24 By completing the modules in Chapter 9 you will produce a Bad Password API.
@@ -294,14 +294,14 @@ Figure 9.24 By completing the modules in Chapter 9 you will produce a Bad Passwo
 
 
 
-### Prompt 9.3 (needs to change)
+## Prompt 9.3 (needs to change)
 
 If you inspect the contents of api/data.js you can see how the project uses comma-separated lists of words. Following methods used in the project, incorporate the list you created in Prompt 9.1 into the interface. Explore the articles linked there and experiment with new parameters. Or, make a fork of the project and create an entirely new generator!
 
 
 
 
-### Full-stack instructions
+## Full-stack instructions
 
 1. Now that you are getting data from an API into the web page, add a new endpoint to return a common password. In `routes.js` you'll notice we are importing data and functions from a file called `data.js`. If you look at `data.js` you'll see it contains lists of potential words to use in new custom passwords. The property named common is a list of the most `common` passwords that have been hacked. Add this new endpoint to return data from this list inside `routes.js` under the previous route.
 
@@ -339,7 +339,7 @@ server.get("/api/custom", async function (request, reply) {
 
 
 
-### Install Node
+## Install Node
 
 A basic install process for Node.js. While you can download and run a [prebuilt installer](https://nodejs.org/en/download) we prefer using NVM (Node Version Manager) to let you manage and upgrade your installation later:
 
@@ -450,17 +450,17 @@ Figure 9.23 The work day is almost over and you want to go ride bikes with your 
 
 
 
-### Vercel Instructions
+## Vercel Instructions
 
 See also: [Using Express.js with Vercel](https://vercel.com/guides/using-express-with-vercel#6.-run-your-application-locally)
 
-#### Test locally
+## Test locally
 
 1. Clone the repo from Github
 1. Run `npm install`
 1. Start the app using `nodemon`
 
-#### Connect to Vercel
+## Connect to Vercel
 
 1. Quit the app (if still running) `CTL + C`
 1. Login to Vercel. Run `vercel login` and choose the method to login with arrow keys + return. It will complete in the browser. Return to the console and you will see `Congratulations! You are now logged in.`
@@ -472,7 +472,7 @@ See also: [Using Express.js with Vercel](https://vercel.com/guides/using-express
     1. In which directory is your code located? `./`
 
 
-#### Deploy on Vercel
+## Deploy on Vercel
 
 
 1. Upload your project to Vercel `vercel` - This will create a private build you can access 
@@ -482,7 +482,7 @@ See also: [Using Express.js with Vercel](https://vercel.com/guides/using-express
 
 
 
-#### TO ADD
+## TO ADD
 
 https://vercel.com/docs/environment-variables
 

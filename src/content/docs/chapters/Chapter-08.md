@@ -93,7 +93,7 @@ The `randomInt` function in Exercise 8.2.2 is an example of a **pure function**.
 
 
 
-## 8.2 SVGs & Color Arrays
+## 8.2 SVGs and Color Arrays
 
 
 ![xxxxx](../../../assets/images/08/08-13-svg-basic.png)
@@ -153,7 +153,7 @@ Figure 8.24 When you complete the exercises in 8.2 your version of the Generativ
 
 
 
-### Creative Coding Tools
+## Creative Coding Tools
 
 In this book we prioritize foundational concepts in HTML, CSS, and JS which you can later apply to any project, regardless of what additional tool is trending. Still, we want to share a sample of the many powerful Javascript libraries and frameworks for creating generative design and art online. Many of these libraries were created by artists or designers, some of whom are featured in the book. We hope you experiment with these tools, and continue to seek out others that will advance your critical and creative coding experiences.
 
@@ -166,7 +166,7 @@ In this book we prioritize foundational concepts in HTML, CSS, and JS which you 
 -   Twine https://twinery.org (Chris Klimas) is a tool for telling interactive, nonlinear stories using HTML, CSS, and Javascript. Twine has a huge user base, especially for creating game-like narrative experiences https://itch.io/games/made-with-twine
 -   The honorable mention goes to some of the popular UI frameworks we discussed in the introduction. "Reactive" tools like React, Angular, Vue, and Svelte can greatly simplify keeping your page content updated (in reaction to) changes to data in your code. While we considered incorporating them in the exercises (see our experiment with the Svelte UI Framework here https://criticalwebdesign.github.io#string-art-generator), their setup, complexity, and special syntax can add a lot of overhead, making them only helpful for creating large websites.
 
-### Flash
+## Flash
 
 Macromedia’s Flash was a software tool that combined an animation timeline, a highly intuitive vector drawing and tweening tool, and a script editor which allowed creators to attach scripts to keyframes, objects, or events. Flash files could be exported in SWF format and then embedded in HTML. Flash was widespread, inspiring international conferences, and artists, designers, game developers across the web. Adobe, who purchased Macromedia, has mostly discontinued Flash today due to performance, accessibility, and security issues on mobile devices. While publishing Flash projects online is no longer possible one can still find evidence of its impact on generative design:
 
@@ -180,7 +180,7 @@ Macromedia’s Flash was a software tool that combined an animation timeline, a 
 
 
 
-### P5 Intro
+## P5 Intro
 
 <!-- Formerly:
 Exercise 8.3.1 Create Generative Arp with p5.js -->
@@ -336,7 +336,7 @@ More info
 
 
 
-### Generative Art and Design
+## Generative Art and Design
 
 
 ![xxxxx](../../../assets/images/08/08-25-schwartz.png)
@@ -367,7 +367,7 @@ Work by Kim Asendorf https://naz.cx/ available in ArtTab https://arttab.xyz/ a c
 
 
 
-### Electronic and Generative Literature
+## Electronic and Generative Literature
 
 Examples related to computational, electronic, or generative literature/poetry
 
@@ -420,7 +420,7 @@ A pioneering work demonstrating these connections is Nanette Wylde’s [Storylan
 
 
 
-### Generative Design in Games
+## Generative Design in Games
 
 
 ![xxxxx](../../../assets/images/08/Fractal_weeds.jpg)
@@ -439,7 +439,7 @@ Related examples found in video games
 -   https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
 -   https://en.wikipedia.org/wiki/Boids
 
-### Demoscene
+## Demoscene
 
 Another important influence on the history and practice of generative art is the demoscene, a subculture of hackers, clubs, and competitions (a.k.a. demoparties) (Figure 8.x) that blended creativity, hacking, and hardware testing. Emerging in Europe during the 1980s, demos were small self-contained computer programs written to test computer hardware capabilities using the most intense algorithmically-generated graphics and audio effects of the time. Typical competition categories restricted the size of the demo's executable, the compiled code packaged into a single file, by overall size (e.g. 1k, 4k, or 64k), and platform (8-bit like Atari or Commodore 64 or 16 bit Amiga). While the results (like "[PC DOS Demoscene mix](https://www.youtube.com/watch?v=O4T7pIs--LA)" or "[Hologon by The Electronic Knights [Amiga 500]](https://www.youtube.com/watch?v=pYtleuGV7ok)") might appear simplistic today, their output can be appreciated for their technical and artistic constraints when considering the abundant limitations on their hardware and access to programming resources (Stinson, Liz. “[The Ever-Changing Art of the Screensaver.](https://eyeondesign.aiga.org/the-ever-changing-art-of-the-screensaver/)” in Eye on Design).
 
@@ -447,7 +447,7 @@ Another important influence on the history and practice of generative art is the
 
 Caption: Hackers gathered in an ice rink during the 2004 Assembly demoscene party in Finland
 
-### Generative Interfaces
+## Generative Interfaces
 
 Example generative art and design web interfaces
 

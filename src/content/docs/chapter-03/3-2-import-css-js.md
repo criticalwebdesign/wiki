@@ -1,5 +1,5 @@
 ---
-title: 3.2 Import CSS & JS into HTML
+title: 3.2 Import CSS and JS files
 description: Links, references, and footnotes
 layout: default
 # draft: true

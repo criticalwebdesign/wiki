@@ -11,7 +11,7 @@ description: Links, references, and footnotes
 Chapter 4 introduces readers to grid-based design, starting with a historical overview of the use of grids in printing with moveable type and concluding with grids for responsive design. The modules put this context into practice, introducing frames and layout grids for desktop, tablet, and mobile devices in Figma, discussing content hierarchy using display and body type, and coding a simple responsive layout with the Bootstrap framework using lorem ipsum placeholder text to work across all devices.
 
 
-### Usability Resources
+## Usability Resources
 
 - NN/G [Thinking Aloud: The #1 Usability Tool](https://www.nngroup.com/articles/thinking-aloud-the-1-usability-tool/)
 - Wikipedia [Think aloud protocol](https://en.wikipedia.org/wiki/Think_aloud_protocol)
@@ -20,7 +20,7 @@ Chapter 4 introduces readers to grid-based design, starting with a historical ov
 
 
 
-### Exercise 4.0.1: What is Good Design?
+## Exercise 4.0.1: What is Good Design?
 
 The following exercise asks you to evaluate your response to good design. As an example of “learning through discovery,” it works best if you actually do the activity, whether you are reading this section on your own or with a group in a classroom.
 
@@ -60,7 +60,7 @@ Figure 4.5 A spread from the Gutenberg Bible, c.1450s.
 
 
 
-### Exercise 4.0.2 Explore Style Guides
+## Exercise 4.0.2 Explore Style Guides
 Explore style guides of organizations to see how they plan for design consistency.
 
 ![xxxxx](../../../assets/images/04/04-04-nasastandards.png)
@@ -130,7 +130,7 @@ Figure 4.15 Change the layout grid to a 12-column grid in Figrma using the layou
 ALT Layout grid interface in Figma
 
 
-### Exercise 4.1.1 Create a Grid-based Layout in Figma
+## Exercise 4.1.1 Create a Grid-based Layout in Figma
 
 1. Open our Figma file or create your own new design file in Figma. If you are making your own, select the Frame tool (it looks like a #) and choose Desktop from the panel on the right. This will create a new frame the size of a desktop display (1440 x 1024 pixels). If you are using ours, explore the file as you read each step in this exercise.
 2. Select the new frame and in the panel on the right, click the plus sign (+) next to “Layout grid” to add a new grid. This will add a 10px grid.
@@ -183,7 +183,7 @@ ALT: A screenshot of our New York Felines redesign.
 
 
 
-### The D.R.Y. Principle
+## The D.R.Y. Principle
 
 One reason responsive CSS frameworks like Bootstrap are so widely used is that they help you adhere to a software principle called **DRY**. DRY, or “don't repeat yourself,” is aimed at reducing repetition to make writing and managing code easier. You have already been practicing DRY in this book:
 - **More efficient coding** - Writing the same code over and over requires time and energy to keep consistent with previous code. You used CSS to define classes that can be reused across your site. For example, defining a typeface once for the whole site inside an html rule ensures you only need to write it once.
@@ -217,7 +217,7 @@ ALT: Use DevTools to see Bootstrap's btn-primary class custom properties
 
 
 
-### Exercise 4.2.3 Override Bootstrap Styles
+## Exercise 4.2.3 Override Bootstrap Styles
 
 There are generally two ways to override Bootstrap styles. The Bootstrap documentation suggestsusually shows customizations using Sass variables. As we discussed, this requires extra setup to recompile the CSS and is really more appropriate for large projects. The method we'll show below applies to the pre-compiled version we've been using so far from the CDN. You will use DevTools to identify the classes you want to override and simply add your own rules, just as you normally would with CSS.  
 

@@ -1,5 +1,5 @@
 ---
-title: Chapter 10 Design & Power
+title: Chapter 10 Design and Power
 description: Links, references, and footnotes
 ---
 
@@ -13,7 +13,7 @@ Chapter 10 discusses the power designers have to evoke participation and collect
 
 
 
-### Optimism
+## Optimism
 
 
 ![xxxxx](../../../assets/images/10/10-01-low-tech-website.png)
@@ -40,7 +40,7 @@ Other groups who encourage technology companies to consider the public good over
 
 
 
-### Participation
+## Participation
 
 ![](../../../assets/images/10/10-02-Greatfire-Analyzer.png)
 The https://en.greatfire.org/analyzer shows which domains and keywords are blocked from within the "Great Firewall of China." Enter a website address and watch as the site attempts to access it from servers located within the People's Republic of China, to display a real-time report on the country's elaborate censorship network. The latest statistics about the number of blocked services (17,489 domains!) are saved to their database and displayed on the front page for the world to see. 
@@ -59,7 +59,7 @@ Examples that involve crowdsourced information, user contributions, or other sha
 
 
 
-### Shared Experiences
+## Shared Experiences
 
 - Projects like Pip Shea's [Any Cast](https://dev.themaninblue.com/anycast/) transform a mundane activity (like agreeing to Terms of Use for free wifi) into a collectively-generated stream of thoughts to create a whole truly greater than the sum of its parts. A similar project (without wifi, but still online today) is Alex Fuller's http://www.onamountaintop.com which equally allows anyone to share a simple message outside of their bubble and without signing away one's privacy. 
 - Dries Depoorter offers another humorous take on shared experience with Die With Me, a networked chat app that connects people around the world who have less than 5% battery left on their phones. 
@@ -70,7 +70,7 @@ Speedshow.net was created by Aram Bartoll as a reusable model to transform Inter
 
 
 
-### Participatory Service
+## Participatory Service
 
 
 
@@ -80,7 +80,7 @@ Figure 10.2 https://somebodyapp.com/ by Miranda July was a short lived but imagi
 
 - Miranda July created Somebody https://somebodyapp.com, an app and messaging service that was, in her words, “half-app, half-human.” The app connected participants in similar geographic areas, letting them send messages, or deliver them for others in person, as a social service (Figure 10.3). The companion film she created offers the best description, representing the app like a cross between Uber and Craigslist, where a stranger (or you) can transmit a message (an apology, an endearment, a breakup) in person that might be difficult to do yourself. 
 - The Nicest Place https://thenicestplace.net offers hugs from its participants for a mediated audience. Informed by conceptual art practices, the website provides instructions so others can join and make an impactful experience out of a collection of small acts.
-- We Feel Fine (2005) http://wefeelfine.org created by Jonathan Harris and Sepandar Kamvar was an online project that visualized publicly-available text (blogs, social media, etc.) that started with the phrase “I feel …”
+- We Feel Fine (2005) http://wefeelfine.org created by Jonathan Harris and Sepandar Kamvar was an online project that visualized publicly-available text (blogs, social media, etc.) that started with the phrase “I feel ...”
 
 
 ![wefeelfine](../../../assets/images/10/10-04-wefeelfine-madness-hires.jpg)
@@ -162,13 +162,13 @@ A few of the mockups for Big Feelings. As you can see, an iterative process help
 
 
 
-### Map Resources
+## Map Resources
 
 - https://leafletjs.com/
 - https://geojson.io
 - https://jsonlint.com/
 
-### Map Tileset Providers
+## Map Tileset Providers
 
 - https://omundy.github.io/free-tiles/
 - http://mc.bbbike.org/mc/
@@ -197,7 +197,7 @@ Figure 10.10 The result of exercises in 10.2 is a map populated with fake data u
 
 
 
-## 10.3 Data & Maps
+## 10.3 Data and Maps
 
 ```js
 async function main() {
@@ -230,7 +230,7 @@ function updateMap(data) {
 
 
 
-### Add data to the map
+## Add data to the map
 
 1. Next, we will connect the web form that lets users submit new data. In `main.js` find the `submitForm()` function. This is called when a user clicks submit. Add the following code to store the form data into a variable called data and log it. If you test your form in a new preview window you will see a JS object containing properties for each of the form’s inputs.
 
@@ -366,7 +366,7 @@ import db from "./database.js";
 ls .data
 ```
 
-4. Now you can add API routes that call the functions exported from database.js. Add the following to the routes function to retrieve data for the map. This route will use the db.getAll() function. It uses the await keyword to make sure and wait for the promise that queries the database to finish so that it has results before sending a reply, by returning data. Test this route now in a new browser window by going to <your-url>/api/feelings. You should see an empty array only because there is no data in the database, yet…
+4. Now you can add API routes that call the functions exported from database.js. Add the following to the routes function to retrieve data for the map. This route will use the db.getAll() function. It uses the await keyword to make sure and wait for the promise that queries the database to finish so that it has results before sending a reply, by returning data. Test this route now in a new browser window by going to <your-url>/api/feelings. You should see an empty array only because there is no data in the database, yet...
 
 ```js
 server.get("/api/feelings", async function (request, reply) {
@@ -389,7 +389,7 @@ server.get("/addTestData", async function (request, reply) {
 Figure 10.20 Data in JSON format for our Big Feelings project. 
 
 
-### SQLite Tips
+## SQLite Tips
 
 - [SQLite](Resources#json)
 - Check a database file exists (in .data directory) `ls -la .data`

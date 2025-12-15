@@ -41,7 +41,7 @@ Reginé Gilbert is an Industry Assistant Professor and James Weldon Johnson Prof
 
 
 
-### Accessibility Testing Tools
+## Accessibility Testing Tools
 
 A list of accessibility testing tools that we found to be helpful and intuitive:
 
@@ -51,7 +51,7 @@ A list of accessibility testing tools that we found to be helpful and intuitive:
 
 
 
-### Best Practices: WAVE caveats
+## Best Practices: WAVE caveats
 
 - This initial display of the WAVE tool and resulting addition of icons and manipulation of web page elements, we found, took some getting used to. However, WAVE is an industry standard that provides potentially valuable feedback regardless of issues we found as of December 2023: 
 - The WAVE interface almost always breaks the page layout which makes it messy and hard to use. 
@@ -85,7 +85,7 @@ ALT: In red-green color blindness the users cannot distinguish the green dots in
 
 
 
-## 7.2 Design Patterns & Prototypes
+## 7.2 Design Patterns and Prototypes
 
 ![xxxxx](../../../assets/images/07/07-09-proportions.png)
 Figure 7.9 Potential methods for representing proportionality of a value, including (from top) horizontal stacked bar charts, proportional area charts, and icon array charts.
@@ -131,7 +131,7 @@ ALT Screenshot of the web page and DevTools console.
 
 
 
-### 7.2.4 Control Flow
+## 7.2.4 Control Flow
 
 By default, a web browser interprets Javascript code line by line, until it reaches the end. You already learned to control the flow of your program using a `for` loop in Chapter 6, repeating specific blocks of code as many times as needed. Similarly, a **conditional statement** allows you to change which code will run based on the state of information in your program. As the second example in Figure 7.16 illustrates, when a conditional statement is evaluated, it either runs the statement block if the condition is true, or skips to the end when the condition is false. 
 

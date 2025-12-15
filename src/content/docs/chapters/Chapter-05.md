@@ -1,5 +1,5 @@
 ---
-title: Chapter 5 Usability & Forms
+title: Chapter 5 Usability and Forms
 description: Links, references, and footnotes
 ---
 
@@ -73,7 +73,7 @@ ALT: A diagram showing how Javascript organizes data by primitive and non-primit
 
 
 
-## 5.3 Javascript & Web Forms 
+## 5.3 Javascript and Web Forms 
 
 
 

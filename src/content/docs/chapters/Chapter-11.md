@@ -19,7 +19,7 @@ Chapter 11 is the coda to this text. We offer readers places where they might ex
 
 
 
-### Keep Playing
+## Keep Playing
 
 The following playgrounds and coding communities are terrific places to continue to play and experiment. While we are light-heartedly referring to this as an “exercise” we do not have distinct directions. Simply follow the URL and explore!
 
@@ -33,7 +33,7 @@ The following playgrounds and coding communities are terrific places to continue
 
 
 
-### Keep Looking
+## Keep Looking
 
 A healthy part of any creative practice is to be aware of what else is going on. Whether you are finding work online or offline at museums, exhibitions, festivals, there are many places to find inspiring and thought-provoking works. 
 
@@ -51,7 +51,7 @@ A healthy part of any creative practice is to be aware of what else is going on.
 
 
 
-### Stay Connected
+## Stay Connected
 
 The following organizations have a legacy of bringing new digital and interactive works to viewers spanning net.art, speculative design, interactive stories, and other new media works. 
 
@@ -69,7 +69,7 @@ The following organizations have a legacy of bringing new digital and interactiv
 
 
 
-### Explore Journals
+## Explore Journals
 
 - The New River, https://thenewriver.us is a journal promoting digital art and writing
 - Media-N, https://iopn.library.illinois.edu/journals/median is the peer-reviewed, open-access journal of the College Art Association’s New Media Caucus
@@ -84,7 +84,7 @@ The following organizations have a legacy of bringing new digital and interactiv
 ## 11.2 Professional Practices
 
 
-### Servers and Hosting
+## Servers and Hosting
 
 Full-stack platforms with a free tier
 
@@ -96,7 +96,7 @@ Full-stack platforms with a free tier
 
 
 
-### Professional Practices
+## Professional Practices
 
 ![fastgoodcheap](../../../assets/images/11/11-fastgoodcheap.png)
 
