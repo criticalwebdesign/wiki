@@ -19,7 +19,10 @@ Visual representations of centralized, decentralized, and distributed networks.
 A diagram showing how packet switching technology allows data to break apart and come together. 
 
 
-You can use the website https://tools.keycdn.com/traceroute to see the path that data takes as it moves across the internet (see callout). The packet switching process occurs at each internet switch, or router (like the one in your home) to connect sub-networks to the internet. Finally, TCP/IP is the packet-switching Transmission Control Protocol (TCP) + Internet Protocol (IP). These standards are the rules that govern how computers connect to the internet.
+
+## Use Traceroute
+
+You can use the website https://tools.keycdn.com/traceroute to see the path that data takes as it moves across the internet. The packet switching process occurs at each internet switch, or router (like the one in your home) to connect sub-networks to the internet. Finally, TCP/IP is the packet-switching Transmission Control Protocol (TCP) + Internet Protocol (IP). These standards are the rules that govern how computers connect to the internet.
 
 ![CDN](../../../assets/images/01/01-04-traceroute.png) 
 Content Delivery Network (CDN) - The online tool at https://tools.keycdn.com/traceroute shows the paths and response time (in milliseconds) taken to retrieve data from Amazon.com, starting from different locations around the world. A Content Delivery Network (CDN) consists of several servers located around the world which each have a copy of the same data. When you visit amazon.com, the network will retrieve the web page from the server that is physically closest to speed the time it takes to load the data.

@@ -79,12 +79,16 @@ Figure 8.12 Two instances of Generative Arp with various colors and rotations.
 ALT Side-by-side screenshots showing a random number of polygons filled with a variety of colors.
 
 
-### Pro Tip: Functional Programming
 
+
+:::tip[Functional Programming]
 The `randomInt` function in Exercise 8.2.2 is an example of a **pure function**. It is written to perform a single task, all information is encapsulated in the data you give it, and it produces no **side effects**. Given the same input information, it will always return the same values, which makes it simple to debug and copy and paste into new projects. For more on this subject, find articles on **functional programming** with Javascript, which emphasizes the use of pure functions, immutability, and higher-order functions so you can create code that is more predictable and easier to use. 
 
 - JSDevJournal, “Functional Programming With JavaScript: A Deep Dive,” HackerNoon, accessed January 18, 2024, https://hackernoon.com/functional-programming-with-javascript-a-deep-dive
 - Eric Elliott, “Master the JavaScript Interview: What Is Functional Programming?” JavaScript Scene (blog), accessed August 24, 2021, https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0
+:::
+
+
 
 
 

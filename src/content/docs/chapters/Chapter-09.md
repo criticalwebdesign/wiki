@@ -387,8 +387,10 @@ node index.js
 6. To make Node run continuously, listening for requests to the API, you'll need to install additional code. Click on the file called `package.json` and find the property named **dependencies**. Every Node.js project has a package.json which lists the libraries the project uses, as well as other metadata. 
 
 
-> **Pro Tip: NPM Install**
+:::tip[NPM Install]
 If you are following along on your own computer, you would run `npm install` in the Terminal to install package.json dependencies. NPM will download and install the packages into a specially-named folder called `node_modules`, which Node can access simply with the `import` command. Note that there are several Node package managers, but NPM is a popular choice. 
+:::
+
 
 
 7. Also note that package.json has a "main" property which tells NPM the default file to run for this project. Click on that file. While Node can be used for many purposes, `server.js` imports and uses a web framework (that you just installed with NPM) called [Fastify](https://fastify.dev) that will run continuously, accepting requests to the API and returning new data. The code in this file is boilerplate language required to start the application server but we added comments to explain what is happening. Notice the line that imports another Javascript file called routes.js that contains all the routes (the URLs for the API endpoints) that you will create.

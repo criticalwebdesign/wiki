@@ -205,12 +205,14 @@ const randomNumber = (min, max) => {
 The location you declare a variable determines its **scope**, or how its value can be accessed by other parts of your program. We declared rotation in the **global scope** (outside of any functions) so we could access it from anywhere ("globally") in the program and add to the value over time. Alternately, variables created inside a statement block have **local scope** and are only accessible "locally" inside the curly braces where they were declared. So, creating a function not only packages your code for reuse, it also allows you to protect variables from being changed accidentally by other parts of your code. 
 
 
-### Pro Tip: Functional Programming
+
+
+
+:::tip[Functional Programming]
 With time, you’ll see that functions work best as small, single purpose expressions. Like functions in algebra, **pure functions**, those that always return the same output given the same input, are easier to test and reuse. You can see we have started to do this by linking to a single JS file called (appropriately) functions.js in the main assets folder of the repository. Pure functions are one feature of a programming paradigm called **functional programming** used by professional Javascript coders to write code that is easier to understand and more bug resistant.
 
 Eric Elliott, “What Is Functional Programming?” JavaScript Scene, August 24, 2021, accessed June 3, 2024, https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0.
-
-
+:::
 
 
 

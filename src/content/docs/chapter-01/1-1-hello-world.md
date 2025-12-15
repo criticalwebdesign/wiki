@@ -1,16 +1,13 @@
 ---
-title: 1.1 Create A Web Page
+title: 1.1 Hello, World!
 description: Code playgrounds like https://codepen.io make it easy to test and share HTML, CSS, and Javascript in a “web environment.”
 layout: default
 # draft: true
 ---
 
-:::note[About]{icon="information"}
+<div class="callout-intro">
 👉 Create a basic web page using Codepen.io.
-:::
-
-
-
+</div>
 
 
 
@@ -29,6 +26,15 @@ Code playgrounds like https://codepen.io make it easy to test and share HTML, CS
 ```html
 <h1>Hello, World!</h1>
 ```
+
+
+<figure>
+
+![HTML](../../../assets/images/01/01-05-html-element.png)
+This diagram shows the structure of an HTML element, including the opening tag, content contained within, and the closing tag. Tags use predefined names between a less than and greater than sign. 
+</figure>
+
+
 
 4. Type the following code into the CSS section. As you can see, CSS is the language that controls the presentation of web pages.
 
@@ -56,36 +62,42 @@ console.log("Hello, World!");
 
 
 
-
-![text](../../../assets/images/01/01-17-html-element.png) 
-This diagram shows the structure of an HTML element, including the opening tag, content contained within, and the closing tag. Tags use predefined names between a less than and greater than sign. 
-
-![text](../../../assets/images/01/01-10-HTML.png)
-HTML code and its corresponding text formatting when viewed with a web browser. This page is displayed using only vanilla HTML so its elements appear using the default format of the browser, as no CSS has been applied to change the presentation.
+## Continue Exploring HTML
 
 
-![alt text](../../../assets/images/01/01-19-html-doc-structure.png) 
+
+
+<figure>
+
+![HTML](../../../assets/images/01/01-06-html-doc-structure.png) 
 This diagram shows the required structure of an HTML document.
+</figure>
 
 
 
-![HTML code showing incorrect and correct element nesting](../../../assets/images/01/01-20-html-nesting.png)
-Figure 1.15 The first line shows incorrect nesting (the `<a>` tag is closed before the `<h2>`). The second line shows the proper structure. The third shows how to use whitespace with nesting to make the code readable and easier to see if there are nesting problems.
+<figure>
+
+![alt text](../../../assets/images/01/01-08-html-attribute.png)
+An anchor tag with an href attribute. The attribute value can be wrapped in single or double quotes.
+</figure>
+
+
+<figure>
+
+![HTML](../../../assets/images/01/01-07-html-nesting.png) 
+The first line shows incorrect nesting (the `<a>` tag is closed before the `<h2>`). The second line shows the proper structure. The third shows how to use whitespace with nesting to make the code readable and easier to see if there are nesting problems.
+</figure>
 
 
 
 
-![HTML code showing how to use attributes in a tag](../../../assets/images/01/01-21-html-attribute.png)
-Figure 1.16 An anchor tag with an href attribute. The attribute value can be wrapped in single or double quotes.
 
-
-
-
-## Continue Learning
-
-- 
 
 
 :::tip[Continue Learning]
 See the other markup language examples (e.g. [markdown](https://github.com/criticalwebdesign/book/blob/main/01-networks/examples/example.md)) in the repo. 
 :::
+
+
+
+

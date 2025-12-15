@@ -5,13 +5,9 @@ layout: default
 # draft: true
 ---
 
-:::note[About]{icon="information"}
-👉 Install Git Github Desktop, and VS Code so you can build and publish websites from your own machine. *This is not required if you are using Github Codespaces*.
-:::
-
-:::caution
-Ensure you are familiar using a [Command Line](./1-2-command-line.md) before completing the following exercise.
-:::
+<div class="callout-intro">
+👉 Install Git Github Desktop, and VS Code so you can build and publish websites from your own machine. *Not required if you are using Github Codespaces.
+</div>
 
 
 
@@ -26,11 +22,11 @@ IN THE BOOK
 
 
 
-
-
-
-
 ## Install & Configure Git
+
+:::caution
+You should be familiar with the [Command Line](./1-2-command-line.md) to complete the following exercises.
+:::
 
 There are many ways to install Git, depending on your operating system. First, run the following on the command line to see if it is already installed. 
 
@@ -66,9 +62,9 @@ While all Git tasks can be performed on the command line (see the tutorial in th
 
 
 
+## Install a Code Editor
 
-
-
+For local development we suggest using [Visual Studio Code (VS Code)](https://visualstudio.microsoft.com/downloads/), which is free, popular, and will likely exist for many years. The list of editors we have tried includes Dreamweaver, TextWrangler, Coda, Sublime, and Atom; and we are certain that in some future moment we will use a new or different editor, too. If you are a student working with peers in a classroom, you may want to choose the same editor  so you can help each other as you are learning. Consider also that there are many benefits to trying new and unfamiliar tools, especially since adaptability and "learning to learn" is essential for developing and incorporating the changing technologies for the web.
 
 
 
@@ -80,7 +76,7 @@ Github Desktop makes it easy to keep track and view information about your repos
 2. Create a Github account https://github.com/join and login to Github Desktop.
 
 
-![Github Desktop](../../../assets/images/01/01-23-github-desktop-first-commit.png)
+
 
 
 ## Create a Website with Git
@@ -88,11 +84,16 @@ Github Desktop makes it easy to keep track and view information about your repos
 This exercise establishes best practices for setting up a new website project, including the index.html page, and tracking and publishing with Git. While you are working through this book, you will create a new folder and repository for the prompt in each chapter. This allows you to publish individual projects with unique URLs and keep your files organized.
 
 1. In Github Desktop, choose File > New Repository.
-1. In the dialog box that appears: Name the repository `hello-world`. The default location (`~/Documents/Github`) is fine. Check "Initialize the project with a README".
-1. Click "Create Repository" This will create a new folder named hello-world inside `~/Sites` begin tracking it with Git.
+1. In the dialog box that appears: Name the repository `hello-world`. The default location `~/Documents/Github` is fine. Check "Initialize the project with a README".
+1. Click "Create Repository" This will create a new folder at `~/Documents/Github/hello-world` and begin tracking it with Git.
 1. Open the project folder in VS Code by choosing Repository > Open in Visual Studio Code
 1. In VS Code, create a new file in the project and name it `index.html`
-1. Add the html, head, and body elements that define the structure of an HTML file. Notice that VS Code will add the closing tags by default. Your code should look like the following:
+
+:::caution
+File paths on the Web are case sensitive!
+:::
+
+6. Add the html, head, and body elements that define the structure of an HTML file. Notice that VS Code will add the closing tags by default. Your code should look like the following:
 
 ```html
 <html>
@@ -110,10 +111,12 @@ This exercise establishes best practices for setting up a new website project, i
     - In Google Chrome, select File > Open File to locate the `index.html` file.
     - In the Finder, double click the file to open it in Chrome.
 
-<!-- <img src="../../../assets/images/01/01-23-github-desktop-first-commit.png" alt="">
-<div><small>
+<figure>
+
+![alt text](../../../assets/images/01/01-23-github-desktop-first-commit.png)
 Github Desktop with changes to the index.html file
-</small></div> -->
+</figure>
+
 
 8. In Github Desktop, you can see the changes you've made to `index.html` highlighted in green with + signs to let you know they are additions to the file. Deletions will be highlighted in red and appear with a - sign.
 9. Create your first commit by adding a commit message explaining the basics of your changes. Press commit to main and your commit will be saved in the git history. You can verify this under the History tab.
@@ -131,7 +134,7 @@ If you already have a project on your computer you want to start tracking with g
 
 
 
-## Publish your Repo on Github
+## Publish Your Repo on Github
 
 Since you created this project on your computer's hard drive, it only exists “locally.” In this exercise you will push files in your repo to create a remote copy on github.com.
 
@@ -139,17 +142,27 @@ Since you created this project on your computer's hard drive, it only exists “
 1. After Github uploads your code, choose Repository > View on Github to open the remote copy. Now you are viewing your repo in the web browser, where you can see the history of commits as you did in Github Desktop. 
 1. Test that your local and remote copy are synced by going to Github Desktop and choosing Fetch origin.  
 
-> Pro Tip: Create commits in your editor 
-> You can also make commits and push/pull your work to Github using VS Code. Choose View > Source Control to open and use the sidebar.
 
+:::tip[Create commits in your editor]
+You can also make commits and push/pull your work to Github using VS Code. Choose View > Source Control to open and use the sidebar.
+:::
+
+
+
+## Enable GitHub Pages
+
+Exercise 1.2.2 in the book shows how to publish your website with GitHub Pages for the world to see.
+
+<figure>
 
 ![alt text](../../../assets/images/01/01-25-deployPage.png)
 
+</figure>
 
+:::tip[Track Existing Projects with Github Desktop]
+If you already have a project on your computer you want to start tracking with Git and/or publish with Github Pages you can drag the project folder into Github Desktop which will prompt you to initialize a new repository in the project.
+:::
 
-
-> Pro Tip: Track Existing Projects with Github Desktop
-> If you already have a project on your computer you want to start tracking with Git and/or publish with Github Pages you can drag the project folder into Github Desktop which will prompt you to initialize a new repository in the project.
 
 
 
@@ -252,11 +265,14 @@ git status
 git commit -m "Second commit from the command line"
 ```
 
-<!-- <img src="../../../assets/images/01/01-24-git-diff.png" alt="Terminal screenshot">
-<div><small>The git diff command is a powerful feature that allows you to see what has changed in a file before or after you commit it to the repository.</small></div> -->
 
 
-> For local development we suggest using [Visual Studio Code (VS Code)](https://visualstudio.microsoft.com/downloads/), which is free, popular, and will likely exist for many years. The list of editors we have tried includes Dreamweaver, TextWrangler, Coda, Sublime, and Atom; and we are certain that in some future moment we will use a new or different editor, too. If you are a student working with peers in a classroom, you may want to choose the same editor  so you can help each other as you are learning. Consider also that there are many benefits to trying new and unfamiliar tools, especially since adaptability and "learning to learn" is essential for developing and incorporating the changing technologies for the web.
+
+<figure>
+
+![alt text](../../../assets/images/01/01-24-git-diff.png)
+The git diff command is a powerful feature that allows you to see what has changed in a file before or after you commit it to the repository.
+</figure>
 
 
 

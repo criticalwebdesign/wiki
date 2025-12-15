@@ -3,18 +3,18 @@ title: 1.3 Install Live Server
 description: Use an extension to preview your pages in a new browser tab
 layout: default
 # draft: true
+tags: ["install", "live server"]
 ---
 
-:::note[About]{icon="information"}
+<div class="callout-intro">
 👉 Install a Live Server extension to preview and refresh your changes in the browser using either Codespaces or VS Code. 
-:::
+</div>
 
 
 
 
 
-
-## Use Live Server in Codespaces
+## Using Live Server in Codespaces
 
 Github Codespaces, like [github.dev](https://github.dev) or [vscode.dev](https://vscode.dev/) lets you edit your project in a web browser. But Codespaces lets you see changes immediately thanks to a virtual host it runs in the background. Create a new Codespace and install Live Server...
 
