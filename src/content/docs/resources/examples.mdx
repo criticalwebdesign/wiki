@@ -10,8 +10,11 @@ import { Icon } from '@astrojs/starlight/components';
 <Icon name="open-book" />  Learn more about [icons](https://starlight.astro.build/reference/icons/#all-icons)
 
 
+import YoutubeVideo from '@/components/YoutubeVideo.astro';
 
-
+<div class="max-w-2xl mx-auto">
+  <YoutubeVideo src="https://www.youtube.com/watch?v=dQw4w9WgXcQ" />
+</div>
 
 
 ## Import and use a component with a slot
@@ -26,7 +29,7 @@ This content was added into the component HTML
 
 ## Import and use a custom component
 
-import CustomIntro from '../../../components/CustomIntro.astro';
+import CustomIntro from '@/components/CustomIntro.astro';
 
 <CustomIntro>
 Components can also contain **nested content**.

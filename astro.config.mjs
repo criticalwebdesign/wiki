@@ -2,6 +2,7 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import relativeLinks from 'astro-relative-links'
+import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
@@ -44,10 +45,14 @@ export default defineConfig({
                 },
             ],
             customCss: [
-                './src/assets/styles.css', // relative path to custom CSS file
+                './src/styles/styles.css', // relative path to custom CSS file
+                './src/styles/global.css', // tailwind CSS 
             ],
             components: {
             },
         }),
     ],
+    vite: {
+        plugins: [tailwindcss()],
+    },
 });
