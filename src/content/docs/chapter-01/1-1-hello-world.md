@@ -95,9 +95,8 @@ The first line shows incorrect nesting (the `<a>` tag is closed before the `<h2>
 
 
 :::tip[Continue Learning]
-See the other markup language examples (e.g. [markdown](https://github.com/criticalwebdesign/book/blob/main/01-networks/examples/example.md)) in the repo. 
+See other markup language examples (e.g. [markdown](https://github.com/criticalwebdesign/book/blob/main/01-networks/examples/example.md) or [XML](https://github.com/criticalwebdesign/book/blob/main/01-networks/examples/example.xml)) in the repo. 
 :::
-
 
 
 

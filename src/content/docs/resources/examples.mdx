@@ -7,7 +7,7 @@ description: Links, references, and footnotes from the book
 
 import { Icon } from '@astrojs/starlight/components';
 
-<Icon name="open-book" />  Learn more about [icons](https://starlight.astro.build/reference/icons/#all-icons)
+<Icon name="open-book" class="inline-icon" />  Learn more about [icons](https://starlight.astro.build/reference/icons/#all-icons)
 
 
 import YoutubeVideo from '@/components/YoutubeVideo.astro';
@@ -41,13 +41,27 @@ Components can also contain **nested content**.
 
 [Asides](https://starlight.astro.build/guides/authoring-content/#asides) can be used in .md files
 
-:::tip[Pro Tip]
+
+:::note
+A note aside
+:::
+
+:::tip[Custom aside titles]
 An aside with a custom title
+:::
+
+:::tip{icon="heart"}
+Custom aside icons
 :::
 
 :::caution
 A caution aside
 :::
+
+:::danger
+A danger aside
+:::
+
 
 
 ## Discussion
@@ -56,6 +70,17 @@ A caution aside
 <details>
 <summary>@xtine - Custom Intro Alternatives</summary>
 
+
+
+<div class="callout-intro">
+Create a basic web page using Codepen.io. (bare bones)
+</div>
+
+
+<div class="callout-intro">
+<b><Icon name="open-book" class="inline-icon" /> About</b><br/>
+Create a basic web page using Codepen.io. (bare bones)
+</div>
 
 
 👉 Create a basic web page using Codepen.io. (bare bones)
@@ -82,6 +107,7 @@ This exercise appears in Chapter 1 of Critical Web Design. ["info" aside w/ open
 
 
 </details>
+
 
 
 

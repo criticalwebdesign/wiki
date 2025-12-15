@@ -31,8 +31,8 @@ The files you create while completing exercises in this book will each have a sp
 
 
 
-:::tip[Author’s Note]
-Web pages are composed of many different files, so it is essential to keep your web projects organized. Maintaining a similar folder structure also keeps your file paths consistent.  To keep your file paths organized and make it easier to follow the book, you should keep all your websites in one location that you will create on your hard drive now. 
+:::note[Author’s Note]
+Web pages are composed of many different files, so it is essential to keep your web projects organized. Maintaining a similar folder structure also keeps your file paths consistent. To keep your file paths organized and make it easier to follow the book, you should keep all your websites in one location that you will create on your hard drive now. 
 :::
 
 
@@ -41,7 +41,8 @@ Web pages are composed of many different files, so it is essential to keep your 
 
 
 
-### Find Your Home Folder
+
+## Find Your Home Folder
 <!-- Owen: The default location ~/Documents/Github/ is perfectly acceptable. And, it's cross platform. Removing requirement to use Sites folder and changing this to "Find Home Folder". -->
 
 
@@ -122,7 +123,7 @@ If you make a mistake press backspace to change your input. At any time you can 
 
 
 :::tip[Pro Tip]
-press the tab key after the first few characters of a file or folder name to have the OS autocomplete the name.
+Press the tab key after the first few characters of a file or folder name to have the OS autocomplete the name.
 :::
 
 
