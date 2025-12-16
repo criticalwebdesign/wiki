@@ -100,8 +100,7 @@ See your color palette in action! The Visualize Colors button leads you to a new
 
 <figure>
 
-![xxxxx](../../../assets/images/04/04-27-coolors-export-comp.png)
-Figure 4.27 [Coolors.co](https://coolors.co/) export options and CSS formats.
-ALT: Coolors.co export options and CSS formats
+![Coolors.co export options and CSS formats](../../../assets/images/04/04-27-coolors-export-comp.png)
+[Coolors.co](https://coolors.co/) export options and CSS formats.
 
 </figure>

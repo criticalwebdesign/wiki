@@ -22,11 +22,11 @@ layout: default
 
 
 :::note[Author's Note]
-Here we share notes from our own response to the above questions, using the “Thinking Aloud” method to assess apple.com (Figure 4.1): 
+Here we share notes from our own response to the above questions, using the “Thinking Aloud” method (see the book) to assess apple.com: 
 
 > [on the Apple home page] *“Apple spends billions of dollars on marketing each year, and it is evident in their product photography. All of these images are beautiful, especially the product close-ups and details.”*
 > 
-> [clicks the Apple Watch Ultra page] *“Isn't it interesting how the color chosen for the text that describes the watch features on the web page (Figure 4.0.1) matches the color on the actual watch crown and band? All the typefaces and type treatments on the page are equally consistent. Body text about the product is always left-aligned, making it easy to scan.”*
+> [clicks the Apple Watch Ultra page] *“Isn't it interesting how the color chosen for the text that describes the watch features on the web page  matches the color on the actual watch crown and band? All the typefaces and type treatments on the page are equally consistent. Body text about the product is always left-aligned, making it easy to scan.”*
 >
 > [scrolls through the Watch Ultra page] *“There is that orange color again—on a watch band, a call to action (CTA) button (see sidebar), and even on icons above text blocks— creating focal points that guide our eyes around the page. So many things are uniform, even the animations on this page move at the same speed!”*
 

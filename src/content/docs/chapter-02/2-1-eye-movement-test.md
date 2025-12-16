@@ -48,8 +48,18 @@ The wireframe drawing for the example xtine designed for this chapter expresses 
 
 <figure>
 
-![Webpage showing the focus of the user's eyes as they move around the page. ](../../../assets/images/02/02-12-baby-eye-tracking.png)
+![Webpage showing the focus of the user's eyes as they move around the page](../../../assets/images/02/02-12-baby-eye-tracking.png)
 In the baby product ad at the top, the results of an eye movement test show the order and location of the test user's focus as they move their eyes around the design. The second row shows a heatmap from the eye tracking test. While the composition on the left shows only one strong heat spot, in the composition on the right, participants’ eyes followed the gaze of the baby to increase engagement with important information on the page. This is an example of using leading lines (in this case the baby’s gaze) to direct attention. Image appears courtesy of James Breeze, made with Tobii eye tracker. See: [Eye Tracking 2021 – You Look Where They Look!](https://www.objectiveexperience.com/eye-tracking-ux-research/)
+
+</figure>
+
+
+![alt text]
+
+<figure>
+
+![Webpage showing the focus of the user's eyes as they move around the page](../../../assets/images/02/02-12-eye-movement-test.png)
+Another example showing eye movement
 
 </figure>
 

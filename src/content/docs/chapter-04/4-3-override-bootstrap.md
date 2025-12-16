@@ -94,7 +94,7 @@ Using CSS rules low in specificity will allow you to create reusable styles that
 </figure>
 
 
-6. This works, but you still have to enter the same color name several times because some of the color values in this rule are being reused. To avoid repetition and make the code easier to update let’s do this using the DRY principle. You’ll need to just define seven custom properties, several of which are reused across all the interaction states. Add a `:root` rule above the `.btn-primary` rule. Then type the following seven custom properties. These properties could be any name and color. We named them using a fruit followed by the name of the first time it was used in the class. The first two colors are for the text and the five following colors are variations of orange that are progressively darker to match how Bootstrap’s hover effect works on other button classes. It was easy to create these variations with the color picker tool in Visual Studio by adding the first orange color to all of them and then selecting and slightly dragging the color picker interface to find one just a tad darker in value each time (Figure 4.24). Experiment as needed.
+6. This works, but you still have to enter the same color name several times because some of the color values in this rule are being reused. To avoid repetition and make the code easier to update let’s do this using the DRY principle. You’ll need to just define seven custom properties, several of which are reused across all the interaction states. Add a `:root` rule above the `.btn-primary` rule. Then type the following seven custom properties. These properties could be any name and color. We named them using a fruit followed by the name of the first time it was used in the class. The first two colors are for the text and the five following colors are variations of orange that are progressively darker to match how Bootstrap’s hover effect works on other button classes. It was easy to create these variations with the color picker tool in Visual Studio by adding the first orange color to all of them and then selecting and slightly dragging the color picker interface to find one just a tad darker in value each time. Experiment as needed.
 
 
 <figure>
@@ -118,7 +118,7 @@ You can select a color with a color picker tool in Visual Studio Code by clickin
 }
 ```
 
-7. Now that you’ve added these definitions you can override all the defaults for `.btn-primary` using the CSS `var()` function. Update the rule as we did below and in Figure 4.25 then save and refresh your page in Chrome. You should see the color has been updated for all of the different states of interaction, including focus, which you can check by clicking on the page and tabbing through the buttons. 
+7. Now that you’ve added these definitions you can override all the defaults for `.btn-primary` using the CSS `var()` function. Update the rule as we did below and in then save and refresh your page in Chrome. You should see the color has been updated for all of the different states of interaction, including focus, which you can check by clicking on the page and tabbing through the buttons. 
 
 ```css
 .btn-primary {

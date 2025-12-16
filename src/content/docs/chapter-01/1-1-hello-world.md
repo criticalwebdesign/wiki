@@ -44,7 +44,7 @@ h1 {
 }
 ```
 
-5. Type the following code into the Javascript section. Javascript is the language used to control the behavior of web pages. You can see in our screenshot in Figure 0.2 you will need to click the console button to see the output from console.log().
+5. Type the following code into the Javascript section. Javascript is the language used to control the behavior of web pages. You will need to click the console button to see the output from `console.log()`.
 
 ```js
 console.log("Hello, World!");
