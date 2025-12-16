@@ -45,7 +45,7 @@ At top, a typeface (also called a type family) is a collection of related fonts,
 <figure>
 
 ![ikea](../../../assets/images/03/ch3-unbrand-comp-ikea.png)
-This [outcome](https://criticalwebdesign.github.io/book/03-critical-design/examples/ikea-time/module3.3-finish.html) uses the CSS `:hover` pseudoclass to swap the image of the allen wrench with a graphic of an alarm clock. The TIME wordmark is an unbrand of the IKEA logo. 
+This [outcome](https://criticalwebdesign.github.io/book/03-critical-design/3-3) uses the CSS `:hover` pseudoclass to swap the image of the allen wrench with a graphic of an alarm clock. The TIME wordmark is an unbrand of the IKEA logo. 
 
 </figure>
 

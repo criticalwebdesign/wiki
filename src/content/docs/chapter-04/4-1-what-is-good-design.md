@@ -69,11 +69,11 @@ The NASA Graphics Standards Manual (1976) shows how to produce consistent design
 <figure>
 
 ![A screenshot of Apple's design template published on Figma](../../../assets/images/04/04-03-apple-template.png)
-Two examples from a Figma design template published in the Apple Design Resources for iOS 17 and iPadOS 17 https://developer.apple.com/design/resources/ to help designers and developers ensure consistency with all Apple interfaces.
+Two examples from a [Figma design templates](https://www.figma.com/community/file/1248375255495415511) published in the [Apple Design Resources for iOS 17 and iPadOS 17](https://developer.apple.com/design/resources/) to help designers and developers ensure consistency with all Apple interfaces.
 
 </figure>
 
-
+ 
 
 3. Continue exploring the above examples and find one more contemporary or past example using a search engine. Make notes about the system, including things that might not be evident at first glance.
 	- [Firefox](https://acorn.firefox.com/)

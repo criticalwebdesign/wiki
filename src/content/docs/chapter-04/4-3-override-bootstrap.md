@@ -1,0 +1,154 @@
+---
+title: 4.3 Override Bootstrap Styles
+description: Links, references, and footnotes
+layout: default
+# draft: true
+---
+
+<div class="callout-intro">
+👉 Override Bootstrap's default colors to match your designs.
+</div>
+
+
+
+
+
+
+
+
+
+
+## The D.R.Y. Principle
+
+One reason responsive CSS frameworks like Bootstrap are so widely used is that they help you adhere to a software principle called **DRY**. DRY, or “don't repeat yourself,” is aimed at reducing repetition to make writing and managing code easier. You have already been practicing DRY in this book:
+- **More efficient coding** - Writing the same code over and over requires time and energy to keep consistent with previous code. You used CSS to define classes that can be reused across your site. For example, defining a typeface once for the whole site inside an html rule ensures you only need to write it once.
+- **Easier maintenance** - While it makes perfect sense to copy code you've written from a previous project (e.g. to make a website responsive), what if you find a bug? Now you have to stop working on the current task to find and fix the issue in every project that uses that code. This is where Bootstrap helps, providing access to a huge amount of thoroughly-tested boilerplate code with standard features needed for every new site.
+- **Avoiding errors** - Think of a program that changes a color on the page depending on user interaction. However, instead of adhering to DRY, the program updates the color from several different locations. This makes it difficult to find where the error originated. Writing code once will ensure a program does not conflict or cause unexpected behavior.
+In short, when you write DRY code you will be more efficient and encounter fewer errors!
+
+
+
+
+
+
+
+
+
+
+
+## Inspect Bootstrap
+
+1. Use DevTools to inspect the CSS breakpoint and color classes that Bootstrap adds to the root element
+
+<figure>
+
+![Using the styles tab in DevTools to inspect the CSS classes that Bootstrap adds](../../../assets/images/04/04-21-bootstrapRoot.png)
+
+</figure>
+
+
+2. Use DevTools to see Bootstrap’s btn-primary class custom properties.
+
+<figure>
+
+![Use DevTools to see Bootstrap's btn-primary class custom properties](../../../assets/images/04/04-22-bootsstrapPrimary.png)
+
+</figure>
+
+
+
+
+
+## Override Bootstrap Styles
+
+There are generally two ways to override Bootstrap styles. The Bootstrap documentation suggestsusually shows customizations using Sass variables. As we discussed, this requires extra setup to recompile the CSS and is really more appropriate for large projects. The method we'll show below applies to the pre-compiled version we've been using so far from the CDN. You will use DevTools to identify the classes you want to override and simply add your own rules, just as you normally would with CSS.  
+
+1. Open `on-the-grid/index.html` in Chrome. 
+2. Add the following CSS rule to change the background color of all elements that use the `btn-primary` class from the default blue color to purple. The additional `!important` rule will add more importance than normal rules for that property on that element. 
+
+```css
+.btn-primary { background-color: purple !important; }
+```
+
+:::note[Best Practices]
+Using CSS rules low in specificity will allow you to create reusable styles that are easy to override when needed. In addition to the methods we describe above, you can add `!important` to the end of a declaration to create the most specific rule of all. Update your code with this to see what we mean.
+`h1 { color: hotpink !important; } `
+:::
+
+
+3. Thanks to the CSS cascade, the above method works as long as you add it *after* you incorporate the Bootstrap CSS file. But, as you can see, it doesn’t cover all the states of interaction (hover, active, focus, etc.). This is because you haven’t added rules for each of the interaction pseudo-classes. While you could do that, you would be creating repetitious code. Instead, you'll keep your code “DRY” by overriding the custom properties in the main `btn-primary` class. Start by commenting out the rule you just added, then save your work and refresh the page in Chrome.
+4. As you did in the previous exercise, inspect the “primary” button and find the rule for the `btn-primary` class with the custom properties. Since your previous rule was removed it should be blue again. Copy/paste the rule from DevTools into your `<style>` element in index.html. 
+5. To override the colors used by the button you simply need to update these colors. As a test, set `--bs-btn-bg` using any of the named web colors https://en.wikipedia.org/wiki/Web_colors . We assigned the color `slateblue`. Save and refresh your work. 
+
+```css
+.btn-primary {
+    	--bs-btn-color: slateblue; 
+}
+```
+
+
+<figure>
+
+![The code and results from updating the background color of btn-primary.](../../../assets/images/04/04-23-bootstrap-primary-slateblue.png)
+
+</figure>
+
+
+6. This works, but you still have to enter the same color name several times because some of the color values in this rule are being reused. To avoid repetition and make the code easier to update let’s do this using the DRY principle. You’ll need to just define seven custom properties, several of which are reused across all the interaction states. Add a `:root` rule above the `.btn-primary` rule. Then type the following seven custom properties. These properties could be any name and color. We named them using a fruit followed by the name of the first time it was used in the class. The first two colors are for the text and the five following colors are variations of orange that are progressively darker to match how Bootstrap’s hover effect works on other button classes. It was easy to create these variations with the color picker tool in Visual Studio by adding the first orange color to all of them and then selecting and slightly dragging the color picker interface to find one just a tad darker in value each time (Figure 4.24). Experiment as needed.
+
+
+<figure>
+
+![A screenshot for the color picker tool in Visual Studio Code. ](../../../assets/images/04/04-24-colorPicker.png)
+You can select a color with a color picker tool in Visual Studio Code by clicking on the color chip next to its hex value or name in the stylesheet. 
+ 
+</figure>
+
+
+
+```css
+:root {
+	--oranges-btn-color: #000;
+	--oranges-btn-hover-color: #000;
+	--oranges-btn-bg: #eeac20;
+	--oranges-btn-hover-bg: #e6a61c;
+	--oranges-btn-hover-border: #eaa91e;
+	--oranges-btn-active-border: #ebaa1c;
+	--oranges-btn-focus-shadow-rgb: 235, 170, 28;
+}
+```
+
+7. Now that you’ve added these definitions you can override all the defaults for `.btn-primary` using the CSS `var()` function. Update the rule as we did below and in Figure 4.25 then save and refresh your page in Chrome. You should see the color has been updated for all of the different states of interaction, including focus, which you can check by clicking on the page and tabbing through the buttons. 
+
+```css
+.btn-primary {
+    --bs-btn-color: var(--oranges-btn-color);
+    --bs-btn-bg: var(--oranges-btn-bg);
+    --bs-btn-border-color: var(--oranges-btn-bg);
+    --bs-btn-hover-color: var(--oranges-btn-hover-color);
+    --bs-btn-hover-bg: var(--oranges-btn-hover-bg);
+    --bs-btn-hover-border-color: var(--oranges-btn-hover-border);
+    --bs-btn-focus-shadow-rgb: var(--oranges-btn-focus-shadow-rgb);
+    --bs-btn-active-color: var(--oranges-btn-hover-color);
+    --bs-btn-active-bg: var(--oranges-btn-hover-border);
+    --bs-btn-active-border-color: var(--oranges-btn-active-border);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--oranges-btn-hover-color);
+    --bs-btn-disabled-bg: var(--oranges-btn-bg);
+    --bs-btn-disabled-border-color: var(--oranges-btn-bg);
+}
+```
+
+<figure>
+
+![A screenshot of DevTools with custom properties in place.](../../../assets/images/04/04-25-bootstrap-colors-override.png)
+This screenshot shows our custom properties in DevTools.
+
+</figure>
+
+
+
+
+
+
+

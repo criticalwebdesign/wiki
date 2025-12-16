@@ -109,7 +109,7 @@ ALT A screenshot showing an example of form validation thanks to the required at
 
 
 ![xxxxx](../../../assets/images/05/05-16-Usability-results.png)
-Figure 5.16 The results of our usability test, coded in a web page with the SUS form can be found at https://criticalwebdesign.github.io/book/05-usability/examples/usability-aiga/module5.3-finish.html
+Figure 5.16 The results of our usability test, coded in a web page with the SUS form can be found at https://criticalwebdesign.github.io/book/05-usability/5-3/
 
 
 

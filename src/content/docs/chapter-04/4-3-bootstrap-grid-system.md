@@ -1,0 +1,110 @@
+---
+title: 4.3 Bootstrap Grid System
+description: Links, references, and footnotes
+layout: default
+# draft: true
+---
+
+<div class="callout-intro">
+👉 Use Figma layout grids to create a multi-column page design.
+</div>
+
+
+
+
+## Grid Features
+
+:::note
+Explore the coded version of the below Bootstrap grid layout in our demo on Codepen https://criticalwebdesign.github.io#bootstrap-grid-examples
+:::
+
+<figure>
+
+![Diagram showing bootstrap classes](../../../assets/images/04/04-13-bootstrap-columns-combined.png)
+
+</figure>
+
+
+
+1. Bootstrap's `.container-fluid` class always expands to the full width of the window, while the `.container` class has a maximum width. The `.col` class will expand to fill the width of the row on that container. Add multiple columns (in this case 3) and you will see that number of equally-sized columns per row. 
+1. The `.col-{rows}` classes will take up only as many of the 12 Bootstrap columns as you define. The only rule is that the column and offset spans together add up to 12. 
+1. Mix and match Bootstrap column sizes however you like.
+1. The `.col-{breakpoint}-{rows}` classes span the Bootstrap columns, but only on the breakpoint you define (and larger). So, while example#3 `.col-4` remains the same, in example#4 `.col-12 .col-md-4` defaults to the full width, except on medium breakpoints and higher. This allows for different layouts with the same content across different device sizes.
+1. The offset classes can center the columns in a container. 
+1. There are also helper classes to control how elements are displayed.
+
+
+
+
+## Coding Bootstrap Grids
+
+<figure>
+
+![A screenshot showing code autocompletion in VS Code.](../../../assets/images/04/04-31-VS%20Code%20auto%20complete.png)
+Most editors let you type the beginning of an HTML element and press tab to add the open and close tag you want. This feature also lets you add HTML elements with their class names by typing the full name of the selector.
+
+</figure>
+
+<figure>
+
+![A screenshot showing code completed so far.](../../../assets/images/04/04-32-divs.png)
+A three column layout coded. 
+
+</figure>
+
+
+## Creating Consistency
+
+<figure>
+
+![A screenshot of the image in the second column.](../../../assets/images/04/04-33-secondColumn.png)
+The image in the second column is not scaling or reflowing like the text.
+
+</figure>
+
+<figure>
+
+![A screenshot showing before and after adding spacing above the heading](../../../assets/images/04/04-34-addedTopMargin.png)
+Notice the difference in negative space before and after we added top margin to the heading.
+
+</figure>
+
+<figure>
+
+![Left aligned text](../../../assets/images/04/04-07-alignment.png)
+Notice that, aside from the masthead (the name of the publication), all text is left-aligned. Left aligned text has a straight edge on the left side that helps readers scan and find content. And, it's easier to read because each line starts at the same horizontal origin, whereas center-aligned text has a ragged left edge causing readers to search for the start of each line.
+
+</figure>
+
+
+
+:::caution
+We highly recommend you use the default sizing (fonts, margins, columns, etc.) Bootstrap provides to help keep your layout consistent and your content and its structure easy to read by your users.
+:::
+
+
+
+
+<figure>
+
+![An image showing the headings in the Bootstrap framework. ](../../../assets/images/04/04-11-bootstrap-headings.png)
+The headings in the Bootstrap framework scale at consistent values.
+
+</figure>
+
+
+## Finished Prompt
+
+
+<figure>
+
+![xxxxx](../../../assets/images/04/04-35-final-exercise-mobile-comps-new.jpg)
+Our final composition https://criticalwebdesign.github.io/book/04-on-the-grid/4-3/index.html for multiple breakpoints seen in the browser with DevTools. The Toggle Device Toolbar (see the cursor in the upper right corner of the top image) enables you to view your work across multiple devices in the Chrome browser.
+
+</figure>
+
+
+
+:::caution[Bootstrap Themes]
+A **theme** is a collection of coded files that modify the appearance or behaviors of an interface. Themes can be installed in code editors, Wordpress websites, and even Bootstrap. For example, we have been using the one-dark theme in the graphics for the book as an homage to the Atom (R.I.P.) editor we used before VS Code. Bootstrap 5.3 has something like a theme in their in-progress color modes feature to let you select between light (default) or dark modes. Color mode differs from the themes widely available online that vary in quality, support, and price. It goes without saying that *practicing design* yourself is the most important path toward becoming a designer. But we also recommend you avoid using "bootstrap themes" for now so you learn the foundational concepts we present and avoid getting stuck. While third-party themes appear to be fast solutions, they usually create more work due to little documentation or support. And, perhaps more importantly, they lock you into choices someone else is making. In *The Language of New Media* Lev Manovich describes this problem well, stating that the “interface shapes how the computer user conceives the computer itself.” In other words, the tools you use ultimately affect the choices you are able to make due to the limits imposed by their creators. Instead of a theme, we sugest you see the next article on overriding Bootstrap styles.
+:::

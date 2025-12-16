@@ -280,7 +280,7 @@ See this Codepen for more information about bookmarklets, including instructions
 Figure 6.19 The LA Times and The New York Times websites get a redesign with two lines of code in the Console. 
 
 ![xxxxx](../../../assets/images/06/ch6-haiku-xtine-1.gif)
-https://criticalwebdesign.github.io/book/06-off-the-grid/examples/module6.3-finish.html 
+https://criticalwebdesign.github.io/book/06-off-the-grid/6-3
 
 
 ![xxxxx](../../../assets/images/06/ch6-birds-1.gif)
