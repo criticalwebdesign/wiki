@@ -1,7 +1,7 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
-import relativeLinks from 'astro-relative-links'
+// import relativeLinks from 'astro-relative-links'
 import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
@@ -9,7 +9,7 @@ export default defineConfig({
     site: 'https://criticalwebdesign.github.io',
     base: '/wiki',
     integrations: [
-        // relativeLinks(),
+        // relativeLinks(), // breaks 404 - only use for local builds!
         starlight({
             title: 'Critical Web Design Wiki',
             social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/criticalwebdesign/wiki' }],
@@ -24,6 +24,7 @@ export default defineConfig({
                 { label: '2. View Source', autogenerate: { directory: 'chapter-02' }, },
                 { label: '3. Critical Design', autogenerate: { directory: 'chapter-03' }, },
                 { label: '4. On the Grid', autogenerate: { directory: 'chapter-04' }, },
+                { label: '4. Usability and Forms', autogenerate: { directory: 'chapter-05' }, },
 
 
 
