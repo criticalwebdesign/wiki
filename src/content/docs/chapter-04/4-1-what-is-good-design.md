@@ -1,0 +1,96 @@
+---
+title: 4.1 What is Good Design?
+description: Links, references, and footnotes
+layout: default
+# draft: true
+---
+
+<div class="callout-intro">
+👉 The following activities ask you to evaluate your response to good design, and then explore established style guides to see how they plan for design consistency.
+</div>
+
+
+
+
+## Explore Good Design
+
+1. Think of a company or organization that you associate with “good design.” 
+2. Explore the website of the organization, consider the objects, software, or other things they create. Use the Thinking Aloud method (see chapter 4) while you look to evaluate your response to the design.
+3. List some reasons why you might have selected this organization. What about their website, products, or other aspects of their brand or identity (see chapter 3) are examples of good design?
+
+
+
+
+:::note[Author's Note]
+Here we share notes from our own response to the above questions, using the “Thinking Aloud” method to assess apple.com (Figure 4.1): 
+
+> [on the Apple home page] *“Apple spends billions of dollars on marketing each year, and it is evident in their product photography. All of these images are beautiful, especially the product close-ups and details.”*
+> 
+> [clicks the Apple Watch Ultra page] *“Isn't it interesting how the color chosen for the text that describes the watch features on the web page (Figure 4.0.1) matches the color on the actual watch crown and band? All the typefaces and type treatments on the page are equally consistent. Body text about the product is always left-aligned, making it easy to scan.”*
+>
+> [scrolls through the Watch Ultra page] *“There is that orange color again—on a watch band, a call to action (CTA) button (see sidebar), and even on icons above text blocks— creating focal points that guide our eyes around the page. So many things are uniform, even the animations on this page move at the same speed!”*
+
+:::
+
+<figure>
+
+![The Apple Watch Ultra home page](../../../assets/images/04/04-01-apple-watch-comp.png)
+The Apple Watch Ultra home page
+
+</figure>
+
+
+
+## How To Create Consistency
+
+So, what is the answer to the question presented above? If there is one solid principle you can take from Apple's brand, products, webpage, everything, it is this: ***Consistency is central to good design.***
+
+
+1. In the 220 page [NASA Graphics Standards Manual](https://standardsmanual.com/products/nasa-graphics-standards-manual) (1976), Richard Danne and Bruce Blackburn show how the NASA logo, U.S. flag, and classic Helvetica typeface should be used on vans, confidential documents, and even the space shuttle.
+
+
+<figure>
+
+![nasa standards](../../../assets/images/04/04-04-nasastandards.png)
+The NASA Graphics Standards Manual (1976) shows how to produce consistent designs across everything that represents this iconic organization. ©Danne & Blackburn / NASA, Standards Manual.
+
+</figure>
+
+
+2. The [Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/charts) explains best practices across all their content. For example on the Charts page inside Content, they remind readers to "Establish a consistent visual hierarchy [to] help communicate the relative importance of various chart elements.
+
+
+<figure>
+
+![A screenshot of Apple's design template for iOS 17 published on Figma](../../../assets/images/04/04-03-appleHomeScreens.png)
+
+</figure>
+
+<figure>
+
+![A screenshot of Apple's design template published on Figma](../../../assets/images/04/04-03-apple-template.png)
+Two examples from a Figma design template published in the Apple Design Resources for iOS 17 and iPadOS 17 https://developer.apple.com/design/resources/ to help designers and developers ensure consistency with all Apple interfaces.
+
+</figure>
+
+
+
+3. Continue exploring the above examples and find one more contemporary or past example using a search engine. Make notes about the system, including things that might not be evident at first glance.
+	- [Firefox](https://acorn.firefox.com/)
+	- [Uber](https://brand.uber.com/)
+	- [Design Systems and How to Learn (and Steal) From Them](https://designerup.co/blog/10-best-design-systems-and-how-to-learn-and-steal-from-them/)
+
+
+
+
+
+## Practicing Consistency
+
+<figure>
+
+![Screenshot of the online game Kern Type.](../../../assets/images/04/04-02-kerntype.png)
+Kern Type challenges players to adjust the kerning between letters so that the negative space between them is consistent. See https://type.method.ac 
+
+</figure>
+
+
