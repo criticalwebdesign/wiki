@@ -12,6 +12,27 @@ layout: default
 
 
 
+## Intro to Bootstrap
+
+1. Go to https://getbootstrap.com/ 
+1. Click on Docs https://getbootstrap.com/docs/5.3/getting-started/introduction/ 
+1. Scroll to code example #2 and copy/paste this code (with the CSS and JS links already in place) into a new HTML document or Codepen.
+1. Click on Components > Buttons and paste in some example buttons https://getbootstrap.com/docs/5.3/components/buttons/ 
+
+```html
+<button type="button" class="btn btn-primary">Primary</button>
+```
+
+5. Note the class names of other button variants. Change your button by editing the class name only.
+
+```html
+<button type="button" class="btn btn-success">Success!</button>
+```
+
+6. Continue exploring other components like [Alerts](https://getbootstrap.com/docs/5.3/components/alerts/), [Carousel](https://getbootstrap.com/docs/5.3/components/carousel/), and [Modal](https://getbootstrap.com/docs/5.3/components/modal/).
+
+
+
 ## Grid Features
 
 :::note
