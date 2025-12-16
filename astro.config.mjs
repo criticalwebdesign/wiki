@@ -9,7 +9,7 @@ export default defineConfig({
     site: 'https://criticalwebdesign.github.io',
     base: '/wiki',
     integrations: [
-        relativeLinks(),
+        // relativeLinks(),
         starlight({
             title: 'Critical Web Design Wiki',
             social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/criticalwebdesign/wiki' }],
@@ -34,8 +34,7 @@ export default defineConfig({
                 './src/styles/styles.css', // relative path to custom CSS file
                 './src/styles/global.css', // tailwind CSS 
             ],
-            components: {
-            },
+            components: {},
         }),
     ],
     vite: {
