@@ -16,7 +16,7 @@ layout: default
 
 ## How to Match a Typeface
 
-
+Use the graphic and steps below to match the Ikea logo typeface (or any) for the chapter 3 prompt.
 
 
 <figure>

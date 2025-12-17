@@ -54,7 +54,6 @@ In the baby product ad at the top, the results of an eye movement test show the 
 </figure>
 
 
-![alt text]
 
 <figure>
 

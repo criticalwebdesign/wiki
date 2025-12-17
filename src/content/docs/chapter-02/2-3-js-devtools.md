@@ -14,22 +14,25 @@ layout: default
 
 ## Using DevTools
 
-1. Right+click anywhere on a web page and choose "Inspect".
+Use DevTools to explore HTML, CSS, and JS in a web page.
 
+1. Right+click anywhere on a web page and choose "Inspect".
+1. Mouse over HTML elements in DevTools to see the corresponding elements on the page.
+1. Select one of the elements to see the CSS applied to it and a visualization using the Box Model diagram in the bottom right. 
 
 <figure>
 
 ![A screenshot of the Elements tab in DevTools.](../../../assets/images/02/02-23-CSS-devtools.png)
-Using DevTools, developers can see and manipulate a live version of the page. The element is visualized in the bottom right using the Box Model diagram. 
 
 </figure>
 
+
+4. Use the Element tool to select and inspect elements directly on the page.
 
 
 <figure>
 
 ![Element tool](../../../assets/images/02/02-22-elementtool.png)
-Use the Element tool to select and inspect elements on the page.
 
 </figure>
 

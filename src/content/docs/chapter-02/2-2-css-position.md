@@ -103,7 +103,7 @@ p {
 }
 ```
 
-2. Update the p rule in CSS to reflect the code sample below. The code shown in gray was already added. You can see the updated rule adds spacing between the paragraphs.
+2. Update the `p` rule in CSS to reflect the code sample below. The code shown in gray was already added. You can see the updated rule adds spacing between the paragraphs.
 
 ```css
 p {

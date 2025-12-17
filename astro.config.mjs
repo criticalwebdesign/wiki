@@ -24,7 +24,8 @@ export default defineConfig({
                 { label: '2. View Source', autogenerate: { directory: 'chapter-02' }, },
                 { label: '3. Critical Design', autogenerate: { directory: 'chapter-03' }, },
                 { label: '4. On the Grid', autogenerate: { directory: 'chapter-04' }, },
-                { label: '4. Usability and Forms', autogenerate: { directory: 'chapter-05' }, },
+                { label: '5. Usability and Forms', autogenerate: { directory: 'chapter-05' }, },
+                { label: '6. Off the Grid', autogenerate: { directory: 'chapter-06' }, },
 
 
 

@@ -11,6 +11,9 @@ layout: default
 
 
 
+
+## Introduction to HTML, CSS, and JS
+
 <figure>   
 
 ![HTML, CSS, and Javascript in a new codepen.](../../../assets/images/00/00-02-code-playground.png)

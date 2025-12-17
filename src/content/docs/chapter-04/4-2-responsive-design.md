@@ -15,13 +15,20 @@ layout: default
 
 ## Set Up Layout Grids in Figma
 
+A guide to creating layout grids in Figma.
+
 :::tip[Use Our Figma Template]
-Our [Figma file](https://www.figma.com/community/file/1501679035518799477) already contains these layout grid settings. Simply copy/paste any (desktop, tablet, mobile) frame from ours into your own whenever you start a new design. Make sure grids are enabled using `shift+G`. Or, you can create them from scratch following this exercise.
+Our published [Figma file](https://www.figma.com/community/file/1501679035518799477) already contains the following layout grid settings. Simply copy/paste any (desktop, tablet, mobile) frame from [ours](https://www.figma.com/community/file/1501679035518799477) whenever you start a new design. 
 :::
 
 1. In a new design file in Figma, select the Frame tool (it looks like a #) and choose Desktop from the panel on the right. This will create a new frame the size of a desktop display (1440 x 1024 pixels). 
 2. Select the new frame and name it "Desktop".
 3. In the panel on the right, click the plus sign (+) next to “Layout grid” to add a new grid. This will add a 10px grid.
+
+:::note[Author's Note]
+Make sure grids are enabled using `shift+G`. 
+:::
+
 4. Change the grid to columns by clicking the Layout grid settings icon to expand the options for the grid. Click on the pull-down menu set to “Grid” and change it to “Columns” then modify the grid so that it appears as 12 columns. Change the width of the grid to `73px` and the gutters (the spaces between the columns) to `24px`. This matches the 12 columns in the Bootstrap CSS framework and will make it easy to later transfer your design to the coded version. 
 
 <figure>

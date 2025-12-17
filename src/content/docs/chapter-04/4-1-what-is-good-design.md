@@ -14,9 +14,11 @@ layout: default
 
 ## Explore Good Design
 
-1. Think of a company or organization that you associate with “good design.” 
-2. Explore the website of the organization, consider the objects, software, or other things they create. Use the Thinking Aloud method (see chapter 4) while you look to evaluate your response to the design.
-3. List some reasons why you might have selected this organization. What about their website, products, or other aspects of their brand or identity (see chapter 3) are examples of good design?
+A [Think-Pair-Share](https://mtei.engineering.cornell.edu/teaching-resources/active-learning/think-pair-share/) exploring responses to design.
+
+1. Think of a company or organization that you associate with “good design” and describe waht makes them exemplary.
+2. Explore the website of the organization, consider the objects, software, or other things they create. Use the Thinking Aloud method (see chapter 4) to evaluate your response to the design.
+3. List additional reasons why you have selected this organization. What about their website, products, or other aspects of their brand or identity (see chapter 3) are examples of good design?
 
 
 
