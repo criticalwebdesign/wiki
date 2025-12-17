@@ -1,0 +1,105 @@
+---
+title: 5.3 Javascript and Web Forms
+description: Links, references, and footnotes
+layout: default
+# draft: true
+---
+
+<div class="callout-intro">
+Figures from the book
+</div>
+
+
+
+
+
+
+
+
+
+## Javascript Data Types
+
+
+
+<figure>
+
+![A diagram showing how Javascript organizes data by primitive and non-primitive types.](../../../assets/images/05/05-09-js-data-types.png)
+Javascript organizes data by primitive and non-primitive types
+
+</figure>
+
+
+<figure>
+
+![This graphic shows the flow, state, logic, and events of a program that turns a lamp on or off.](../../../assets/images/05/05-08-js-lamp-program-flow.png)
+This graphic shows the flow, state, logic, and events of a program that “turns a lamp on or off.” The logic (decisions the computer makes) is based on the state (the status of variables in the program) and events (e.g. user input) directing the computer towards its goal.
+
+</figure>
+
+
+
+## GET vs POST Requests
+
+
+
+
+<figure>
+
+![A screenshot showing how to inspect the headers of the GET request using a Google search for “dog”](../../../assets/images/05/05-10-DevToolsGETrequest.png)
+Inspecting the headers of the GET request using a Google search for “dog.”
+
+</figure>
+
+
+
+
+
+## Javascript and Web Forms 
+
+<figure>
+
+![Screenshot of codepen with added HTML, CSS, and Javascript.](../../../assets/images/05/05-12-codepen-hello.png)
+We added HTML, CSS, and Javascript to a new codepen.
+
+</figure>
+
+<figure>
+
+![Screenshot of Codepen.io with HTML and JS](../../../assets/images/05/05-13-codepen-form-1.png)
+Set up the HTML and JS code to create a form in Codepen.io.
+
+</figure>
+
+<figure>
+
+![The finished SUS form prototype.](../../../assets/images/05/05-14-codepen-form-prototype.png)
+The finished SUS form prototype https://codepen.io/owenmundy/pen/zYJNyEP
+
+</figure>
+
+<figure>
+
+![A screenshot showing an example of form validation thanks to the required attribute.](../../../assets/images/05/05-15-Form%20validation.png)
+An example of form validation thanks to the required attribute.
+
+</figure>
+
+
+
+
+
+## Finished Prompt
+
+<figure>
+
+![xxxxx](../../../assets/images/05/05-16-Usability-results.png)
+The results of our usability test, coded in a web page with the SUS form can be found at https://criticalwebdesign.github.io/book/05-usability/5-3/
+
+</figure>
+
+
+
+
+
+
+
