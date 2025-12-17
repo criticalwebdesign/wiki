@@ -12,7 +12,7 @@ Figures from the book
 
 
 
-## Use the “Less Is More” Critique and Redesign
+## The “Less Is More” Critique
 
 Remember when we said earlier that “you shouldn’t see good design”? A good rule of thumb for achieving this is to question everything you add to a layout. If it’s difficult to explain how a text treatment or graphic element makes it easier for your users to understand the content and achieve their goals, then it likely shouldn’t be added to the design.
 
