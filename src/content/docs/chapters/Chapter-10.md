@@ -422,3 +422,13 @@ Figure 10.23 The International Pussycats (in-progress) is a virtual post-punk ba
 https://www.mongodb.com/developer/languages/javascript/node-crud-tutorial/
 https://www.mongodb.com/developer/code-examples/javascript/node-connect-mongodb-3-3-2/
 https://northflank.com/guides/connecting-to-a-mongo-db-database-using-node-js
+
+
+
+https://github.com/omundy/big-feelings
+
+
+https://www.mongodb.com/products/platform/atlas-database
+
+https://dev.to/adafycheng/deploy-nodejs-application-to-vercel-in-5-minutes-171m
+https://omundy.github.io/learn-javascript/topics/servers/slides.html#4

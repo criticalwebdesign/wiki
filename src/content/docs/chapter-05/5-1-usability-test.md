@@ -6,7 +6,7 @@ layout: default
 ---
 
 <div class="callout-intro">
-👉 Create and implement a usability test. Then, apply design thinking concepts and our “less is more” critique to design and code a responsive web page that reflects on your findings.
+👉 Usability should be performed early and often in order to help guide design decisions. Follow these excerpts from the book to create and implement a usability test. 
 </div>
 
 
@@ -14,6 +14,10 @@ layout: default
 
 
 ## Create a Usability Test
+
+<div class="callout-intro">
+This is an excerpt from Module 5.1
+</div>
 
 The empathy phase of a typical design thinking process for website production includes seeking to understand potential users. A typical approach for this is to create a user story which helps designers imagine each user, including details about who they are, their technical capabilities, and importantly, what are their specific goals in using the website. 
 
@@ -23,6 +27,11 @@ The empathy phase of a typical design thinking process for website production in
 
 
 ## Perform the Usability Test
+
+<div class="callout-intro">
+This is an excerpt from Module 5.1
+</div>
+
 
 Now you are ready to implement your usability test.
 
@@ -38,3 +47,23 @@ Now you are ready to implement your usability test.
    1. Recall: How much did your test user remember on multiple uses? Did they improve at using the website over time?
    1. Emotional response: How did your test user feel after using the website?
 1. Finally, ask your user to complete the 10-question System Usability Scale (SUS) survey measuringu.com/sus and record the data. 
+
+
+
+## Compile Data
+
+<div class="callout-intro">
+This is an excerpt from Module 5.1
+</div>
+
+Reflect on what you observed and compile information from the usability test into a single report. If working in a group, write it down in a shared document so you can access it later when you create your page designs.
+
+1. List your name(s) and a link to the website you chose to analyze.
+1. List the test user’s responses (a number 1–5) to each of the ten prompts in the SUS at measuringu.com/sus. You will use JavaScript later in this chapter to perform the math required to tally the score.
+1. List the five tasks you gave the user, along with the following information:
+   1. Add all of the data you collected in the test.
+   1. Add a discussion about the result of each task. Was the test user successful? Why or why not? Cite information on the NNG website to inform your report and communicate your findings.
+   1. Write what recommendations you would make to the website owner. Refer to the digital.gov/topics/usability website for advice on how you might phrase these recommendations.
+   1. Create a screenshot for each task focusing on the aspects of the website that led to the success or failure of the task.
+
+Continue following the prompt for chapter 5, applying design thinking concepts and our “less is more” critique to design and code a responsive web page that reflects on your findings.

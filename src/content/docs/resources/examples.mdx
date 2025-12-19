@@ -12,9 +12,19 @@ import { Icon } from '@astrojs/starlight/components';
 
 import YoutubeVideo from '@/components/YoutubeVideo.astro';
 
+{/* THE OLD WAY
+<div class="not-content">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9mput42uZsQ?si=0RVKFwz3LH_AK_T1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div> */}
+
 <div class="max-w-2xl mx-auto not-content">
   <YoutubeVideo src="https://www.youtube.com/watch?v=dQw4w9WgXcQ" />
 </div>
+
+
+
+
+
 
 
 ## Import and use a component with a slot
@@ -78,7 +88,7 @@ Create a basic web page using Codepen.io. (bare bones)
 
 
 <div class="callout-intro">
-<b><Icon name="open-book" class="inline-icon" /> About</b><br/>
+<b><Icon name="open-book" class="inline-icon" /> Overview</b><br/>
 Create a basic web page using Codepen.io. (bare bones)
 </div>
 
@@ -96,7 +106,7 @@ Create a basic web page using Codepen.io. (bare bones)
 
 
 
-:::note[About]{icon="information"}
+:::note[Overview]{icon="information"}
 👉 Create a basic web page using Codepen.io. ["note" aside]
 :::
 
