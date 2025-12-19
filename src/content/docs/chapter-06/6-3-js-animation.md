@@ -6,7 +6,7 @@ layout: default
 ---
 
 <div class="callout-intro">
-👉 Create animation using Javascript.
+👉 This wiki article shows additional methods to create animations for the web using Javascript with CSS.
 </div>
 
 
@@ -14,19 +14,16 @@ layout: default
 
 
 
-:::caution
-Refresh the page to reset the animations!
-:::
-
-
-
-
 
 ## Create a Simple Javascript Animation
 
-There are many excellent libraries for animation, like [anime.js](https://animejs.com/) or [p5.js](https://p5js.org/) which we will explore later in the book. This simple exercise shows how to use Javascript to create animation by changing CSS properties over time with `setInterval()`. 
+This simple exercise shows how to use Javascript to create animation by changing CSS properties over time with `setInterval()`. 
 
-1. To access and change styles on any element you can use the style property. Add this code to a script tag before the closing body tag in index.html and test it. This single line of code will change the opacity of everything on the page using a decimal value between 0 and 1. You could select any element on the page but we are using the body to keep the example simple. 
+:::tip
+There are many excellent Javascript and CSS libraries for animation, like [anime.js](https://animejs.com/), [p5.js](https://p5js.org/), and [animate.css](https://animate.style/) which we explore later in the book. 
+:::
+
+1. To access and change styles on any element you can use the `style` property. Add this code to a script tag before the closing body tag in index.html and test it. This single line of code will change the opacity of everything on the page using a decimal value between 0 and 1. You could select any element on the page but we are using the body to keep the example simple. 
 
 ```html
 <script>
@@ -60,42 +57,95 @@ setInterval(function () {
 }, 100);
 ```
 
+
 4. Continue experimenting with the number values to get a sense of how this block of code affects the page. 
 
 
 
-<button class="jsRotate bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">See it in action</button>
+
+See the above code applied to a button:
+
+<button class="jsRotate bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer">See it in action</button>
 
 <script>
-let rotation = 0;
-document.querySelector(".jsRotate").addEventListener("click", function(){
-    setInterval(function () {
-        rotation += 5;
-        document.querySelector(".jsRotate").style.transform = `rotate(${rotation}deg)`;
-    }, 100);
-})
+(()=> {
+    let rotation = 0;
+    document.querySelector(".jsRotate").addEventListener("click", function(){
+        setInterval(function () {
+            rotation += 5;
+            document.querySelector(".jsRotate").style.transform = `rotate(${rotation}deg)`;
+        }, 100);
+    });
+})();
 </script>
 
 
-## CSS Animations and Transitions
+:::caution
+Refresh the page to reset animations!
+:::
 
-While Javascript can change values repeatedly using `setInterval()`, CSS has two methods that create motion automatically. A CSS animation uses the `@keyframes` rule to define the start and end values of a tween and the browser renders the frames between. 
 
-1. Remove or comment out the Javascript you added inside the script tag above, and add this block of code to your stylesheet . While the @keyframes rule specifies the values and when the property changes, the body rule defines parameters like the name (fadeOut) and duration (2 seconds) of the animation.
+
+
+## CSS Animation
+
+While Javascript can change values repeatedly using `setInterval()`, CSS has two methods that create motion automatically. A [CSS animation](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Animations/Using) uses the `@keyframes` rule to define the start and end values of a tween and the browser renders the frames between. 
+
+1. Remove or comment out the Javascript you added inside the script tag above, and add this block of code to your stylesheet. While the `@keyframes` rule specifies the values and when the property changes, the body rule defines parameters like the name (fadeOut) and duration (2 seconds) of the animation.
 
 ```css
-@keyframes fadeOut {
-	0% { opacity: 1;}
-	100% { opacity: 0;}
+@keyframes animFrames {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
 }
-body {
-	animation-name: fadeOut;
+.cssAnim {
+	animation-name: animFrames;
 	animation-duration: 2s;
 }
 ```
 
 2. Compare the performance of this with the code from the previous exercise you will see the CSS animation appears smoother. This is because it lets the browser optimize the rendering to minimize the frame-skipping that creates a stuttering effect. While `setInterval()` may be intuitive, a more efficient Javascript method exists called `requestAnimationFrame()`. See the documentation for substituting this method to increase your animation performance.
-3. A CSS transition is different from a CSS animation, defining only the parameters of the transition, but not the start or end values or when they occur. This means your code will need to change properties using an event to start the effect. One benefit of CSS transitions is how easy it is to control when they start. Comment out or remove the previous CSS animation then add this transition to your body tag. 
+
+
+
+
+See the above code applied to a button:
+
+
+<button class="cssAnimBtn bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer">See it in action</button>
+
+<style>
+@keyframes animFrames {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+.cssAnim {
+	animation-name: animFrames;
+	animation-duration: 2s;
+}
+</style>
+<script>
+(()=> {
+    let rotation = 0;
+    let cssAnimBtn = document.querySelector(".cssAnimBtn");
+    cssAnimBtn.addEventListener("click", function () {
+        cssAnimBtn.classList.add("cssAnim");
+        setTimeout(function() { cssAnimBtn.classList.remove("cssAnim") }, 2000);
+    });
+})();
+</script>
+
+
+
+
+
+
+
+
+
+## CSS Transition
+
+1. A [CSS transition](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/transition) is different from a CSS animation, defining only the parameters of the transition, but not the start or end values or when they occur. This means your code will need to change properties using an event to start the effect. One benefit of CSS transitions is how easy it is to control when they start. Comment out or remove the previous CSS animation then add this transition to your body tag. 
 
 ```css
 body {
@@ -104,7 +154,7 @@ body {
 }
 ```
 
-Add this code to your script tag in the index file to start the transition. The click listener changes the transform style on the body by adding a random number between 1 and 20 degrees which the CSS transition will animate to the new value. 
+2. Add this code to your script tag in the index file to start the transition. The click listener changes the transform style on the body by adding a random number between 1 and 20 degrees which the CSS transition will animate to the new value. 
 
 ```js
 let rotation = 0;
@@ -117,22 +167,29 @@ document.addEventListener("click", function () {
 ```
 
 
-<button class="cssFade bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">See it in action</button>
+
+
+See the above code applied to a button:
+
+
+<button class="cssRotate bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer">See it in action</button>
 
 <style>
-.cssFade {
+.cssRotate {
 	transition-property: transform;
 	transition-duration: 3s;
 }
 </style>
 <script>
-rotation = 0;
-document.querySelector(".cssFade").addEventListener("click", function () {
-	let min = 1;
-	let max = 360;
-	rotation += Math.random() * (max - min + 1) + min;
-	this.style.transform = `rotate(${rotation}deg)`;
-});
+(()=> {
+    let rotation = 0;
+    document.querySelector(".cssRotate").addEventListener("click", function () {
+        let min = 1;
+        let max = 360;
+        rotation += Math.random() * (max - min + 1) + min;
+        document.querySelector(".cssRotate").style.transform = `rotate(${rotation}deg)`;
+    });
+})();
 </script>
 
 
@@ -158,3 +215,10 @@ The background image is centered in the browser. It appears only once, and the t
 
 
 
+
+<figure>
+
+![prompt result](../../../assets/images/06/ch6-haiku-xtine-1.gif)
+Our example uses Javascript with CSS transformation properties to explode a grid into a surprising, dynamic composition. https://criticalwebdesign.github.io/book/06-off-the-grid/6-3
+
+</figure>

@@ -6,7 +6,7 @@ layout: default
 ---
 
 <div class="callout-intro">
-👉 Create animation using Javascript.
+👉 Explore foundational concepts in Javascript.
 </div>
 
 
@@ -17,20 +17,90 @@ layout: default
 
 
 
-## Javascript Functions, Arrays, and Loops
+## Functions
 
-Create animations on the page using these three features of Javascript.
+A **function** allows you to reuse code. We use the `function` keyword to declare a function, one or more parameters to customize its task, and `return` to send data back to the location where it was called. ​​To use a function, call it with the function's name and two parentheses `()`. 
 
-- **Functions** allow you to write repeatable code
-- **Arrays** are data type that lets you store multiple values
-- **Loops** are a control structure that let you repeat specific code
 
 <figure>
 
 ![functions](../../../assets/images/06/06-12-JS-function-anatomy.png)
-Use the `function` keyword to declare a function, one or more parameters to customize its task, and `return` to send data back to the location where it was called. ​​To use a function, call it with the function's name and two parentheses `()`. 
 
 </figure>
+
+
+### Function Expressions
+
+Functions can be written multiple ways. Following are four examples showuing essentially the same function. The above graphic shows a **function declaration** using the `function` keyword. Here is another example:
+
+```js
+function square (num){
+	console.log("Hello from a function declaration!");
+}
+```
+
+
+The same function can also be written as a **function expression** like this:
+
+```js
+const square = (num) => {
+	console.log("Hello from a function expression!");
+}
+```
+
+This example is the same as the above but, since it only contains one statement inside the function block it can be written without the curly braces using the fat arrow syntax.
+
+```js
+const square = (num) => console.log("Hello from a single line function expression!");
+
+```
+
+This is an example of a **anonymous function**. You can see it has no name because it is passed as the second parameter (the callback) of the `addEventListener()` handler.
+
+```js
+document.addEventListener("click", function (){
+	console.log("Hello from an anonymous function!");
+}
+```
+
+
+
+
+
+### Function Scope
+
+The location you declare a variable determines its **scope**, or how its value can be accessed by other parts of your program. Below we declare `num` in the **global scope** (outside of any functions) so we can access it from anywhere ("globally") in the program, even inside a function. Alternately, variables created inside a statement block (inside functions, if statements, for loops, etc.) have **local scope** and are only accessible "locally" inside the curly braces where they were declared. So, creating a function not only packages your code for reuse, it also allows you to protect variables from being changed accidentally by other parts of your code. 
+
+```js
+let num = 7;
+function main (){
+    let secret = 7;
+    console.log(`The number is ${num}`);
+	console.log(`The secret number is ${secret}`);
+}
+console.log(`The number is ${num}`);
+console.log(`The secret number is ${secret}`); // this will show an error
+```
+
+
+
+:::tip[Functional Programming]
+With time, you’ll see that functions work best as small, single purpose expressions. Like functions in algebra, **pure functions**, those that always return the same output given the same input, are easier to test and reuse. You can see we have started to do this by linking to a single JS file called (appropriately) functions.js in the main assets folder of the repository. Pure functions are one feature of a programming paradigm called **functional programming** used by professional Javascript coders to write code that is easier to understand and more bug resistant. See [What Is Functional Programming?](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0) for more information.
+:::
+
+
+
+
+
+
+
+
+
+
+
+## Loops
+
+**Loops** are a control structure that let you repeat specific code until a condition is met.
 
 <figure>
 
@@ -46,88 +116,25 @@ A Javascript `for` loop includes a control variable, loop condition, and iterato
 
 </figure>
 
-Putting this all together...
-
-```js
-// element reference in variable
-let ele = document.querySelector("jsColors");
-// array of colors
-let colors = ["red", "green", "blue"];
-// declfunction
-function changeColors(){
-    // move first element in array to last index
-    colors.push(colors.shift());
-    // loop through array
-    for (let i = 0; i < colors.length; i++){
-        ele.style.backgroundColor = colors[i];
-        ele.innerHTML = colors[i];
-    }
-}
-```
-
-<button class="jsColors bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">See it in action</button>
-
-<script>
-// store reference to element in a variable
-let ele = document.querySelector(".jsColors");
-// declare an array
-let colors = ["red", "green", "blue"];
-// declare a function
-function changeColors(){
-    // move first element in array to last index
-    colors.push(colors.shift());
-    // loop elements in the array
-    for (let i = 0; i < colors.length; i++){
-        ele.style.backgroundColor = colors[i];
-        ele.innerHTML = colors[i];
-    }
-}
-document.querySelector(".jsColors").addEventListener("click", function(){
-    setInterval(function(){
-        changeColors();
-    },500);
-});
-</script>
-
-
-
-:::caution
-Refresh the page to reset the animations!
-:::
 
 
 
 
 
 
-## 6.3.2 Anonymous Functions and Scope
-
-Look back at the code in the preceding exercise. Using the function keyword to define the reusable code of `randomNumber()` is called a **function declaration**. However, the function keyword in the second parameter of addEventListener also creates a function (see Module 3.3) to handle the event. Passing the callback function like this as an argument is an example of a **function expression**. Function expressions created without a name are **anonymous functions** but they can also be stored in a variable, which we show below by rewriting `randomNumber()` as a function expression. The "fat arrow" syntax is more concise.
-
-```js
-const randomNumber = (min, max) => {
-	return Math.random() * (max - min + 1) + min;
-}
-```
-
-The location you declare a variable determines its **scope**, or how its value can be accessed by other parts of your program. We declared rotation in the **global scope** (outside of any functions) so we could access it from anywhere ("globally") in the program and add to the value over time. Alternately, variables created inside a statement block have **local scope** and are only accessible "locally" inside the curly braces where they were declared. So, creating a function not only packages your code for reuse, it also allows you to protect variables from being changed accidentally by other parts of your code. 
 
 
+## Arrays
 
+Review the data type diagram from Chapter 5 below. In addition to primitive data types, Javascript can store collections of data. An **array** is an example of a collection type, letting you store multiple values inside a single variable. You can store any type of data inside an array, even other arrays. Explore a simple array in the DevTools console.
 
+<figure>
 
-:::tip[Functional Programming]
-With time, you’ll see that functions work best as small, single purpose expressions. Like functions in algebra, **pure functions**, those that always return the same output given the same input, are easier to test and reuse. You can see we have started to do this by linking to a single JS file called (appropriately) functions.js in the main assets folder of the repository. Pure functions are one feature of a programming paradigm called **functional programming** used by professional Javascript coders to write code that is easier to understand and more bug resistant.
+![A diagram showing how Javascript organizes data by primitive and non-primitive types.](../../../assets/images/05/05-09-js-data-types.png)
+Javascript organizes data by primitive and non-primitive types
 
-Eric Elliott, “What Is Functional Programming?” JavaScript Scene, August 24, 2021, accessed June 3, 2024, https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0.
-:::
+</figure>
 
-
-
-
-## Exercise 6.3.2 Create and Access an Array
-
-Revisit the data type diagram in Module 5.2. In addition to primitive data types, Javascript can store collections of data. An array is an example of a collection type, letting you store multiple values inside a single variable. You can store any type of data inside an array, even other arrays. Explore a simple array in the DevTools console.
 
 1. Open the DevTools console andto create the following array with a variable declaration, a name, and multiple comma-separated values between square brackets. This introduces a new array with three values. The variable name is written in plural form, a best practice for naming an entity that holds multiple values. 
 
@@ -135,7 +142,7 @@ Revisit the data type diagram in Module 5.2. In addition to primitive data types
 let colors = ["purple", "green", "blue"];
 ```
 
-To retrieve any array value, use the index—the position or order of the data in the array—between two square brackets. Arrays are zero-indexed so the first data value is stored at 0, and then 1, and so on. Even though array indexes start at zero, their length reflects the total number in the array. Run this code, line by line, in the DevTools console to see what we mean.
+2. To retrieve any array value, use the index—the position or order of the data in the array—between two square brackets. Arrays are zero-indexed so the first data value is stored at 0, and then 1, and so on. Even though array indexes start at zero, their length reflects the total number in the array. Run this code, line by line, in the DevTools console to see what we mean.
 
 ```js
 colors[0] // -> "purple"
@@ -143,7 +150,7 @@ colors[1] // -> “green”
 colors.length // -> 3
 ```
 
-Arrays are also like variables in that you can not only retrieve, or get stored values, you can set values by assigning them to an array index. Run these on the console to see this in action.
+3. Arrays are also like variables in that you can not only retrieve, or get stored values, you can set values by assigning them to an array index. Run these on the console to see this in action.
 
 ```js
 colors[0] = "red";
@@ -151,7 +158,7 @@ colors[0] // -> "red"
 colors // -> ["red", "green", "blue"];
 ```
 
-In Javascript, arrays can store the same or different data types. This includes other arrays. An array inside an array adds a second dimension, similar to a table of data. While people[0] returns the entire array (or row), which is ['Mary', 18, 'mauve'], people[0][1] returns only the first index inside the array at people[0]. 
+4. In Javascript, arrays can store the same or different data types. This includes other arrays. An array inside an array adds a second dimension, similar to a table of data. While `people[0]` returns the entire array (or row), which is `['Mary', 18, 'mauve']`, `people[0][1]` returns only the first index inside the array at `people[0]`. 
 
 ```js
 const people = [
@@ -166,19 +173,81 @@ people[0][1] // -> 18
 
 
 
+## Put It All Together
 
 
-## Best Practices: Bookmarklets
+Putting this all together, we can create a function that logs each element of an array with a loop. Open the console to see the results.
 
-A bookmarklet is like a regular browser bookmark except it contains Javascript in the URL field that runs when you click the link. These instructions demonstrate how to create a simple "hello world" bookmarket. 
+```html
+<button class="logColors">Log them to the console</button>
 
-1. Open a new pen at [codepen.io](https://codepen.io/) and paste the string below into the HTML section. Instead of a URL, the link's href uses the word "javascript" followed by actual script to run an alert on the page. When you test this link the browser will execute the Javascript. 
+<script>
+let colors = ["red", "green", "blue"];
+function logarray(){
+    for (let i = 0; i < colors.length; i++){
+        console.log(i, colors[i])
+    }
+}
+document.querySelector(".logColors").addEventListener("click", logarray);
+</script>
+```
 
-<a href="javascript:alert('Hello, World!')">Hello, World!</a>
+<button class="logColors bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer">Log them to the console</button>
 
-2. To install the bookmarket, drag the link from the web page to your bookmarks bar. The browser will save the text inside the href as the URL.
+<script>
+let colors = ["red", "green", "blue"];
+function logarray(){
+    for (let i = 0; i < colors.length; i++){
+        console.log(i, colors[i])
+    }
+}
+document.querySelector(".logColors").addEventListener("click", logarray);
+</script>
 
-See this Codepen for more information about bookmarklets, including instructions to save the above "Explode!" script or an HTML/CSS validation tool as bookmarklets: [criticalwebdesign.github.io#codepen-bookmarklets](http://criticalwebdesign.github.io#codepen-bookmarklets)  
+
+
+<!-- OLD EXAMPLE
+<button class="jsColorsBtn bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer">See it in action</button>
+<style>
+    .jsColors span { display: inline-block; text-align: center; color: white; padding: .2rem .6rem; margin-right: .2rem; }
+</style>
+<div class="jsColors"></div>
+<script>
+(()=> {
+    // declare an array
+    let colors = ["thistle", "plum", "violet", "orchid", "magenta", "mediumorchid", "mediumpurple"];
+    // declare a function
+    function changeColors(){
+        let htmlContent = "";
+        // move first element in array to last index
+        colors.unshift(colors.pop());
+        // loop through array
+        for (let i = 0; i < colors.length; i++){
+            htmlContent += `<span style="background-color: ${colors[i]};">${colors[i]}</span>`;
+        }
+        document.querySelector(".jsColors").innerHTML = htmlContent;
+    }
+    // on click, start a new interval to call changeColors() every .5 seconds
+    document.querySelector(".jsColorsBtn").addEventListener("click", function(){
+        setInterval(changeColors, 500);
+    });
+})();
+</script> -->
+
+
+
+The above example is a little simplified so here's another [example](https://codepen.io/owenmundy/pen/dPMxgqj?editors=0110) that uses `setInterval()` to make elements appear to move. The next article covers animation.
+
+<div class=" not-content">
+    <p class="codepen" data-height="300" data-default-tab="js,result" data-slug-hash="dPMxgqj" data-pen-title="JS Color Array" data-editable="true" data-user="owenmundy" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+    <span>See the Pen <a href="https://codepen.io/owenmundy/pen/dPMxgqj">
+    JS Color Array</a> by Owen Mundy (<a href="https://codepen.io/owenmundy">@owenmundy</a>) on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://public.codepenassets.com/embed/index.js"></script>
+</div>
+
+
+
 
 
 
