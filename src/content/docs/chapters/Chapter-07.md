@@ -1,8 +1,8 @@
 ---
 title: Chapter 7 Ethical Design
 description: Links, references, and footnotes
+draft: true
 ---
-
 
 
 ## Context

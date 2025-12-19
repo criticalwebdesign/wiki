@@ -1,6 +1,7 @@
 ---
 title: Chapter 10 Design and Power
 description: Links, references, and footnotes
+draft: true
 ---
 
 

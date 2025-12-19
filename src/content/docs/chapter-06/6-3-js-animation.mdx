@@ -1,13 +1,15 @@
 ---
 title: 6.3 JS Animation
 description: Links, references, and footnotes
-layout: default
 # draft: true
 ---
 
-<div class="callout-intro">
-👉 This wiki article shows additional methods to create animations for the web using Javascript with CSS.
-</div>
+import Excerpt from '@/components/Excerpt.astro';
+import Overview from '@/components/Overview.astro';
+
+<Overview>
+This article shows methods to create animations for the web using Javascript with CSS.
+</Overview>
 
 
 
@@ -16,6 +18,8 @@ layout: default
 
 
 ## Create a Simple Javascript Animation
+
+<Excerpt>This is an excerpt from Module 6.2</Excerpt>
 
 This simple exercise shows how to use Javascript to create animation by changing CSS properties over time with `setInterval()`. 
 
@@ -67,17 +71,17 @@ See the above code applied to a button:
 
 <button class="jsRotate bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer">See it in action</button>
 
-<script>
+<script>{`
 (()=> {
     let rotation = 0;
     document.querySelector(".jsRotate").addEventListener("click", function(){
         setInterval(function () {
             rotation += 5;
-            document.querySelector(".jsRotate").style.transform = `rotate(${rotation}deg)`;
+            document.querySelector(".jsRotate").style.transform = "rotate(" + rotation + "deg)";
         }, 100);
     });
 })();
-</script>
+`}</script>
 
 
 :::caution
@@ -114,7 +118,7 @@ See the above code applied to a button:
 
 <button class="cssAnimBtn bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer">See it in action</button>
 
-<style>
+<style>{`
 @keyframes animFrames {
 	0% { transform: rotate(0deg); }
 	100% { transform: rotate(360deg); }
@@ -123,8 +127,8 @@ See the above code applied to a button:
 	animation-name: animFrames;
 	animation-duration: 2s;
 }
-</style>
-<script>
+`}</style>
+<script>{`
 (()=> {
     let rotation = 0;
     let cssAnimBtn = document.querySelector(".cssAnimBtn");
@@ -133,7 +137,7 @@ See the above code applied to a button:
         setTimeout(function() { cssAnimBtn.classList.remove("cssAnim") }, 2000);
     });
 })();
-</script>
+`}</script>
 
 
 
@@ -174,23 +178,23 @@ See the above code applied to a button:
 
 <button class="cssRotate bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer">See it in action</button>
 
-<style>
+<style>{`
 .cssRotate {
 	transition-property: transform;
 	transition-duration: 3s;
 }
-</style>
-<script>
+`}</style>
+<script>{`
 (()=> {
     let rotation = 0;
     document.querySelector(".cssRotate").addEventListener("click", function () {
         let min = 1;
         let max = 360;
         rotation += Math.random() * (max - min + 1) + min;
-        document.querySelector(".cssRotate").style.transform = `rotate(${rotation}deg)`;
+        document.querySelector(".cssRotate").style.transform = "rotate(" + rotation +"deg)";
     });
 })();
-</script>
+`}</script>
 
 
 

@@ -1,6 +1,7 @@
 ---
 title: Chapter 8 Generative Design
 description: Links, references, and footnotes
+draft: true
 ---
 
 ## Context 
