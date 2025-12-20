@@ -1,13 +1,17 @@
 ---
 title: 1.0 Context
-description: Links, references, and footnotes
-layout: default
+description: Chapter 1 begins with the origins of the internet, factors in the rise of the information age, and how the various impacts of networked computers can be understood by looking at other media revolutions. Likewise, we introduce the foundational components for making websites, the command line, Git version control, and publishing a simple web page on the internet.
 # draft: true
 ---
 
-<div class="callout-intro">
-Chapter 1 begins with the origins of the internet, factors in the rise of the information age, and how the various impacts of networked computers can be understood by looking at other media revolutions. Likewise, we introduce the foundational components for making websites, the command line, Git version control, and publishing a simple web page on the internet.
-</div>
+import Excerpt from '@/components/Excerpt.astro';
+import Overview from '@/components/Overview.astro';
+
+<Overview>{frontmatter.description}</Overview>
+
+
+
+
 
 
 ## Networks
@@ -25,6 +29,8 @@ Visual representations of centralized, decentralized, and distributed networks.
 “Arpanet 1972 Map” by UCLA and BBN
 
 </figure>
+
+<figure>
 
 ![packet switching](../../../assets/images/01/01-03-network-packets.png) 
 A diagram showing how packet switching technology allows data to break apart and come together. 

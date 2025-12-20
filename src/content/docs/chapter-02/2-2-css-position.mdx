@@ -1,23 +1,25 @@
 ---
 title: 2.2 CSS Position
-description: Links, references, and footnotes
-layout: default
+description: Using CSS display and position properties.
 # draft: true
 ---
 
-<div class="callout-intro">
-👉 Using CSS display and position properties.
-</div>
+import Excerpt from '@/components/Excerpt.astro';
+import Overview from '@/components/Overview.astro';
+
+<Overview>{frontmatter.description}</Overview>
 
 
-<!-- 
+
+{/* 
 <figure>
 
 ![The hierarchy of folders and files in your website is the file address or path.](../../../assets/images/02/02-14-hierarchyOfFolders.png)
 The hierarchy of folders and files in your website is the file address or path.
 
-</figure>
- -->
+</figure> 
+*/}
+
 
 
 ## HTML and CSS
@@ -95,7 +97,7 @@ Abstract Browsing by Rafaël Rozendaal and Reinier Feijen (2014) is a browser ex
 
 Edit the box model properties in CSS.
 
-1. Open view-source/index.html in VS Code. In the <style> element, add a new CSS rule for paragraphs and set their display property to inline-block. If you test your work you'll see they are no longer taking up the full width.
+1. Open view-source/index.html in VS Code. In the `<style>` element, add a new CSS rule for paragraphs and set their display property to inline-block. If you test your work you'll see they are no longer taking up the full width.
 
 ```css
 p { 

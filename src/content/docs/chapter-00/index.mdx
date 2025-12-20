@@ -1,15 +1,16 @@
 ---
 title: 0.0 Context
-description: Links, references, and footnotes from the book
+description: Introduction to the book
 # draft: true
 ---
 
-import { Icon } from '@astrojs/starlight/components';
+import Excerpt from '@/components/Excerpt.astro';
+import Overview from '@/components/Overview.astro';
 
-<div class="callout-intro">
-<b><Icon name="open-book" class="inline-icon" /> Overview</b><br/>
-Introduction to the book
-</div>
+<Overview>{frontmatter.description}</Overview>
+
+
+
 
 
 
@@ -75,9 +76,9 @@ A tongue in cheek [post](https://twitter.com/johnnemann/status/15120347893139456
 
 ## Aside Style Guide
 
-<div class="callout-intro">
-A short summary of each article.
-</div>
+
+<Excerpt>A short summary of each article.</Excerpt>
+
 
 :::note[Author’s Note]
 Standard callout for related info from our perspective. 

@@ -1,24 +1,28 @@
 ---
 title: 3.3 Javascript Events
-description: Links, references, and footnotes
-layout: default
+description: Import a Javascript file into HTML and create a mouseover event listener.
 # draft: true
 ---
 
-<div class="callout-intro">
-👉 Import a Javascript file into HTML and create a mouseover event listener
-</div>
+import Excerpt from '@/components/Excerpt.astro';
+import Overview from '@/components/Overview.astro';
+
+<Overview>{frontmatter.description}</Overview>
 
 
 
 
 
-<!-- <figure>
+
+
+{/* 
+ <figure>
 
 ![Screenshot with the image source tag commented out in HTML.](../../../assets/images/03/03-23-img-commented.png)
 We commented-out the image source tag that we implemented in the previous exercise. Using comments like this is a common practice and lets you save code snippets to reference later but disables them in the browser.
 
-</figure> -->
+</figure>  
+*/}
 
 
 ## Import a Javascript file into HTML
@@ -32,7 +36,7 @@ Link to direct an external Javascript file to the HTML document.
 console.log("Hello from main.js");
 ```
 
-3. Before you can see this message in your web page you need to embed the Javascript file in the HTML document using the <script> element. VS Code users should open critical-design/index.html and add the following element just before the closing </body> tag, so the code executes after the document has loaded. 
+3. Before you can see this message in your web page you need to embed the Javascript file in the HTML document using the `<script>` element. VS Code users should open critical-design/index.html and add the following element just before the closing `</body>` tag, so the code executes after the document has loaded. 
 
 ```html
 <script src="assets/js/main.js"></script>
@@ -103,7 +107,7 @@ targetElement.addEventListener("mouseover", function(){
 );
 ```
 
-<!-- ![A screenshot of the basic anatomy of an event listener.](@/assets/images/03/03-30-js-eventlistener-anatomy.png) -->
+{/* ![A screenshot of the basic anatomy of an event listener.](@/assets/images/03/03-30-js-eventlistener-anatomy.png) */}
 
 The above code shows how to add a click event listener in Javascript. 
 - Line 1 creates a new variable to store a reference to the target element. 

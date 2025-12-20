@@ -1,15 +1,13 @@
 ---
 title: 5.3 Less is More Critique
-description: Links, references, and footnotes
-layout: default
+description: Use the Less is More critique to refine your final design compositions.
 # draft: true
 ---
 
-<div class="callout-intro">
-Figures from the book
-</div>
+import Excerpt from '@/components/Excerpt.astro';
+import Overview from '@/components/Overview.astro';
 
-
+<Overview>{frontmatter.description}</Overview>
 
 
 ## The “Less Is More” Critique
@@ -38,10 +36,10 @@ The original and improved designs  from the “less is more” critique. Open in
 </figure>
 
 
-<style>
+<style>{`
 .tcol-num { width: 2%; }
 .tcol-text { width: 49%; }
-</style>
+`}</style>
 
 <table>
 <tr>
