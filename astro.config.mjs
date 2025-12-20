@@ -26,6 +26,11 @@ export default defineConfig({
                 { label: '4. On the Grid', autogenerate: { directory: 'chapter-04' }, },
                 { label: '5. Usability and Forms', autogenerate: { directory: 'chapter-05' }, },
                 { label: '6. Off the Grid', autogenerate: { directory: 'chapter-06' }, },
+                { label: '7. Ethical by Design', autogenerate: { directory: 'chapter-07' }, },
+                { label: '8. Generative Design', autogenerate: { directory: 'chapter-08' }, },
+                { label: '9. Data Tracking', autogenerate: { directory: 'chapter-09' }, },
+                { label: '10. Design and Power', autogenerate: { directory: 'chapter-10' }, },
+                { label: '11. Distribution', autogenerate: { directory: 'chapter-11' }, },
 
 
 
