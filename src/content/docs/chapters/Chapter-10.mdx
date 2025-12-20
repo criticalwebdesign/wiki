@@ -367,7 +367,7 @@ import db from "./database.js";
 ls .data
 ```
 
-4. Now you can add API routes that call the functions exported from database.js. Add the following to the routes function to retrieve data for the map. This route will use the db.getAll() function. It uses the await keyword to make sure and wait for the promise that queries the database to finish so that it has results before sending a reply, by returning data. Test this route now in a new browser window by going to <your-url>/api/feelings. You should see an empty array only because there is no data in the database, yet...
+4. Now you can add API routes that call the functions exported from database.js. Add the following to the routes function to retrieve data for the map. This route will use the `db.getAll()` function. It uses the await keyword to make sure and wait for the promise that queries the database to finish so that it has results before sending a reply, by returning data. Test this route now in a new browser window by going to your-url/api/feelings. You should see an empty array only because there is no data in the database, yet...
 
 ```js
 server.get("/api/feelings", async function (request, reply) {
@@ -376,7 +376,7 @@ server.get("/api/feelings", async function (request, reply) {
 });
 ```
 
-5. Add this route to the bottom of the routes function in routes.js to add test data to the database. This route is not meant to send data back, we are enabling it to add test data only and then the Fastify server will redirect the browser back to the home page. To test this route you need to simply visit <your-url>/addTestData or click the link under the map (Figure 10.20).
+5. Add this route to the bottom of the routes function in routes.js to add test data to the database. This route is not meant to send data back, we are enabling it to add test data only and then the Fastify server will redirect the browser back to the home page. To test this route you need to simply visit your-url/addTestData or click the link under the map (Figure 10.20).
 
 ```js
 server.get("/addTestData", async function (request, reply) {
@@ -413,9 +413,9 @@ Figure 10.22 The final version of the prompt for Chapter 10 can be found online 
 
 
 
-<!-- ![xxxxx](../../../assets/images/10)
-Figure 10.23 The International Pussycats (in-progress) is a virtual post-punk band made with methods outlined in this chapter.  -->
-
+{/* ![xxxxx](../../../assets/images/10)
+Figure 10.23 The International Pussycats (in-progress) is a virtual post-punk band made with methods outlined in this chapter.
+ */}
 
 
 

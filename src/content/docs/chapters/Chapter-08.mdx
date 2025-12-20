@@ -102,9 +102,9 @@ Figure 8.13 SVG images https://www.w3schools.com/graphics/svg_intro.asp are crea
 ALT A cyan triangle, magenta square, and yellow circle next to the letters “svg” in black above a block of code that renders the image.
 
 
-![xxxxx](../../../assets/images/08/08-14-svg-devTools.png)
-Fig 8.14 The SVG appears as an image in the Chrome browser, but a closer look at its source code shows how this image is composed of coordinates between the open and close <svg> tags.
-ALT Screenshot of an SVG in Chrome with DevTools showing its code.
+![Screenshot of an SVG in Chrome with DevTools showing its code.](../../../assets/images/08/08-14-svg-devTools.png)
+The SVG appears as an image in the Chrome browser, but a closer look at its source code shows how this image is composed of coordinates between the open and close `<svg>` tags.
+
 
 
 ![xxxxx](../../../assets/images/08/08-15-quadsInbrowser.png)
@@ -183,14 +183,15 @@ Macromedia’s Flash was a software tool that combined an animation timeline, a 
 
 ## P5 Intro
 
-<!-- Formerly:
-Exercise 8.3.1 Create Generative Arp with p5.js -->
+{/* Formerly:
+Exercise 8.3.1 Create Generative Arp with p5.js */}
+
 
 In this introduction to p5.js you’ll recreate a basic version of Generative Arp. As with other libraries, you can use p5.js by downloading or hotlinking to the Javascript file on a CDN. To minimize setup, we use the p5.js editor in the browser.
 
 1. Open the p5.js Web Editor https://editor.p5js.org which will show a new file (a “Sketch”) where you can immediately start coding.
 
-> **Author’s Note: P5 Editor** <br>
+> **Author’s Note: P5 Editor** 
 > Like other code playgrounds, you can sign up and log into the p5.js editor so that you can save your sketches in a personal library.
 
 2. p5.js contains two default functions in the main Sketch file. The `setup()` function is called once, when the program starts, to define key properties of the coded environment (like background size and color). The `draw()` function runs directly after, continuously executing the lines of code contained inside its block until the program is stopped. Update your `draw()` function to match ours below and press the play button at the top left corner in the web editor interface. You should see a line that extends diagonally from the top left corner `(0,0)` towards the middle of the canvas `(100,100)` (Figure 8.32).
@@ -221,7 +222,7 @@ ALT Screenshot of the p5.js editor using width and height variables in the line 
 
 4. The `createCanvas()` function adds an HTML5 Canvas element in the page on which to draw graphics. If you inspect the contents of a Canvas element with DevTools you will only see the parent Canvas element because the graphics it renders are only pixels on the screen. Unlike other HTML elements, graphics on a Canvas element are more like a real life painting in which every brush stroke the artist draws appears on top of previous strokes, until they paint over everything and start again. Of course drawing on the Canvas with p5.js is a little different, because you can create 2D or 3D graphics, and even use shaders and lighting to render interactive game worlds. You can also easily create animations by using the `background()` function to cover everything that was added on a previous frame, then make the drawing appear in a new location on the canvas, before repeating the process. Change your code to match ours to see this in action. Start by deleting the line function we added previously. The `draw()` loop now resets the canvas on each frame and then uses the current seconds on your computer to change the position of the line to suggest a makeshift clock.
 
-> **Author’s Note**: Line position <br>
+> **Author’s Note**: Line position
 > To position the line relative to the current second, we multiplied the value returned from seconds() (0-59) by a percentage resulting from the width (400) of the canvas divided by the number of possible seconds (60). This means the range of x values will be 0 to 400, enabling our animation to span the width of the canvas. You could write 6.6 in your code but avoiding such magic numbers and letting p5.js do the math will ensure your equation will always work even if you change the width later.
 
 ```js
@@ -379,20 +380,12 @@ Examples related to computational, electronic, or generative literature/poetry
 -   The School for Poetic Computation https://sfpc.study/
 -   Taper https://taper.badquar.to/
 
-<table>
-<tr>
-<td valign="top"><a href="../../../assets/images/08/sample-two-moji-1.png"><img src="../../../assets/images/08/sample-two-moji-1.png" alt="ALT"></a>
-</td>
-<td valign="top"><a href="../../../assets/images/08/sample-two-moji-2.png"><img src="../../../assets/images/08/sample-two-moji-2.png" alt="ALT"></a>
-</td>
-</tr>
-<tr>
-<td valign="top"><a href="../../../assets/images/08/sample-two-moji-3.png"><img src="../../../assets/images/08/sample-two-moji-3.png" alt="ALT"></a>
-</td>
-<td valign="top"><a href="../../../assets/images/08/sample-two-moji-4.png"><img src="../../../assets/images/08/sample-two-moji-4.png" alt="ALT"></a>
-</td>
-</tr>
-</table>
+
+![](../../../assets/images/08/sample-two-moji-1.png)
+![](../../../assets/images/08/sample-two-moji-2.png)
+![](../../../assets/images/08/sample-two-moji-3.png)
+![](../../../assets/images/08/sample-two-moji-4.png)
+
 Two Moji: A Modern Epic of Love and Betrayal https://taper.badquar.to/2/two_moji.html (2018) by Mark Sample generates infinite dramatic stories depicting guilty pleasure, forbidden romance, and crimes of passion using only emoji and Javascript.
 
 
@@ -402,16 +395,8 @@ Figure 8.28 Allison Parrish, The Nonsense Laboratory, 2021, https://experiments.
 ALT: Two screenshots of Parrish’s The Nonsense Laboratory displays the Mixer and Explorer portions of the Laboratory’s interface. 
 
 
-
-<table>
-<tr>
-<td valign="top"><a href="../../../assets/images/08/08-storyland1.png"><img src="../../../assets/images/08/08-storyland1.png" alt="ALT"></a>
-
-</td>
-<td valign="top"><a href="../../../assets/images/08/08-storyland2.png"><img src="../../../assets/images/08/08-storyland2.png" alt="ALT"></a>
-</td>
-</tr>
-</table>
+![](../../../assets/images/08/08-storyland1.png)
+![](../../../assets/images/08/08-storyland2.png)
 A pioneering work demonstrating these connections is Nanette Wylde’s [Storyland](https://collection.eliterature.org/1/works/wylde__storyland.html ). Wylde describes the project as “a randomly created narrative which plays with social stereotypes and elements of popular culture.” This work was developed in 2002, revised for a second version in 2004 with the now outdated application and web format Flash, and recently preserved for viewers with [Ruffle](https://github.com/ruffle-rs/ruffle) (a Flash Player emulator written in Rust) by the Electronic Literature Lab in 2023. It is archived in [Volume 1 of the Electronic Literature Archive](https://collection.eliterature.org/1/index.html).
 
 
@@ -444,8 +429,7 @@ Related examples found in video games
 
 Another important influence on the history and practice of generative art is the demoscene, a subculture of hackers, clubs, and competitions (a.k.a. demoparties) (Figure 8.x) that blended creativity, hacking, and hardware testing. Emerging in Europe during the 1980s, demos were small self-contained computer programs written to test computer hardware capabilities using the most intense algorithmically-generated graphics and audio effects of the time. Typical competition categories restricted the size of the demo's executable, the compiled code packaged into a single file, by overall size (e.g. 1k, 4k, or 64k), and platform (8-bit like Atari or Commodore 64 or 16 bit Amiga). While the results (like "[PC DOS Demoscene mix](https://www.youtube.com/watch?v=O4T7pIs--LA)" or "[Hologon by The Electronic Knights [Amiga 500]](https://www.youtube.com/watch?v=pYtleuGV7ok)") might appear simplistic today, their output can be appreciated for their technical and artistic constraints when considering the abundant limitations on their hardware and access to programming resources (Stinson, Liz. “[The Ever-Changing Art of the Screensaver.](https://eyeondesign.aiga.org/the-ever-changing-art-of-the-screensaver/)” in Eye on Design).
 
-<a href="https://upload.wikimedia.org/wikipedia/commons/e/ea/Assembly2004-areena01.jpg" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Assembly2004-areena01.jpg" width="600"></a>
-
+![](https://upload.wikimedia.org/wikipedia/commons/e/ea/Assembly2004-areena01.jpg)
 Caption: Hackers gathered in an ice rink during the 2004 Assembly demoscene party in Finland
 
 ## Generative Interfaces
