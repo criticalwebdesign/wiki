@@ -1,0 +1,66 @@
+---
+title: 7.1 Accessibility Testing
+description: In this section we present our own process conducting an accessibility evaluation and then analyzing it for changes we can make to our code.
+---
+
+import Excerpt from '@/components/Excerpt.astro';
+import Overview from '@/components/Overview.astro';
+
+<Overview>{frontmatter.description}</Overview>
+
+
+
+
+
+## Accessibility Testing Tools
+
+A list of accessibility testing tools that we found to be helpful and intuitive:
+
+- WAVE https://wave.webaim.org/ 
+- ANDI https://www.ssa.gov/accessibility/andi/ 
+- LERA https://advancedbytez.com/lera/ 
+
+
+
+<Excerpt>Accessibility describes the degree to which a design is usable by the broadest range of individuals, regardless of ability. An accessible design provides equal access and opportunity regardless of whether a user’s ability is permanent, temporary, or situational.</Excerpt>
+
+
+
+
+## WAVE caveats
+
+- This initial display of the WAVE tool and resulting addition of icons and manipulation of web page elements, we found, took some getting used to. However, WAVE is an industry standard that provides potentially valuable feedback regardless of issues we found as of December 2023: 
+- The WAVE interface almost always breaks the page layout which makes it messy and hard to use. 
+- The design of the WAVE interface itself could be improved. It does not make good use of whitespace, the Summary items are not hotlinked to their respective areas in the tabbed menu, nor does it make a clear distinction between which items are positive or negative accessibility findings on the page.  
+- The icons WAVE uses, which contain tiny miniature icons attached to the bottom right (meant to communicate errors, warnings, and everything else) could be greatly improved to make them more readable, cohesive, and potentially, changed to overlay the page instead of interrupting (and breaking) the HTML flow.
+- We also found WAVE recommendations to be inconsistent across installations. xtine found "structural tag" warnings with the module 7.3 start file, but Owen encountered none of these regardless of testing using the same file, browser, and operating system. 
+
+
+
+<figure>
+
+![A screenshot of WAVE in action, providing a summary for the AIGA Our Story page.](../../../assets/images/07/07-05-WAVE-viewFromHere.png)
+This screenshot of WAVE’s summary from October 2023 shows errors and alerts drawing attention to elements one could adjust to achieve greater accessibility. 
+
+</figure>
+
+<figure>
+
+![A screenshot of WAVE focusing on missing alternative text.](../../../assets/images/07/07-06-WAVE-errors.png)
+There are 9 errors found, including missing alternative text, which we can confirm in the code drawer at the bottom.
+
+</figure>
+
+<figure>
+
+![A screenshot of the WAVE tool displaying a skipped heading level alert.](../../../assets/images/07/07-07-WAVE-skippedHeading.png)
+The “Skipped heading level” alert shows where the code presents heading levels seemingly out of order. 
+
+</figure>
+
+<figure>
+
+![In red-green color blindness the users cannot distinguish the green dots in the center of the circle that make a "74".](../../../assets/images/07/07-08-color-vision-test.png)
+Results from using the Emulate vision deficiencies option in DevTools. The original Ishihara test image is on the left, followed by the Protanopia and then Deuteranopia (red-green) emulation.
+
+</figure>

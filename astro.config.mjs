@@ -19,22 +19,20 @@ export default defineConfig({
             sidebar: [
 
                 { label: 'Home', link: './' },
-                { label: '0. Introduction', autogenerate: { directory: 'chapter-00' }, },
-                { label: '1. Networks', autogenerate: { directory: 'chapter-01' }, },
-                { label: '2. View Source', autogenerate: { directory: 'chapter-02' }, },
-                { label: '3. Critical Design', autogenerate: { directory: 'chapter-03' }, },
-                { label: '4. On the Grid', autogenerate: { directory: 'chapter-04' }, },
-                { label: '5. Usability and Forms', autogenerate: { directory: 'chapter-05' }, },
-                { label: '6. Off the Grid', autogenerate: { directory: 'chapter-06' }, },
-                { label: '7. Ethical by Design', autogenerate: { directory: 'chapter-07' }, },
-                { label: '8. Generative Design', autogenerate: { directory: 'chapter-08' }, },
-                { label: '9. Data Tracking', autogenerate: { directory: 'chapter-09' }, },
-                { label: '10. Design and Power', autogenerate: { directory: 'chapter-10' }, },
-                { label: '11. Distribution', autogenerate: { directory: 'chapter-11' }, },
+                { label: '0. Introduction', autogenerate: { directory: 'chapter-00' }, collapsed: false },
+                { label: '1. Networks', autogenerate: { directory: 'chapter-01' }, collapsed: true },
+                { label: '2. View Source', autogenerate: { directory: 'chapter-02' }, collapsed: true },
+                { label: '3. Critical Design', autogenerate: { directory: 'chapter-03' }, collapsed: true },
+                { label: '4. On the Grid', autogenerate: { directory: 'chapter-04' }, collapsed: true },
+                { label: '5. Usability and Forms', autogenerate: { directory: 'chapter-05' }, collapsed: true },
+                { label: '6. Off the Grid', autogenerate: { directory: 'chapter-06' }, collapsed: true },
+                { label: '7. Ethical by Design', autogenerate: { directory: 'chapter-07' }, collapsed: false },
+                { label: '8. Generative Design', autogenerate: { directory: 'chapter-08' }, collapsed: true },
+                { label: '9. Data Tracking', autogenerate: { directory: 'chapter-09' }, collapsed: true },
+                { label: '10. Design and Power', autogenerate: { directory: 'chapter-10' }, collapsed: true },
+                { label: '11. Distribution', autogenerate: { directory: 'chapter-11' }, collapsed: true },
 
 
-
-                { label: 'Chapters', autogenerate: { directory: 'chapters' }, },
                 { label: 'Resources', autogenerate: { directory: 'resources' }, },
             ],
             customCss: [
