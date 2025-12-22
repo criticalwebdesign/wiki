@@ -39,7 +39,10 @@ export default defineConfig({
                 './src/styles/styles.css', // relative path to custom CSS file
                 './src/styles/global.css', // tailwind CSS 
             ],
-            components: {},
+            components: {
+                // Override the default `Banner` component.
+                Banner: './src/components/Banner.astro',
+            },
         }),
     ],
     vite: {
