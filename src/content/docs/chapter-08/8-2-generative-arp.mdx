@@ -1,0 +1,152 @@
+---
+title: 8.2 Generative Arp
+description: The Generative Arp design and coding process.
+---
+
+import Excerpt from '@/components/Excerpt.astro';
+import Overview from '@/components/Overview.astro';
+
+<Overview>{frontmatter.description}</Overview>
+
+
+
+
+
+## Chapter Prompt
+
+<figure>
+
+![Untitled](../../../assets/images/08/08-01-jean-arp-moma.png)
+Untitled (Collage with Squares Arranged according to the Law of Chance) can be found on the Museum of Modern Art’s website: https://www.moma.org/collection/works/37013
+
+</figure>
+
+<figure>
+
+![Generative Arp](../../../assets/images/08/08-01-arp-controls.png)
+A screenshot from our Generative Arp https://criticalwebdesign.github.io/book/08-generative-design/8-3/
+
+</figure>
+
+
+
+
+## Generative Arp Process
+
+
+<figure>
+
+![flowchart](../../../assets/images/08/08-08-visual-generative-arp-pseudo-code.png)
+A visual flowchart showing the flow of the program described by the pseudocode.
+
+</figure>
+
+
+
+<figure>
+
+![Four screenshots showing random numbers of boxes.](../../../assets/images/08/08-10-randomOutputs.jpg)
+Four examples of outputs producing a random number of divisions that would hold polygons in later exercises.
+
+</figure>
+
+<figure>
+
+![Screenshots demonstrating Generative Arp so far](../../../assets/images/08/08-11-boxes-2-red.png)
+Two instances of Generative Arp show a random number of rectangles in red.
+
+</figure>
+
+<figure>
+
+![Side-by-side screenshots showing a random number of polygons filled with a variety of colors.](../../../assets/images/08/08-12-boxes-3-colors.png)
+Two instances of Generative Arp with various colors and rotations.
+
+</figure>
+
+
+
+
+
+
+
+
+
+## 8.2 SVGs and Color Arrays
+
+<figure>
+
+![A cyan triangle, magenta square, and yellow circle next to the letters “svg” in black above a block of code that renders the image.](../../../assets/images/08/08-13-svg-basic.png)
+SVG images https://www.w3schools.com/graphics/svg_intro.asp are created using XML (eXtensible Markup Language), making their code easy to understand like HTML. 
+
+</figure>
+
+<figure>
+
+![Screenshot of an SVG in Chrome with DevTools showing its code.](../../../assets/images/08/08-14-svg-devTools.png)
+The SVG appears as an image in the Chrome browser, but a closer look at its source code shows how this image is composed of coordinates between the open and close `<svg>` tags.
+
+</figure>
+
+
+<figure>
+
+![Myriad shapes in a variety of colors, sizes, and positions on a dark background.](../../../assets/images/08/08-15-quadsInbrowser.png)
+The polygons in the browser. Click or reload the page to see their color, size, and position change.
+
+</figure>
+
+<figure>
+
+![diagram](../../../assets/images/08/08-16-svg-polygon-math.png)
+This diagram illustrates how the polygon points are selected. Each magenta circle defines the area within which the x or y values could be created.
+
+</figure>
+
+<figure>
+
+![Multi-colored polygons on a dark background.](../../../assets/images/08/08-17-polygonsInBrowser.png)
+SVG Polygons generated for the browser. Click or refresh the page to see a new composition of polygons.
+
+</figure>
+
+
+
+<figure>
+
+![Screenshot of the export interface on coolors.co. ](../../../assets/images/08/08-19-coolors.png)
+Export the code from a trending color palette on https://coolors.co/palettes/trending 
+
+</figure>
+
+
+<figure>
+
+![A diagram showing how a PRNG can be used to select random colors from an array](../../../assets/images/08/08-20-random-color-values-from-array.png)
+A diagram showing how a PRNG can be used to select random colors from an array. Each color is stored at an index number starting at 0. 
+
+</figure>
+
+:::tip[Functional Programming]
+The `randomInt` function in Exercise 8.2.2 is an example of a **pure function**. It is written to perform a single task, all information is encapsulated in the data you give it, and it produces no **side effects**. Given the same input information, it will always return the same values, which makes it simple to debug and copy and paste into new projects. For more on this subject, find articles on **functional programming** with Javascript, which emphasizes the use of pure functions, immutability, and higher-order functions so you can create code that is more predictable and easier to use. 
+
+- JSDevJournal, “Functional Programming With JavaScript: A Deep Dive,” HackerNoon, accessed January 18, 2024, https://hackernoon.com/functional-programming-with-javascript-a-deep-dive
+- Eric Elliott, “Master the JavaScript Interview: What Is Functional Programming?” JavaScript Scene (blog), accessed August 24, 2021, https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0
+:::
+
+
+<figure>
+
+![Side-by-side screenshots of the project expressed with two color palettes: blue and purple hues on the left and orange and yellow hues on the right.](../../../assets/images/08/08-21-boxes-5-svg-custom-palette.png)
+Two palettes from Coolors.co in our Generative Arp project.
+
+</figure>
+
+
+
+<figure>
+
+![the Generative Arp project will include controls for the number of polygons and their height values](../../../assets/images/08/08-24-boxes-6-inputs.png)
+When you complete the exercises in 8.2 your version of the Generative Arp project will include controls for the number of polygons and their height values.
+
+</figure>
