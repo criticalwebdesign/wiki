@@ -1,0 +1,199 @@
+---
+title: 9.2 JSON Data and APIs 
+description: An introduction to JSON data, dynamic websites, and APIs.
+---
+
+import Excerpt from '@/components/Excerpt.astro';
+import Overview from '@/components/Overview.astro';
+
+<Overview>{frontmatter.description}</Overview>
+
+
+
+
+
+
+
+## JSON Data
+
+A Javascript object is a hierarchical format for storing collections of properties. While an array stores a list of values identified by their index, object properties store values using a name (also referred to as a key).
+
+```js
+let color = {
+  id: "cyan",
+  hex: "00ffff",
+};
+```
+
+:::note[Javascript Objects]
+Explore this full tutorial https://criticalwebdesign.github.io#js-objects
+:::
+
+JSON (Javasscript Object Notation) is essentially the same structure, with some small differences, but it can be stored in a separate file and requested via JS.
+
+```json 
+// colors.json
+[
+    { "id": "cyan", "hex": "00ffff", "rgb": [0, 255, 255] },
+    { "id": "magenta", "hex": "ff00ff", "rgb": [255, 0, 255] },
+    { "id": "yellow", "hex": "ffff00", "rgb": [255, 255, 0] },
+    { "id": "black", "hex": "000000", "rgb": [0, 0, 0] }
+]
+```
+
+:::note[Javascript Objects]
+See JSON, XML, and CSV examples https://github.com/criticalwebdesign/book/tree/main/09-data-tracking/examples/data-examples
+:::
+
+
+
+
+
+
+## APIs
+
+<figure>
+
+![Diagram showing the web browser, or client and its requests and responses to and from the server](../../../assets/images/09/09-06-request-response.png)
+Diagram showing just a few of the many requests and responses between client and server when a page loads.
+
+</figure>
+
+
+
+
+
+
+
+## Test an API 
+
+In this exercise you’ll learn to test APIs. There are hundreds of free APIs that offer a wealth of functionality and data for you to use in your projects. Some APIs require you to register and send requests along with a special key to prevent abuse, but there are plenty of public APIs you can use as well.
+
+1. We will use this free API that offers facts about cats. You should always refer to an API's documentation, in this case [catfact.ninja](https://catfact.ninja), to learn about the **endpoints**, or specific URLs used to access particular information. Open the following link in a web browser and you should see a simple JSON document, organized by `key:value` relationships: [catfact.ninja/fact](https://catfact.ninja/fact)
+2. Install the [JSON Formatter extension](http://criticalwebdesign.github.io#json-formatter) for Chrome criticalwebdesign.github.io#json-formatter to make it easier to read JSON data in the browser, and reload the cat fact API (Figure 9.17).
+
+<figure>
+
+![JSON](../../../assets/images/09/09-17-cat-fact-api-1.png)
+A cat fact in JSON formatted with JSON Formatter. Fascinating.
+
+</figure>
+
+
+3. {JSON} Placeholder is a free "realistic" API for testing. For example, access the “users” endpoint to get a list of fake users: [jsonplaceholder.typicode.com/users](https://jsonplaceholder.typicode.com/users)
+4. While basic API testing can be as simple as viewing a web page, sometimes you may need special tools to send data or authenticate. For the next API we'll use a tool called REQBIN to send information with the API request that lets you mimic a web form’s POST request. The “Real REST API” [restful-api.dev](https://restful-api.dev/) we will use features endpoints that operate differently, depending on the HTTP verb you use in the request. Go to [reqbin.com](https://reqbin.com) and add the following URL in the field—watch out for errant spaces at the end of the URL. Send the request with GET selected in the dropdown and you'll see a list of devices.
+
+[`https://api.restful-api.dev/objects`](https://api.restful-api.dev/objects)
+
+5. Change the dropdown to POST, and then under content tab type or paste the following JSON data. Feel free to change the value of any property. Press Send and your data will be sent to the API and then returned with an additional id property. Copy the value of the id.
+
+```json
+{
+    "name": "Owen's Computer",
+   "data": {
+       "year": 2024,
+      "color": "Sparkleberry"
+   }
+}
+```
+
+6. Open a new browser tab and add the id you copied to the end of the following URL after the equal sign and press return. You should see the data you sent with the first request. Here is the one we sent: [criticalwebdesign.github.io#restful-api](http://criticalwebdesign.github.io#restful-api) (Figure 9.18).
+
+```
+https://api.restful-api.dev/objects?id=
+```
+
+
+<figure>
+
+![Screenshot of POST results include an id.](../../../assets/images/09/09-18-reqbin.png)
+Using the POST method we added an entry to the dataset by following the  JSON formatting rules to specify keys and values. In the result, our entry includes a new key for id.
+
+</figure>
+
+
+
+
+
+
+
+
+## Other API Examples
+
+- https://github.com/public-apis/public-apis
+- https://catfact.ninja/fact
+- https://jsonplaceholder.typicode.com/
+- https://restful-api.dev/
+- https://api.restful-api.dev/objects?id=ff8081818e21ce2d018e58d462663da1
+
+
+
+## API Tools
+
+- https://reqbin.com
+- JSON Formatter Chrome Extension https://chromewebstore.google.com/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa
+- https://www.postman.com
+
+
+<figure>
+
+![Paris](../../../assets/images/09/09-19-paris-schwartz.png)
+Tim Schwartz created Paris by writing a data scraper that monitored news and search engines for “paris hilton” and “paris france” and displayed the results in real time.
+
+</figure>
+
+
+
+
+
+
+## Javascript Prototype
+
+Objects are commonly used to represent the properties and behaviors of entities in a programming model called **Object Oriented Programming (OOP)**. OOP languages use predefined classes and inheritance to derive behavior. For example, all objects of a car class will have wheels and headlights that turn on, which are inherited by its child classes that define more specific properties. 
+
+Javascript uses a(n arguably simpler) **prototype** pattern to define objects. When you create a new variable in Javascript it creates a new copy of the object prototype, cloning all its functionality and data. Javascript's prototype shares many of the OOP's benefits. For example, Javascript objects use **encapsulation** to group and identify similar information inside a single container (like formats for a color), and standardizes access to their properties. 
+
+Type an open and close curly brace in the DevTools Console to see the properties all objects receive from the prototype:
+
+```js
+{} 
+// -> [[Prototype]]: Object
+    constructor: ƒ Date()
+    hasOwnProperty: ƒ hasOwnProperty()
+    isPrototypeOf: ƒ isPrototypeOf()
+    ...
+```
+
+In the console, create a new object: 
+
+```js
+let color = {
+    name: "red",
+}
+```
+
+If you log the color value you can see the `name` property you creaded, as well as the constructor from the prototype:
+
+```js
+color
+// -> {name: "red"}
+    [[Prototype]]: Object
+        constructor: ƒ Date()
+        hasOwnProperty: ƒ hasOwnProperty()
+        isPrototypeOf: ƒ isPrototypeOf()
+        ...
+```
+
+If you type the constructor (the method in each object that creates itself) of any data type based on the object, like Date, you will again see the prototype functions listed below the functions (ƒ) specific to that object.
+
+```js
+new Date()
+    // -> constructor: ƒ Date()
+    getDate: ƒ getDate()
+    getDay: ƒ getDay()
+    getFullYear: ƒ getFullYear()
+    ...
+    [[Prototype]]: Object
+        constructor: ƒ Date()
+        ...
+```
