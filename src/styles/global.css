@@ -11,7 +11,7 @@
 /* Add base styles that Tailwind removed in preflight */
 /* https://tailwindcss.com/docs/preflight#lists-are-unstyled */
 main ol,
-main ul,
+main ul:not([role='tablist']), /* don't affect tabs*/
 main menu {
     display: block;
     margin-block-start: 1em;
@@ -22,10 +22,15 @@ main menu {
 main ol {
     list-style-type: decimal;
 }
-main ul {
+main ul:not([role='tablist']) {
     list-style-type: disc;
 }
-main li {
+
+main ul li:not(.tab) {
     display: list-item;
     unicode-bidi: isolate;
 }
+
+/* testing */
+/* main ul:not([role='tablist']) { color:red}
+main ul li:not(.tab) { color:green} */
