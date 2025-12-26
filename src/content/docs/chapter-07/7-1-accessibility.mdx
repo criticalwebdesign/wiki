@@ -3,10 +3,9 @@ title: 7.1 Accessibility Testing
 description: In this section we present our own process conducting an accessibility evaluation and then analyzing it for changes we can make to our code.
 ---
 
-import Excerpt from '@/components/Excerpt.astro';
-import Overview from '@/components/Overview.astro';
+import CustomAside from '@/components/CustomAside.astro';
 
-<Overview>{frontmatter.description}</Overview>
+<CustomAside type="overview">{frontmatter.description}</CustomAside>
 
 
 ## Raise Awareness for Digital Accessibility
@@ -26,8 +25,7 @@ A list of accessibility testing tools that we found to be helpful and intuitive:
 
 
 
-<Excerpt>Accessibility describes the degree to which a design is usable by the broadest range of individuals, regardless of ability. An accessible design provides equal access and opportunity regardless of whether a user’s ability is permanent, temporary, or situational.</Excerpt>
-
+<CustomAside type="excerpt" reference="Context 7.0">Accessibility describes the degree to which a design is usable by the broadest range of individuals, regardless of ability. An accessible design provides equal access and opportunity regardless of whether a user’s ability is permanent, temporary, or situational.</CustomAside>
 
 
 

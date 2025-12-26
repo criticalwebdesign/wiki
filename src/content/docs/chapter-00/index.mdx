@@ -4,10 +4,9 @@ description: Introduction to the book
 # draft: true
 ---
 
-import Excerpt from '@/components/Excerpt.astro';
-import Overview from '@/components/Overview.astro';
+import CustomAside from '@/components/CustomAside.astro';
 
-<Overview>{frontmatter.description}</Overview>
+<CustomAside type="overview">{frontmatter.description}</CustomAside>
 
 
 
@@ -77,7 +76,7 @@ A tongue in cheek [post](https://twitter.com/johnnemann/status/15120347893139456
 ## Aside Style Guide
 
 
-<Excerpt>A short summary of each article.</Excerpt>
+<CustomAside type="excerpt">A short summary of each article.</CustomAside>
 
 
 :::note[Author’s Note]

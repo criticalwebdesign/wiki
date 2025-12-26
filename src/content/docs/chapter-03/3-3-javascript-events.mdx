@@ -4,10 +4,9 @@ description: Import a Javascript file into HTML and create a mouseover event lis
 # draft: true
 ---
 
-import Excerpt from '@/components/Excerpt.astro';
-import Overview from '@/components/Overview.astro';
+import CustomAside from '@/components/CustomAside.astro';
 
-<Overview>{frontmatter.description}</Overview>
+<CustomAside type="overview">{frontmatter.description}</CustomAside>
 
 
 

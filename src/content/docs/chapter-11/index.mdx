@@ -3,10 +3,9 @@ title: 11.0 Context
 description: Chapter 11 is the coda to this text. We offer readers places where they might exhibit or showcase works made using the skills they have learned throughout the book, as well as resources and advice for the labor market.
 ---
 
-import Excerpt from '@/components/Excerpt.astro';
-import Overview from '@/components/Overview.astro';
+import CustomAside from '@/components/CustomAside.astro';
 
-<Overview>{frontmatter.description}</Overview>
+<CustomAside type="overview">{frontmatter.description}</CustomAside>
 
 
 
@@ -116,7 +115,7 @@ Full-stack platforms with a free tier
 
 ## How to Be Brave
 
-<Excerpt>Just be brave and make the work. Don’t worry about gate-keepers giving you permission or validating your ideas.</Excerpt>
+<CustomAside type="excerpt" reference="Section 11.3">Just be brave and make the work. Don’t worry about gate-keepers giving you permission or validating your ideas.</CustomAside>
 
 
 

@@ -6,10 +6,9 @@ sidebar:
   order: 2
 ---
 
-import Excerpt from '@/components/Excerpt.astro';
-import Overview from '@/components/Overview.astro';
+import CustomAside from '@/components/CustomAside.astro';
 
-<Overview>{frontmatter.description}</Overview>
+<CustomAside type="overview">{frontmatter.description}</CustomAside>
 
 
 
@@ -17,6 +16,7 @@ import Overview from '@/components/Overview.astro';
 
 ## Figma Basics
 
+<CustomAside type="excerpt" reference="Exercise 3.1.1"></CustomAside>
 
 As software tools like Figma can change often, we encourage you to explore their onboarding tutorials to learn the basics. Below are the essential steps and concepts for beginning a layout design in Figma.
 

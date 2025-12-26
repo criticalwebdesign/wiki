@@ -4,10 +4,9 @@ description: The following activities ask you to evaluate your response to good 
 # draft: true
 ---
 
-import Excerpt from '@/components/Excerpt.astro';
-import Overview from '@/components/Overview.astro';
+import CustomAside from '@/components/CustomAside.astro';
 
-<Overview>{frontmatter.description}</Overview>
+<CustomAside type="overview">{frontmatter.description}</CustomAside>
 
 
 
@@ -15,6 +14,8 @@ import Overview from '@/components/Overview.astro';
 
 
 ## Explore Good Design
+
+<CustomAside type="excerpt" reference="Context 4.0"></CustomAside>
 
 A [Think-Pair-Share](https://mtei.engineering.cornell.edu/teaching-resources/active-learning/think-pair-share/) exploring responses to design.
 

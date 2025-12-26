@@ -3,16 +3,17 @@ title: 8.1 Generative Practices
 description: A Survey of generative practices across art, literature, and games.
 ---
 
-import Excerpt from '@/components/Excerpt.astro';
-import Overview from '@/components/Overview.astro';
+import CustomAside from '@/components/CustomAside.astro';
 
-<Overview>{frontmatter.description}</Overview>
+<CustomAside type="overview">{frontmatter.description}</CustomAside>
 
 
 
 
 
 ## Creative Coding Tools
+
+<CustomAside type="excerpt" reference="Section 8.1.5"></CustomAside>
 
 In this book we prioritize foundational concepts in HTML, CSS, and JS which you can later apply to any project, regardless of what additional tool is trending. Still, we want to share a sample of the many powerful Javascript libraries and frameworks for creating generative design and art online. Many of these libraries were created by artists or designers, some of whom are featured in the book. We hope you experiment with these tools, and continue to seek out others that will advance your critical and creative coding experiences.
 
@@ -42,7 +43,14 @@ Macromedia’s Flash was a software tool that combined an animation timeline, a 
 
 <figure>
 
-![Pixillation HD](../../../assets/images/08/08-25-schwartz.png)
+{/* ![Pixillation HD](../../../assets/images/08/08-25-schwartz.png) */}
+
+import YoutubeVideo from '@/components/YoutubeVideo.astro';
+
+<div class="max-w-2xl mx-auto not-content">
+  <YoutubeVideo src="https://www.youtube.com/watch?v=XAlXN-F2vPQ" />
+</div>
+
 Lillian Schwartz & Kenneth Knowlton, Pixillation HD, 1970. In this film, Schwartz developed an editing technique that synthesized computer code, black and white pixels, and hand-drawn colored animation to create abstracted pixel-like movement with a seemingly saturated color palette. See https://archive.org/details/1970LillianSchwartzPixillation.
 
 </figure>

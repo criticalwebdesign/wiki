@@ -4,14 +4,16 @@ description: Use Figma layout grids to create a multi-column page design.
 # draft: true
 ---
 
-import Excerpt from '@/components/Excerpt.astro';
-import Overview from '@/components/Overview.astro';
+import CustomAside from '@/components/CustomAside.astro';
 
-<Overview>{frontmatter.description}</Overview>
+<CustomAside type="overview">{frontmatter.description}</CustomAside>
 
 
 
 ## Set Up Layout Grids in Figma
+
+<CustomAside type="excerpt" reference="Exercise 4.1.1"></CustomAside>
+
 
 A guide to creating layout grids in Figma.
 

@@ -4,10 +4,9 @@ description: Follow brainstorming suggestions from the book and experiment with 
 # draft: true
 ---
 
-import Excerpt from '@/components/Excerpt.astro';
-import Overview from '@/components/Overview.astro';
+import CustomAside from '@/components/CustomAside.astro';
 
-<Overview>{frontmatter.description}</Overview>
+<CustomAside type="overview">{frontmatter.description}</CustomAside>
 
 
 
@@ -18,7 +17,7 @@ import Overview from '@/components/Overview.astro';
 
 ## Create a Text Layout on a Grid in Figma
 
-<Excerpt>This is an excerpt from Module 6.1</Excerpt>
+<CustomAside type="excerpt" reference="Exercise 6.1.2"></CustomAside>
 
 The first step in resisting any structure is to familiarize yourself with it. Once you understand and know how such a system functions then your resistance can be focused, specific, and effective. In this exercise you’ll complete four layout variations using only the text you've chosen and a layout grid in Figma. 
 
@@ -73,8 +72,7 @@ In the chapter, “Improvisations and Limitations” of his book The Shape of De
 
 ## Owen’s Design Process
 
-<Excerpt>This is an excerpt from Module 6.1</Excerpt>
-
+<CustomAside type="excerpt" reference="Exercise 6.1.4"></CustomAside>
 
 Use these steps to iterate on and improve any design. 
 

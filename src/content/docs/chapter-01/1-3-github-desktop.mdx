@@ -4,10 +4,10 @@ description: Install Git Github Desktop, and VS Code so you can build and publis
 # draft: true
 ---
 
-import Excerpt from '@/components/Excerpt.astro';
-import Overview from '@/components/Overview.astro';
+import CustomAside from '@/components/CustomAside.astro';
 
-<Overview>{frontmatter.description}</Overview>
+<CustomAside type="overview">{frontmatter.description}</CustomAside>
+
 
 
 {/* 
@@ -23,6 +23,9 @@ IN THE BOOK
 :::caution
 This setup is not required if you are using Github Codespaces.
 :::
+
+
+<CustomAside type="newmaterial"></CustomAside>
 
 
 

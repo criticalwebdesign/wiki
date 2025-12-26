@@ -4,10 +4,9 @@ description: Chapter 1 begins with the origins of the internet, factors in the r
 # draft: true
 ---
 
-import Excerpt from '@/components/Excerpt.astro';
-import Overview from '@/components/Overview.astro';
+import CustomAside from '@/components/CustomAside.astro';
 
-<Overview>{frontmatter.description}</Overview>
+<CustomAside type="overview">{frontmatter.description}</CustomAside>
 
 
 
@@ -43,7 +42,9 @@ A diagram showing how packet switching technology allows data to break apart and
 
 ## Use Traceroute
 
-One way to visualize the packet switching process is through the traceroute command. In this exercise you will use an online tool to show the paths and response times (in milliseconds) to retrieve data from any domain from major datacenters around the globe.
+<CustomAside type="newmaterial">One way to visualize the packet switching process is through the traceroute command. In this exercise you will use an online tool to show the paths and response times (in milliseconds) to retrieve data from any domain from major datacenters around the globe.</CustomAside>
+
+
 
 1. Start by checking DNS information for a domain. Go to https://tools.keycdn.com/dig and enter a domain name to test. The IP address will be listed to the right of the domain name.
 1. Paste the IP address from the first step into the form at https://tools.keycdn.com/traceroute to see the path that data takes as it moves across the internet. 

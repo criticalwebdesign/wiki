@@ -4,10 +4,9 @@ description: Learn about additive color model used on the web in Figma.
 # draft: true
 ---
 
-import Excerpt from '@/components/Excerpt.astro';
-import Overview from '@/components/Overview.astro';
+import CustomAside from '@/components/CustomAside.astro';
 
-<Overview>{frontmatter.description}</Overview>
+<CustomAside type="overview">{frontmatter.description}</CustomAside>
 
 
 
@@ -15,6 +14,9 @@ import Overview from '@/components/Overview.astro';
 
 
 ## Color on the Web
+
+<CustomAside type="excerpt" reference="Section 3.1.1"></CustomAside>
+
 
 As you can see in the case study, color is an essential part of a brand identity. Color enabled xtine's project to reference the original while adding additional information to transform it into a form of commentary.
 

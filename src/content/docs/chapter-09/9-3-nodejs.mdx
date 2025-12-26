@@ -1,0 +1,82 @@
+---
+title: 9.3 Install Node.js
+description: Learn to install node.json your own machine.
+---
+
+import CustomAside from '@/components/CustomAside.astro';
+
+<CustomAside type="newmaterial">{frontmatter.description}</CustomAside>
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+
+
+## Install Node
+
+This tutorial covers a basic install process for Node.js. You will run these in your Terminal program.
+
+
+<Tabs>
+<TabItem label="Mac">
+
+  1. Install [Homebrew](https://brew.sh/) (Mac package manager) using their instructions
+  2. Install [Node](https://formulae.brew.sh/formula/node)
+
+  ```bash
+  brew install node
+  ```
+
+</TabItem>
+<TabItem label="Windows">
+
+  1. Install [Scoop](https://scoop.sh/) (Windows package manager) using their instructions
+  2. Install [Node](https://scoop.sh/#/apps?q=nodejs&s=0&d=1&o=true)
+
+  ```bash
+  scoop install nodejs
+  ```
+
+</TabItem>
+</Tabs>
+
+
+
+3. Confirm installation
+
+```bash
+node -v 
+# -> v24.7.0
+npm -v 
+# -> 11.5.1
+```
+
+
+
+
+## Hello, World! with Node.js
+
+
+
+1. Create a project directory and change to it: 
+
+```bash
+mkdir hello-node & cd hello-node
+```
+
+2. Create a file in this folder named `index.js` and paste the below code.
+
+```js
+let greeting = "Hello, from Node";
+console.log(greeting);
+```
+
+3. In the Terminal, run the script with: 
+
+```bash
+node index.js
+```
+
+
+
+
+

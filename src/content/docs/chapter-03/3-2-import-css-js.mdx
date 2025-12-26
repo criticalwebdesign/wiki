@@ -4,10 +4,9 @@ description: Import CSS and Javascript files into HTML.
 # draft: true
 ---
 
-import Excerpt from '@/components/Excerpt.astro';
-import Overview from '@/components/Overview.astro';
+import CustomAside from '@/components/CustomAside.astro';
 
-<Overview>{frontmatter.description}</Overview>
+<CustomAside type="overview">{frontmatter.description}</CustomAside>
 
 
 
@@ -29,6 +28,9 @@ This graphic shows two relative paths. The light blue line indicates the path th
 
 
 ## Add An External Stylesheet
+
+<CustomAside type="excerpt" reference="Exercise 3.2.4"></CustomAside>
+
 
 Follow the steps to add a CSS file, saving and refreshing your work in the browser each time.
 

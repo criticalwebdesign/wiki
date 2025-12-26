@@ -4,10 +4,9 @@ description: Override Bootstrap's default colors to match your designs.
 # draft: true
 ---
 
-import Excerpt from '@/components/Excerpt.astro';
-import Overview from '@/components/Overview.astro';
+import CustomAside from '@/components/CustomAside.astro';
 
-<Overview>{frontmatter.description}</Overview>
+<CustomAside type="overview">{frontmatter.description}</CustomAside>
 
 
 
@@ -58,6 +57,8 @@ In short, when you write DRY code you will be more efficient and encounter fewer
 
 
 ## Override Bootstrap Styles
+
+<CustomAside type="newmaterial"></CustomAside>
 
 There are generally two ways to override Bootstrap styles. The Bootstrap documentation suggestsusually shows customizations using Sass variables. As we discussed, this requires extra setup to recompile the CSS and is really more appropriate for large projects. The method we'll show below applies to the pre-compiled version we've been using so far from the CDN. You will use DevTools to identify the classes you want to override and simply add your own rules, just as you normally would with CSS.  
 

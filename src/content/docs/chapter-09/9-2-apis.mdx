@@ -3,18 +3,20 @@ title: 9.2 JSON Data and APIs
 description: An introduction to JSON data, dynamic websites, and APIs.
 ---
 
-import Excerpt from '@/components/Excerpt.astro';
-import Overview from '@/components/Overview.astro';
+import CustomAside from '@/components/CustomAside.astro';
 
-<Overview>{frontmatter.description}</Overview>
-
+<CustomAside type="overview">{frontmatter.description}</CustomAside>
 
 
 
 
 
 
-## JSON Data
+
+## Javascript Objects and JSON
+
+<CustomAside type="excerpt" reference="Section 9.2.1"></CustomAside>
+
 
 A Javascript object is a hierarchical format for storing collections of properties. While an array stores a list of values identified by their index, object properties store values using a name (also referred to as a key).
 
@@ -25,11 +27,23 @@ let color = {
 };
 ```
 
-:::note[Javascript Objects]
-Explore this full tutorial https://criticalwebdesign.github.io#js-objects
-:::
 
-JSON (Javasscript Object Notation) is essentially the same structure, with some small differences, but it can be stored in a separate file and requested via JS.
+
+<figure>
+<div class="not-content">
+<p class="codepen" data-height="500" data-default-tab="result" data-slug-hash="OJGWyvL" data-pen-title="Javascript Objects" data-editable="true" data-user="owenmundy" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<span>See the Pen <a href="https://codepen.io/owenmundy/pen/OJGWyvL">
+Javascript Objects</a> by Owen Mundy (<a href="https://codepen.io/owenmundy">@owenmundy</a>)
+on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+</div>
+Explore this full tutorial https://criticalwebdesign.github.io#js-objects
+
+</figure>
+
+
+**JSON** (Javasscript Object Notation) is essentially the same structure, with some small differences, but it can be stored in a separate file and sent over a network.
 
 ```json 
 // colors.json
@@ -50,7 +64,14 @@ See JSON, XML, and CSV examples https://github.com/criticalwebdesign/book/tree/m
 
 
 
-## APIs
+
+
+
+
+## Test an API 
+
+<CustomAside type="newmaterial"></CustomAside>
+
 
 <figure>
 
@@ -60,12 +81,6 @@ Diagram showing just a few of the many requests and responses between client and
 </figure>
 
 
-
-
-
-
-
-## Test an API 
 
 In this exercise you’ll learn to test APIs. There are hundreds of free APIs that offer a wealth of functionality and data for you to use in your projects. Some APIs require you to register and send requests along with a special key to prevent abuse, but there are plenty of public APIs you can use as well.
 
@@ -112,13 +127,13 @@ Using the POST method we added an entry to the dataset by following the  JSON fo
 </figure>
 
 
+:::note[Pro Tip]
+Postman https://www.postman.com is an excellent tool for testing APIs.
+:::
 
 
 
-
-
-
-## Other API Examples
+### More APIs
 
 - https://github.com/public-apis/public-apis
 - https://catfact.ninja/fact
@@ -128,11 +143,45 @@ Using the POST method we added an entry to the dataset by following the  JSON fo
 
 
 
-## API Tools
 
-- https://reqbin.com
-- JSON Formatter Chrome Extension https://chromewebstore.google.com/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa
-- https://www.postman.com
+
+## Asynchronous Javascript
+
+<CustomAside type="excerpt" reference="Section 9.3.1">Any time you load data over a network you incur latency, a delay between when you make your request and the moment the response arrives. With zero latency web pages feel speedy and the instant response is gratifying, while lag between user events can make a website clunky and frustrating.</CustomAside>
+
+
+<figure>
+
+![Charts showing synchronous vs. asynchronous wait times in bright hues on a black background.](../../../assets/images/09/09-22-sync-async-compared.png)
+The performance benefits from using asynchronous code are visible on these side-by-side charts.
+
+</figure>
+
+<figure> 
+
+![Chart showing the concept of a promise chain in planning a meet-up to ride bikes.](../../../assets/images/09/09-23-request-response.png)
+The work day is almost over and you want to go ride bikes with your friends. You reach out to see who is available (three requests) and wait for a reply. Of the three you ask, Sam cannot ride (promise rejected), Letícia can go at 3:45pm, and Angel can meet at 4:30pm (two promises pending). You do other work while you wait, perhaps finishing the section of a chapter you are writing, and then head out to meet each friend who resolves their promise by arriving at the trailhead.
+
+</figure>
+
+<figure>
+<div class="not-content">
+<p class="codepen" data-height="600" data-default-tab="result" data-slug-hash="MWRJxjK" data-pen-title="riAsynchronous Javascript" data-editable="true" data-user="owenmundy" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<span>See the Pen <a href="https://codepen.io/owenmundy/pen/MWRJxjK">Asynchronous Javascript</a> by Owen Mundy (<a href="https://codepen.io/owenmundy">@owenmundy</a>) on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+</div> 
+
+See this Codepen https://criticalwebdesign.github.io/#async-js
+</figure>
+
+
+
+
+
+
+
+
 
 
 <figure>
@@ -148,6 +197,9 @@ Tim Schwartz created Paris by writing a data scraper that monitored news and sea
 
 
 ## Javascript Prototype
+
+<CustomAside type="newmaterial">Any time you load data over a network you incur latency, a delay between when you make your request and the moment the response arrives. With zero latency web pages feel speedy and the instant response is gratifying, while lag between user events can make a website clunky and frustrating.</CustomAside>
+
 
 Objects are commonly used to represent the properties and behaviors of entities in a programming model called **Object Oriented Programming (OOP)**. OOP languages use predefined classes and inheritance to derive behavior. For example, all objects of a car class will have wheels and headlights that turn on, which are inherited by its child classes that define more specific properties. 
 

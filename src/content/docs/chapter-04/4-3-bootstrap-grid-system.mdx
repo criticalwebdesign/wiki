@@ -4,10 +4,9 @@ description: Learn how to code Bootstrap components and grid system.
 # draft: true
 ---
 
-import Excerpt from '@/components/Excerpt.astro';
-import Overview from '@/components/Overview.astro';
+import CustomAside from '@/components/CustomAside.astro';
 
-<Overview>{frontmatter.description}</Overview>
+<CustomAside type="overview">{frontmatter.description}</CustomAside>
 
 
 
@@ -15,6 +14,8 @@ import Overview from '@/components/Overview.astro';
 
 
 ## Intro to Bootstrap
+
+<CustomAside type="excerpt" reference="Exercise 4.2.1"></CustomAside>
 
 A quick guide to using Bootstrap components.
 

@@ -3,10 +3,9 @@ title: 7.3 Final Prompt
 description: A selection of figures showing our process, including design patterns and the final prompt.
 ---
 
-import Excerpt from '@/components/Excerpt.astro';
-import Overview from '@/components/Overview.astro';
+import CustomAside from '@/components/CustomAside.astro';
 
-<Overview>{frontmatter.description}</Overview>
+<CustomAside type="overview">{frontmatter.description}</CustomAside>
 
 
 
@@ -96,7 +95,7 @@ The working example after the above changes.
 ## Implementing Accessible Design
 
 
-<Excerpt>Following are figures showing test results for our prompt using WAVE.</Excerpt>
+<CustomAside type="excerpt" reference="Prompt 7.0">Following are figures showing test results for our prompt using WAVE.</CustomAside>
 
 
 

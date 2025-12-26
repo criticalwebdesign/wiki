@@ -4,10 +4,9 @@ description: Learn to create animations for the web using Javascript with CSS.
 # draft: true
 ---
 
-import Excerpt from '@/components/Excerpt.astro';
-import Overview from '@/components/Overview.astro';
+import CustomAside from '@/components/CustomAside.astro';
 
-<Overview>{frontmatter.description}</Overview>
+<CustomAside type="overview">{frontmatter.description}</CustomAside>
 
 
 
@@ -16,7 +15,7 @@ import Overview from '@/components/Overview.astro';
 
 ## Create a Simple Javascript Animation
 
-<Excerpt>This is an excerpt from Module 6.2</Excerpt>
+<CustomAside type="newmaterial"></CustomAside>
 
 This simple exercise shows how to use Javascript to create animation by changing CSS properties over time with `setInterval()`. 
 

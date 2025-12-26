@@ -4,10 +4,9 @@ description: Using CSS display and position properties.
 # draft: true
 ---
 
-import Excerpt from '@/components/Excerpt.astro';
-import Overview from '@/components/Overview.astro';
+import CustomAside from '@/components/CustomAside.astro';
 
-<Overview>{frontmatter.description}</Overview>
+<CustomAside type="overview">{frontmatter.description}</CustomAside>
 
 
 
@@ -94,6 +93,8 @@ Abstract Browsing by Rafaël Rozendaal and Reinier Feijen (2014) is a browser ex
 
 
 ## Using CSS Display and Position Properties
+
+<CustomAside type="excerpt" reference="Exercise 2.2.6"></CustomAside>
 
 Edit the box model properties in CSS.
 

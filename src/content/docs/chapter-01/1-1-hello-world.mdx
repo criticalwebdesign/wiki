@@ -4,13 +4,14 @@ description: Create a basic web page using Codepen.io.
 # draft: true
 ---
 
-import Excerpt from '@/components/Excerpt.astro';
-import Overview from '@/components/Overview.astro';
+import CustomAside from '@/components/CustomAside.astro';
 
-<Overview>{frontmatter.description}</Overview>
+<CustomAside type="overview">{frontmatter.description}</CustomAside>
 
 
 ## Introduction to HTML, CSS, and JS
+
+<CustomAside type="excerpt" reference="Exercise 1.1.1"></CustomAside>
 
 <figure>   
 
