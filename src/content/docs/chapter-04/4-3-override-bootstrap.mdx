@@ -6,7 +6,7 @@ description: Override Bootstrap's default colors to match your designs.
 
 import CustomAside from '@/components/CustomAside.astro';
 
-<CustomAside type="overview">{frontmatter.description}</CustomAside>
+<CustomAside type="newmaterial">{frontmatter.description}</CustomAside>
 
 
 
@@ -14,7 +14,7 @@ import CustomAside from '@/components/CustomAside.astro';
 
 
 
-
+{/* 
 ## The D.R.Y. Principle
 
 One reason responsive CSS frameworks like Bootstrap are so widely used is that they help you adhere to a software principle called **DRY**. DRY, or “don't repeat yourself,” is aimed at reducing repetition to make writing and managing code easier. You have already been practicing DRY in this book:
@@ -22,7 +22,7 @@ One reason responsive CSS frameworks like Bootstrap are so widely used is that t
 - **Easier maintenance** - While it makes perfect sense to copy code you've written from a previous project (e.g. to make a website responsive), what if you find a bug? Now you have to stop working on the current task to find and fix the issue in every project that uses that code. This is where Bootstrap helps, providing access to a huge amount of thoroughly-tested boilerplate code with standard features needed for every new site.
 - **Avoiding errors** - Think of a program that changes a color on the page depending on user interaction. However, instead of adhering to DRY, the program updates the color from several different locations. This makes it difficult to find where the error originated. Writing code once will ensure a program does not conflict or cause unexpected behavior.
 In short, when you write DRY code you will be more efficient and encounter fewer errors!
-
+ */}
 
 
 
@@ -34,6 +34,8 @@ In short, when you write DRY code you will be more efficient and encounter fewer
 
 
 ## Inspect Bootstrap
+
+Review these steps to inspect Bootstrap in DevTools before you attempt to override.
 
 1. Use DevTools to inspect the CSS breakpoint and color classes that Bootstrap adds to the root element
 
@@ -58,9 +60,7 @@ In short, when you write DRY code you will be more efficient and encounter fewer
 
 ## Override Bootstrap Styles
 
-<CustomAside type="newmaterial"></CustomAside>
-
-There are generally two ways to override Bootstrap styles. The Bootstrap documentation suggestsusually shows customizations using Sass variables. As we discussed, this requires extra setup to recompile the CSS and is really more appropriate for large projects. The method we'll show below applies to the pre-compiled version we've been using so far from the CDN. You will use DevTools to identify the classes you want to override and simply add your own rules, just as you normally would with CSS.  
+There are generally two ways to override Bootstrap styles. The Bootstrap documentation usually shows customizations using Sass variables. As we discussed, this requires extra setup to recompile the CSS and is really more appropriate for large projects. The method we'll show below applies to the pre-compiled version we've been using so far from the CDN. You will use DevTools to identify the classes you want to override and simply add your own rules, just as you normally would with CSS.  
 
 1. Open `on-the-grid/index.html` in Chrome. 
 2. Add the following CSS rule to change the background color of all elements that use the `btn-primary` class from the default blue color to purple. The additional `!important` rule will add more importance than normal rules for that property on that element. 
