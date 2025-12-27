@@ -1,13 +1,24 @@
 ---
-title: 9.3 Install Node.js
-description: Learn to install node.json your own machine.
+title: 9.3 Using Node.js
+description: Running Node (potentially on your own computer) lets you build and test a full stack application easily before pushing your files to a server. 
+sidebar:
+  order: 4
 ---
 
 import CustomAside from '@/components/CustomAside.astro';
 
 <CustomAside type="newmaterial">{frontmatter.description}</CustomAside>
 
-import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+{/* :::caution 
+We recommend you complete the [Command Line](/wiki/chapter-01/1-2-command-line/) and [Git and Gitub Desktop](/wiki/chapter-01/1-3-github-desktop/) exercises before attempting the following.
+::: */}
+
+:::caution[Prerequisites] 
+We recommend you complete [1.2 Command Line](/wiki/chapter-01/1-2-command-line/)  to prepare for this tutorial.
+:::
+
+
 
 
 
@@ -15,12 +26,17 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 This tutorial covers a basic install process for Node.js. You will run these in your Terminal program.
 
+:::caution 
+If you are developing on your own machine, please complete [1.3 Git and Gitub Desktop](/wiki/chapter-01/1-3-github-desktop/). Node is already installed on Github Codespaces. 
+:::
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 <Tabs>
 <TabItem label="Mac">
 
   1. Install [Homebrew](https://brew.sh/) (Mac package manager) using their instructions
-  2. Install [Node](https://formulae.brew.sh/formula/node)
+  2. Install [Node](https://formulae.brew.sh/formula/node) using Homebrew
 
   ```bash
   brew install node
@@ -29,11 +45,16 @@ This tutorial covers a basic install process for Node.js. You will run these in 
 </TabItem>
 <TabItem label="Windows">
 
+:::danger[Windows Users]
+Many Unix commands do not work in Windows PowerShell. Install and use [Git Bash](/wiki/chapter-01/1-2-command-line/) instead.
+:::
+
   1. Install [Scoop](https://scoop.sh/) (Windows package manager) using their instructions
-  2. Install [Node](https://scoop.sh/#/apps?q=nodejs&s=0&d=1&o=true)
+  2. Install [Node](https://scoop.sh/#/apps?q=nodejs+lts&p=1) using Scoop
 
   ```bash
-  scoop install nodejs
+  scoop bucket add main
+  scoop install main/nodejs-lts
   ```
 
 </TabItem>
@@ -53,16 +74,50 @@ npm -v
 
 
 
-## Hello, World! with Node.js
 
+## Open Node interactive shell
 
+Test Javascript in Node's interactive shell.
 
-1. Create a project directory and change to it: 
+1. Type `node` on the command line and press return to open the interactive shell. 
+1. At the `>` prompt, type `1+1` and press return. Node will evaluate your expression and return the result.
 
 ```bash
-mkdir hello-node & cd hello-node
+> 1+1
+2
+```
+3. Node is just Javascript, so almost any code will run.
+4. Cancel any process in the Terminal using `Ctl+c`
+
+
+
+
+
+## Run a script with Node
+
+
+<Tabs>
+<TabItem label="Codespaces">
+
+Inside an empty Codespaces project...
+
+1. Create a file named `index.js` and paste the below code.
+
+```js
+let greeting = "Hello, from Node";
+console.log(greeting);
 ```
 
+2. In the Terminal, run the script with: 
+
+```bash
+node index.js
+```
+
+</TabItem>
+<TabItem label="Your Own Machine">
+
+1. Create a new folder named: `cron-demo` and open it in VS Code (in Mac you can just drag the folder from the finder to the VS Code icon in the dock)
 2. Create a file in this folder named `index.js` and paste the below code.
 
 ```js
@@ -75,6 +130,94 @@ console.log(greeting);
 ```bash
 node index.js
 ```
+
+
+</TabItem>
+</Tabs>
+
+:::note
+1. The name `index.js` is arbitrary. Other names like `server.js` and `app.js` are also popular for different use cases.
+1. Notice that Node stops automatically after it runs all the code.
+:::
+
+
+
+
+
+
+
+
+## Initialize a new project with NPM
+
+Every Node.js project has a `package.json` to store project dependencies and other metadata. 
+
+<Tabs>
+<TabItem label="Codespaces">
+
+Inside an empty Codespaces project...
+
+</TabItem>
+<TabItem label="Your Own Machine">
+
+Inside the `cron-demo` in VS Code (created above)
+
+</TabItem>
+</Tabs>
+
+1. Open the Terminal in your editor.
+1. Run `npm init` to initialize a new project. Press return at each prompt. This creates a `package.json` file with data you entered. 
+1. Open your new `package.json` file. Confirm the `main` field is set to `index.js`.
+1. Add a new sub-property under `scripts`. Add a comma after the `test` property, then add `"start": "node index.js"` below it (see outcome below).
+1. Run `npm run start` which runs the command stored in `start`.
+
+
+<details>
+<summary>Outcome</summary>
+
+```json 
+{
+  "name": "cron-demo",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  }
+}
+```
+
+</details>
+
+
+
+
+
+
+## Install Nodemon using NPM
+
+[Nodemon](https://www.npmjs.com/package/nodemon) is an NPM package that automatically restarts your node application when it detects file changes in your the project directory. 
+
+1. Install the nodemon package globally `npm install -g nodemon` (the `-g` flag makes it global)
+1. Run `index.js` using nodemon (instead of node) `nodemon index.js`
+1. Edit and save `index.js`. Nodemon will restart your script each time you save. 
+
+```bash
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+```
+
+4. Exit the process with `Ctl+C` (this exits any process on the Terminal).
+
+
+
+
+
+
+
 
 
 

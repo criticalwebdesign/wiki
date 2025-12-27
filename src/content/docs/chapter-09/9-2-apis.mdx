@@ -1,6 +1,8 @@
 ---
 title: 9.2 JSON Data and APIs 
 description: An introduction to JSON data, dynamic websites, and APIs.
+sidebar:
+  order: 3
 ---
 
 import CustomAside from '@/components/CustomAside.astro';
@@ -70,16 +72,7 @@ See JSON, XML, and CSV examples https://github.com/criticalwebdesign/book/tree/m
 
 ## Test an API 
 
-<CustomAside type="newmaterial"></CustomAside>
-
-
-<figure>
-
-![Diagram showing the web browser, or client and its requests and responses to and from the server](../../../assets/images/09/09-06-request-response.png)
-Diagram showing just a few of the many requests and responses between client and server when a page loads.
-
-</figure>
-
+<CustomAside type="excerpt">Section 9.2.3</CustomAside>
 
 
 In this exercise you’ll learn to test APIs. There are hundreds of free APIs that offer a wealth of functionality and data for you to use in your projects. Some APIs require you to register and send requests along with a special key to prevent abuse, but there are plenty of public APIs you can use as well.
@@ -100,7 +93,16 @@ A cat fact in JSON formatted with JSON Formatter. Fascinating.
 
 [`https://api.restful-api.dev/objects`](https://api.restful-api.dev/objects)
 
-5. Change the dropdown to POST, and then under content tab type or paste the following JSON data. Feel free to change the value of any property. Press Send and your data will be sent to the API and then returned with an additional id property. Copy the value of the id.
+
+
+
+
+## Test an API using POST
+
+<CustomAside type="newmaterial">Test an API using the POST method and a remote database.</CustomAside>
+
+1. While still on [reqbin.com](https://reqbin.com) (continuing from the above activity) with the previous URL still in the path field https://api.restful-api.dev/objects
+2. Change the dropdown to POST, and then under content tab type or paste the following JSON data. Feel free to change the value of any property. Press Send and your data will be sent to the API and then returned with an additional id property. Copy the value of the id.
 
 ```json
 {
@@ -112,7 +114,7 @@ A cat fact in JSON formatted with JSON Formatter. Fascinating.
 }
 ```
 
-6. Open a new browser tab and add the id you copied to the end of the following URL after the equal sign and press return. You should see the data you sent with the first request. Here is the one we sent: [criticalwebdesign.github.io#restful-api](http://criticalwebdesign.github.io#restful-api) (Figure 9.18).
+3. Open a new browser tab and add the id you copied to the end of the following URL after the equal sign and press return. You should see the data you sent with the first request. Here is the one we sent: [criticalwebdesign.github.io#restful-api](http://criticalwebdesign.github.io#restful-api) (Figure 9.18).
 
 ```
 https://api.restful-api.dev/objects?id=
@@ -133,7 +135,7 @@ Postman https://www.postman.com is an excellent tool for testing APIs.
 
 
 
-### More APIs
+#### Continue Exploring APIs
 
 - https://github.com/public-apis/public-apis
 - https://catfact.ninja/fact
