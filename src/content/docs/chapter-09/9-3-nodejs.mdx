@@ -192,6 +192,11 @@ Inside the `cron-demo` in VS Code (created above)
 
 </details>
 
+:::note[Package Managers] 
+There are several Node package managers, but NPM is a popular choice. 
+:::
+
+
 
 
 
@@ -217,8 +222,32 @@ Inside the `cron-demo` in VS Code (created above)
 
 
 
+---
+
+## Use the Cron package
+
+[Cron](https://www.npmjs.com/package/cron) is an NPM package that executes scripts on a schedule (e.g. each/second, once/day) or at particular times. Use it to automate any common task like database backups, etc..
+
+1. Run `npm i cron --save` in the Terminal (`i` is a shortcut for `install`, `--save` adds a dependency to your project's `package.json`) 
+1. In `package.json` a new dependency has been added, as well as a new `node_modules` folder, where the cron package and packages it uses was just installed. 
+1. Add the code below to your `index.js` file.
 
 
+```js
+// require the package
+var CronJob = require('cron').CronJob;
+// create a new instance
+var job = new CronJob(
+	'* * * * * *',
+	function() {
+		console.log('The local time is: '+ new Date().toLocaleString());
+	},
+	null, true, 'America/New_York'
+);
+```
+
+4. Run it with `nodemon index.js` in the Terminal.
+5. Use [crontab.guru](https://crontab.guru/) to experiment with the time.
 
 
 
