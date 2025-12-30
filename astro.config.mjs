@@ -28,8 +28,8 @@ export default defineConfig({
                 { label: '6. Off the Grid', autogenerate: { directory: 'chapter-06' }, collapsed: true },
                 { label: '7. Ethical by Design', autogenerate: { directory: 'chapter-07' }, collapsed: true },
                 { label: '8. Generative Design', autogenerate: { directory: 'chapter-08' }, collapsed: true },
-                { label: '9. Data Tracking', autogenerate: { directory: 'chapter-09' }, collapsed: false },
-                { label: '10. Design and Power', autogenerate: { directory: 'chapter-10' }, collapsed: true },
+                { label: '9. Data Tracking', autogenerate: { directory: 'chapter-09' }, collapsed: true },
+                { label: '10. Design and Power', autogenerate: { directory: 'chapter-10' }, collapsed: false },
                 { label: '11. Distribution', autogenerate: { directory: 'chapter-11' }, collapsed: true },
 
 
