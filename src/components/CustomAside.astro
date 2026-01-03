@@ -12,6 +12,7 @@ const titles: { [key: string]: any } = {
     overview: "Overview",
     excerpt: "Excerpt",
     newmaterial: "New Material",
+    newmaterialsingle: "",
     quote: "Quote",
 };
 import Icon from "@/components/Icon.astro";
@@ -20,10 +21,10 @@ import Icon from "@/components/Icon.astro";
 <div class="not-content callout-intro">
     <Icon {type}>
         <!-- inject html -->
-        <Fragment set:html={titles[type]} /></Icon
-    >
+        <Fragment set:html={titles[type]} /> 
+    </Icon>
 
-    {reference && " - " + reference}
+    {reference && reference}
 
     <div class="bodytext">
         <slot />
