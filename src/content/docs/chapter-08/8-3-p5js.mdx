@@ -27,7 +27,7 @@ In this introduction to [p5.js](https://p5js.org) you’ll recreate a basic vers
 Like other code playgrounds, you can sign up and log into the p5.js editor so that you can save your sketches in a personal library.
 :::
 
-2. p5.js contains two default functions in the main Sketch file. The `setup()` function is called once, when the program starts, to define key properties of the coded environment (like background size and color). The `draw()` function runs directly after, continuously executing the lines of code contained inside its block until the program is stopped. Update your `draw()` function to match ours below and press the play button at the top left corner in the web editor interface. You should see a line that extends diagonally from the top left corner `(0,0)` towards the middle of the canvas `(100,100)` (Figure 8.32).
+2. p5.js contains two default functions in the main Sketch file. The `setup()` function is called once, when the program starts, to define key properties of the coded environment (like background size and color). The `draw()` function runs directly after, continuously executing the lines of code contained inside its block until the program is stopped. Update your `draw()` function to match ours below and press the play button at the top left corner in the web editor interface. You should see a line that extends diagonally from the top left corner `(0,0)` towards the middle of the canvas `(100,100)`.
 
 ```js
 function draw() {
@@ -42,7 +42,7 @@ The line() function accepts four parameters representing numeric coordinates of 
 
 </figure>
 
-3. When you use `createCanvas()` it sets the values of built-in system variables, including `width` and `height`, that you can use throughout your sketch. (see Daniel Shiffman, “System Variables,” Learning Processing 2nd Edition, accessed April 9, 2024, http://learningprocessing.com/examples/chp04/example-04-05-systemvars) Update your line function to match our code below and press Play (Figure 8.33).
+3. When you use `createCanvas()` it sets the values of built-in system variables, including `width` and `height`, that you can use throughout your sketch. (see Daniel Shiffman, “System Variables,” Learning Processing 2nd Edition, accessed April 9, 2024, http://learningprocessing.com/examples/chp04/example-04-05-systemvars) Update your line function to match our code below and press Play.
 
 ```js
 function draw() {
@@ -75,7 +75,7 @@ To position the line relative to the current second, we multiplied the value ret
 
 
 
-5. To create the four-sided polygons in Generative Arp you can use the p5.js quad() function. The shape is defined by four sets of coordinates,` x1,y1,x2,y2,x3,` and so on, placed clockwise. The random() function in p5.js is quite advanced, and includes the ability to return a random number within a range. Update your code as follows to draw a quadrilateral and fill it with a random color. Notice we use the `frameRate()` method to update our drawing every two seconds, during which the background is redrawn and a new random color fills the quadrilateral (Figure 8.34).
+5. To create the four-sided polygons in Generative Arp you can use the p5.js quad() function. The shape is defined by four sets of coordinates,` x1,y1,x2,y2,x3,` and so on, placed clockwise. The random() function in p5.js is quite advanced, and includes the ability to return a random number within a range. Update your code as follows to draw a quadrilateral and fill it with a random color. Notice we use the `frameRate()` method to update our drawing every two seconds, during which the background is redrawn and a new random color fills the quadrilateral.
 
 ```js
 function draw() {
@@ -89,13 +89,13 @@ function draw() {
 
 <figure>
 
-![xxxxx](../../../assets/images/08/08-34-quad.png)
-Figure 8.34 A new quadrilateral is redrawn with a random fill color every two seconds.
+![quadrilateral](../../../assets/images/08/08-34-quad.png)
+A new quadrilateral is redrawn with a random fill color every two seconds.
 ALT Screenshot of the p5.js editor with the quad method.
 
 </figure>
 
-6. The `draw()` function now creates a new quadrilateral with a random color each loop of the `draw()` function. To generate multiple quadrilaterals of various shapes we will need to add a loop that randomizes the coordinates of its vertices. Add the following `for` loop to your code, and move the fill and quad function into it. We only changed the first two parameters (`x1` and `y1`) in this step (Figure 8.35) to a random number between `0` and the `width` and `height` to show how it affects the quads. Run your code to see that on each loop, the `draw()` function “paints” over the canvas with `background()`, then the `for` loop draws 30 unique quadrilaterals, and then the `draw()` function loops and starts the process again.
+6. The `draw()` function now creates a new quadrilateral with a random color each loop of the `draw()` function. To generate multiple quadrilaterals of various shapes we will need to add a loop that randomizes the coordinates of its vertices. Add the following `for` loop to your code, and move the fill and quad function into it. We only changed the first two parameters (`x1` and `y1`) in this step to a random number between `0` and the `width` and `height` to show how it affects the quads. Run your code to see that on each loop, the `draw()` function “paints” over the canvas with `background()`, then the `for` loop draws 30 unique quadrilaterals, and then the `draw()` function loops and starts the process again.
 
 ```js
 function draw() {
@@ -118,7 +118,7 @@ Our code includes a for loop where a quadrilateral is drawn with a randomized fi
 </figure>
 
 
-7. With the quadrilaterals changing shape, we will return to the ideas presented in Figure 8.23, which govern how the vertices of the quadrilaterals will match those created by Jean Arp. We will use the same strategy here, constraining their potential values to ensure the polygons appear like Arp’s hand-cut rectangles dropped onto random positions. In Exercise 8.2.2 we used the CSS transform rule with the `translate()` and `rotate()` functions. We will do something similar in p5.js using three variables: a width (`w`) and height (`h`) variable for the `x` and `y` coordinates at each vertice, and a delta (`d`) variable. Delta is often used in math, logic, or programming to suggest “change.” You will notice that we have a pseudorandomized range for width and height, and then we again implement the random function using these variables. This enables us to draw the vertices in a “slightly random” format (Figure 8.36). The `translate()` function moves the polygons around the canvas. If you comment out the `translate()` function you will see how the polygons are drawn on top of each other, in the same position, on the canvas (Figure 8.37).
+7. With the quadrilaterals changing shape, we will return to the original idea, to govern how the vertices of the quadrilaterals will match those created by Jean Arp. We will use the same strategy here, constraining their potential values to ensure the polygons appear like Arp’s hand-cut rectangles dropped onto random positions. In Exercise 8.2.2 we used the CSS transform rule with the `translate()` and `rotate()` functions. We will do something similar in p5.js using three variables: a width (`w`) and height (`h`) variable for the `x` and `y` coordinates at each vertice, and a delta (`d`) variable. Delta is often used in math, logic, or programming to suggest “change.” You will notice that we have a pseudorandomized range for width and height, and then we again implement the random function using these variables. This enables us to draw the vertices in a “slightly random” format. The `translate()` function moves the polygons around the canvas. If you comment out the `translate()` function you will see how the polygons are drawn on top of each other, in the same position, on the canvas.
 
 ```js
 for (let i = 0; i < 30; i++) {
@@ -154,7 +154,7 @@ Comment out the translate function to see how the polygons are drawn on top of e
 
 </figure>
 
-8. Finally, add multiple polygons like our pure JS Generative Arp. However, when drawing to the HTML5 Canvas with p5.js, each time you call `translate()` it adds a new offset value to a global state. Over time the translations add up and push the elements off the screen. If you change your `w` and `h` maximum value to a smaller number (Figure 8.38) you can see what this looks like. So, we need to implement two p5.js methods called `push()` and `pop()`. “The `push()` function saves the current drawing style settings and transformations, while `pop()` restores these settings.” In other words, these functions, which are always used in tandem, allow us to preserve the blank slate (“push”) at the beginning of every iteration of the for loop, and then return to it (“pop”) at the end of each loop, instead of adding up. So, add `push()` to the first line of the for loop and `pop()` to the last line and test your code. You will see multiple polygons.
+8. Finally, add multiple polygons like our pure JS Generative Arp. However, when drawing to the HTML5 Canvas with p5.js, each time you call `translate()` it adds a new offset value to a global state. Over time the translations add up and push the elements off the screen. If you change your `w` and `h` maximum value to a smaller number you can see what this looks like. So, we need to implement two p5.js methods called `push()` and `pop()`. “The `push()` function saves the current drawing style settings and transformations, while `pop()` restores these settings.” In other words, these functions, which are always used in tandem, allow us to preserve the blank slate (“push”) at the beginning of every iteration of the for loop, and then return to it (“pop”) at the end of each loop, instead of adding up. So, add `push()` to the first line of the for loop and `pop()` to the last line and test your code. You will see multiple polygons.
 
 ```js
 for (let i = 0; i < 30; i++) {
