@@ -66,7 +66,7 @@ This project has two parts. The back-end scripts inside `api/` that run on the s
 
 
 
-3. Open `api/database/mongodb.js`. The database code is organized in its own file to “separate the concerns” and organize scripts by their specific tasks. This file connects to the database to let us save and retrieve data. Also notice that the database functionality (e.g. to create and insert data in the table) is exported inside an object called `db` to make it simpler to run the database queries from `routes.js`. 
+3. Open `api/database/mongodb.js`. The database code is organized in its own file to “separate the concerns” and organize scripts by their specific tasks. This file connects to the database to let us save and retrieve data. Also notice that the database functionality (e.g. to create and insert data in the table) is exported inside an object called `db` to make it simpler to run the database queries from `api/routes.js`. 
 4. Open `package.json` and you'll see (like BPA) that the dependencies include `express`, as well as new packages like `mongodb`. To install them run:
 
 ```
@@ -226,7 +226,7 @@ import db from "./database/mongodb.js";
 ```
 
 
-4. Add the below function to `routes.js` (look for our finger emojis!) to retrieve data for the map. This route will use the `db.getAll()` function to query the database for all records. It uses `await` to make sure and wait for the query to finish so that it has results before sending a response. Test this route now in a new browser window by going to http://localhost:3000/api/feelings. You should see an empty array only because there is no data in the database, yet...
+4. Add the below function to `api/routes.js` (look for our finger emojis!) to retrieve data for the map. This route will use the `db.getAll()` function to query the database for all records. It uses `await` to make sure and wait for the query to finish so that it has results before sending a response. Test this route now in a new browser window by going to http://localhost:3000/api/feelings. You should see an empty array only because there is no data in the database, yet...
 
 ```js
 // 👉 add endpoint to get all the rows in the database (Chapter 10 wiki) ...
@@ -237,7 +237,7 @@ router.get("/api/feelings", async function (req, res) {
 // 👈
 ```
 
-5. Add this endpoint below the code you added above to `routes.js` to add test data to the database. This route is not meant to be public, we are enabling it temporarily to add testing data only. Each time you load this page http://localhost:3000/api/addOneTest you will insert a new entry with random information. You can use the [Atlas Data Explorer](https://cloud.mongodb.com/) or the feelings endpoint to test it http://localhost:3000/api/feelings
+5. Add this endpoint below the code you added above to `api/routes.js` to add test data to the database. This route is not meant to be public, we are enabling it temporarily to add testing data only. Each time you load this page http://localhost:3000/api/addOneTest you will insert a new entry with random information. You can use the [Atlas Data Explorer](https://cloud.mongodb.com/) or the feelings endpoint to test it http://localhost:3000/api/feelings
 
 ```js
 // 👉 add endpoint to insert test data (Chapter 10 wiki) ...
@@ -297,7 +297,7 @@ function submitForm(e) {
 }
 ```
 
-2. We’ve already added a `/api/feeling` POST endpoint that receives the request from the form and updates the database. Look inside `routes.js` and you will notice it uses `router.post()` instead of `router.get()`. 
+2. We’ve already added a `/api/feeling` POST endpoint that receives the request from the form and updates the database. Look inside `api/routes.js` and you will notice it uses `router.post()` instead of `router.get()`. 
 3. This means your `fetch()` function on the front end needs to send this data using a `POST` request. Add the following to the bottom of `submitForm()` to create a new `options` object you can use with `fetch()` that sets the method to `POST`, adds a special header to inform the server it is sending JSON data, and stores the data from the form in body of the request. The `JSON.stringify()` function converts a data object to the text equivalent (a.k.a. "serialization") so it can be sent over the internet.
 
 ```js
