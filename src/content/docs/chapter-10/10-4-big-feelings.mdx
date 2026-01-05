@@ -1,6 +1,6 @@
 ---
 title: 10.4 Big Feelings
-description: Use Node.js to create the backend for the Big Feelings frontend you created following the exercises in chapter 10. Then publish your fullstack application on Vercel. 
+description: Use Node.js and MongoDB Atlas to create the back end for the Big Feelings front end you created following the exercises in chapter 10. Then publish your full-stack application on Vercel. 
 ---
 
 import CustomAside from '@/components/CustomAside.astro';
@@ -8,13 +8,421 @@ import CustomAside from '@/components/CustomAside.astro';
 <CustomAside type="newmaterial">{frontmatter.description}</CustomAside>
 
 
+<figure>
 
+![Screenshot of the Big Feelings web page.](../../../assets/images/10/10-22-big-feelings-finished.png)
+The final version of the prompt for Chapter 10 can be found online https://big-feelings.vercel.app
+
+</figure>
+
+
+:::caution[Prerequisites] 
+We recommend you complete the following materials to prepare for this tutorial:
+- Chapters 9 and 10 in the book
+- [1.2 Command Line](/wiki/chapter-01/1-2-command-line/) 
+- [9.2 JSON Data and APIs](/wiki/chapter-09/9-2-apis/) 
+- [9.3 Using Node.js](/wiki/chapter-09/9-3-nodejs/) 
+- [9.4 Bad Password API](/wiki/chapter-09/9-4-bad-password-api/) 
+:::
+
+
+
+
+
+
+
+## Project Setup
+
+<CustomAside type="newmaterialsingle" reference="Set up the full-stack version of Big Feelings."></CustomAside>
+
+:::caution 
+This tutorial assumes you are continuing from the end of Chapter 10 in the book, and that you've completed **[9.4 Bad Password API](/wiki/chapter-09/9-4-bad-password-api/)** and its prerequisites in this wiki.
+:::
+
+{/* Much of this is the same as 9-4 */}
+
+1. Using Codespaces (or VS Code if you are developing locally) open the `big-feelings-starter` project repository that you edited in Chapter 10. 
+1. Like the Bad Password API (BPA), we modified the project structure to make it easier to publish the front-end version on Github Pages. Move `index.html` and the `assets` folder into the `public` folder. You’ll see the structure is similar to our Bad Password API, with a `api/index.js` and `api/routes.js` file. 
+
+import { FileTree } from '@astrojs/starlight/components';
+
+<figure>
+<FileTree>
+
+- package.json Meta information and project dependencies
+- api Server files
+  - data/ Testing data
+  - database/ Scripts to help connect and use the database
+    - mongodb.js The database script
+  - index.js Run the server using routes.js
+  - routes.js Contains the endpoints that return data
+- public Static files go here
+  - assets/
+  - index.html Client side JS
+
+</FileTree>
+This project has two parts. The back-end scripts inside `api/` that run on the server and respond to requests for data from the front-end files `index.html` etc. in the browser. 
+</figure>
+
+
+
+3. Open `api/database/mongodb.js`. The database code is organized in its own file to “separate the concerns” and organize scripts by their specific tasks. This file connects to the database to let us save and retrieve data. Also notice that the database functionality (e.g. to create and insert data in the table) is exported inside an object called `db` to make it simpler to run the database queries from `routes.js`. 
+4. Open `package.json` and you'll see (like BPA) that the dependencies include `express`, as well as new packages like `mongodb`. To install them run:
+
+```
+npm install 
+```
+
+5. Start the server with `nodemon` (see [9.3 Using Node.js](/wiki/chapter-09/9-3-nodejs/)). A message will appear in the terminal with the URL. Open this page in a browser to check that all is well.
+
+```
+Your app is listening at: http://localhost:3000
+```
+
+
+
+
+
+## Create a MongoDB Database
+
+<CustomAside type="newmaterialsingle" reference="Create a MongoDB Atlas account and database."></CustomAside>
+
+Before you can use our database module you'll need to create a database using Atlas, a professional web service that provides access to MongoDB databases. (see the latest guidance in their [MongoDB Atlas Tutorial](https://www.mongodb.com/resources/products/platform/mongodb-atlas-tutorial) tutorial).
+
+1. Click "Get Started" on their [landing page](https://www.mongodb.com/products/platform/atlas-database) and create an Atlas account 
+1. At the end of the sign-up process, you will be prompted to create an organization (to organize users) and a project (to organize clusters and databases). We created a project named `criticalwebdesign`.
+1. Login to the Dashboard https://cloud.mongodb.com/ and follow the steps in [Deploy a Free Cluster](https://www.mongodb.com/docs/atlas/tutorial/deploy-free-tier-cluster/) to create a new free-tier cluster. We named our cluster `big-feelings`, left all the default options as they were, and clicked "Create Deployment."
+
+:::note 
+Atlas offers a free-forever tier suitable for users learning MongoDB or developing small proof-of-concept applications. Note [you can deploy only one free-tier cluster per project](https://www.mongodb.com/docs/atlas/reference/free-shared-limitations/).
+:::
+
+4. Next you'll be prompted to create a user to access databases in your cluster. We used the default user and password they generated. Save these somewhere safe! Note also your current IP address will be added to the list of allowed connections. This is a security feature that prevents someone at a different location from trying to guess your information. 
+1. Now it's time to choose a connection method. This is important because you'll be connecting to the database from another machines and you need to give permission for Codespaces (and eventually, Vercel) to connect to Atlas. Click "Choose a connection method," then select "Drivers" and choose Node.js. We've already added `mongodb` to the dependencies for this project, so you just need to copy the **connection string** that contains your username, password, and other details to a safe place and proceed to the next section. It will look something like the following:
+
+```
+mongodb+srv://USER:PASS@CLUSTER.[...].mongodb.net/?appName=CLUSTER
+```
+
+:::danger
+Do not commit files containing your connection string or other sensitive information to Git. We'll show you how to handle this in the next step.
+:::
+
+
+
+
+
+## Create an .ENV file 
+
+<CustomAside type="newmaterialsingle" reference="Best practices for sensitive information (e.g. connection strings) in full-stack projects."></CustomAside>
+
+The connection string you created in the previous step contains your database credentials. Obviously you don't want someone with bad intentions to be able to access this. So, don't save in your front-end code. You also don't want to commit this data to your Git repository which may allow someone to see it on Github.
+
+While your frontend code will connect to your API, the connection string will only be accessible on the backend server, which will keep it safe from prying eyes. There are many ways to do this, but we are using the common `.env` "[environment variables](https://www.w3schools.com/nodejs/nodejs_environment.asp)" file. You'll save two versions of this file, one for testing on your own computer, and then another in Vercel when you publish your project.
+
+1. In your repo, rename the `.env.example` file in the root of your project to `.env`. 
+
+:::caution 
+The period in `.env` means it is hidden from MacOS Finder / Windows Explorer so you can only create and edit this file in VS Code, Codespaces, or a Terminal. Note also our project uses the dotenv module, which loads variables from `.env` file. 
+:::
+
+
+2. Paste the following template code into the file: 
+
+```
+MONGODB_URI="YOUR_CONNECTION_STRING"
+NODE_ENV="test"
+```
+
+3. Replace the text `YOUR_CONNECTION_STRING` with your own connection string. 
+4. Open your `.gitignore` file and confirm that `.env` is among the list of files to be ignored by Git so you do not commit this file!
+
+
+
+
+
+
+## Test Database Connection 
+
+<CustomAside type="newmaterialsingle" reference="Test a MongoDB Atlas database connection."></CustomAside>
+
+With the connection string in place you can test your database connection using our test script.
+
+1. In Atlas, make sure your current IP address is allowed to connect. 
+    1. Go to https://cloud.mongodb.com/
+    1. Click "Clusters" on the left
+    1. Click "Database & Network Access"  on the left
+    1. Click "IP Access List" on the left
+    1. Click the "Add IP Address" button
+
+:::caution
+Only IP addresses you add to your Access List will be able to connect to your project's clusters. If you are testing this script on public or university wifi (which may often re-issue new IP addresses) you may need to return this section often.
+
+<figure>
+
+![mongodb add IP address](../../../assets/images/10/10-mongodb-add-ip-address.png)
+
+</figure>
+:::
+
+2. Quit the server with `Ctl+c`
+3. Run our database test script using nodemon:
+
+```
+nodemon api/database/mongodb-test.js
+```
+
+4. In the Terminal confirm you can see the results of the test script, including ping, stats, etc. Every time you run this script it will add a single entry with random data.
+
+
+<figure>
+
+![mongodb add IP address](../../../assets/images/10/10-mongodb-test-script.png)
+
+</figure>
+
+
+
+5. Verify that data was saved in your database by going to 
+    1. Go to https://cloud.mongodb.com/
+    1. Click "Data Explorer" on the left
+    1. Click "Connect" on your cluster in the list
+    1. Expand your cluster and database and select the collection.
+
+<figure>
+
+![mongodb data explorer](../../../assets/images/10/10-mongodb-data-explorer.png)
+Data inside `cwd-test-cluster` (cluster) > `bigFeelings` (database) > `feelings` (collection) 
+
+</figure>
+
+
+
+
+
+
+
+## Use Node.js and MongoDB 
+
+<CustomAside type="newmaterialsingle" reference="Connect to and query the database using Node.js."></CustomAside>
+
+Now that you have confirmed you can connect from your IP address to your database, you can switch to using your own database with this project.
+
+
+1. Quit the database test script with `Ctl+c` and start the project with `nodemon`. Go to http://localhost:3000/ and you should see the map. Note it is still getting data from our finished API.
+
+2. In `api/routes.js` import our database module
+
+```js
+// 👉 import database reference here (Chapter 10 wiki) ...
+import db from "./database/mongodb.js";
+// 👈
+```
+
+3. Now you can add API endpoints that call the functions exported from our module. First, make sure the API is working. Test the root endpoint at http://localhost:3000/api and you should see the following: 
+
+``` 
+{"message":"hello"}
+```
+
+
+4. Add the below function to `routes.js` (look for our finger emojis!) to retrieve data for the map. This route will use the `db.getAll()` function to query the database for all records. It uses `await` to make sure and wait for the query to finish so that it has results before sending a response. Test this route now in a new browser window by going to http://localhost:3000/api/feelings. You should see an empty array only because there is no data in the database, yet...
+
+```js
+// 👉 add endpoint to get all the rows in the database (Chapter 10 wiki) ...
+router.get("/api/feelings", async function (req, res) {
+    let result = await db.getAll();
+    res.json(result);
+});
+// 👈
+```
+
+5. Add this endpoint below the code you added above to `routes.js` to add test data to the database. This route is not meant to be public, we are enabling it temporarily to add testing data only. Each time you load this page http://localhost:3000/api/addOneTest you will insert a new entry with random information. You can use the [Atlas Data Explorer](https://cloud.mongodb.com/) or the feelings endpoint to test it http://localhost:3000/api/feelings
+
+```js
+// 👉 add endpoint to insert test data (Chapter 10 wiki) ...
+router.get("/api/addOneTest", async function (req, res) {
+    let result = await db.addOneTest();
+    res.send({ message: result });
+});
+// 👈
+```
+
+<figure>
+
+![JSON](../../../assets/images/10/10-mongodb-api-feelings.png)
+Data from mongodb at the feelings endpoint
+
+</figure>
+
+
+6. Now that you have feelings in the database you can change your frontend to point to your own backend API. Add this line to change the URL under the original `baseurl` declaration in `public/assets/js/main.js` and visit your site to see your data on the map http://localhost:3000
+
+```js
+// 👉 add new base url to pull from your own database (Chapter 10 wiki) ...
+baseurl = "";
+// 👈
+```
+
+<figure>
+
+![Markers](../../../assets/images/10/10-mongodb-map.png)
+Markers appear on the map for each feeling. Always keep your console open in case you have errors!
+
+</figure>
+
+
+
+
+
+
+
+
+
+## Allowing Visitors to Submit Feelings 
+
+<CustomAside type="newmaterialsingle" reference="Enable form submissions on the map."></CustomAside>
+
+You may notice the Leaflet popup that appears if you click on the map, though nothing happens in your project if you click submit. With the form wired up, we can now connect the web form to let users submit new data.
+
+1. In `public/assets/js/main.js` find the `submitForm()` function. This is called when a user clicks submit. Add the following code to store the form data into a variable called `data` and log it. If you reload your page and test your form you will see a JS object of form inputs in the console.
+
+```js
+function submitForm(e) {
+    // 👉 add code inside this function (Chapter 10 wiki) ...
+    e.preventDefault();
+    let data = getFormData();
+    console.log(data);
+     // 👈
+}
+```
+
+2. We’ve already added a `/api/feeling` POST endpoint that receives the request from the form and updates the database. Look inside `routes.js` and you will notice it uses `router.post()` instead of `router.get()`. 
+3. This means your `fetch()` function on the front end needs to send this data using a `POST` request. Add the following to the bottom of `submitForm()` to create a new `options` object you can use with `fetch()` that sets the method to `POST`, adds a special header to inform the server it is sending JSON data, and stores the data from the form in body of the request. The `JSON.stringify()` function converts a data object to the text equivalent (a.k.a. "serialization") so it can be sent over the internet.
+
+```js
+function submitForm(e) {
+    // step 1 - get form data
+    e.preventDefault();
+    let data = getFormData();
+    console.log(data);
+    // step 2 - create options object to send data
+    let options = {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+    };
+}
+```
+
+3. Now add the `fetch()` code below to send the data to the server. The route will return an updated JSON object, which you can use to call `updateMap(json)` and thencall `showSuccessMsg()` to let the user know everything worked. You can test your project now, watching the console and make sure everything works. 
+
+```js
+function submitForm(e) {
+    // step 1 - get form data
+    e.preventDefault();
+    let data = getFormData();
+    console.log(data);
+
+    // step 2 - create options object to send data
+    let options = {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+    };
+
+    // step 3 - use fetch to send data
+    fetch(baseurl + "/api/feeling", options)
+        .then((response) => response.json())
+        .then(async (json) => {
+            await updateMap(json);
+            showSuccessMsg("Your feeling was added");
+        });
+}            
+```
+
+
+
+:::danger 
+Everything fine to this point.
+:::
 
 
 
 :::note
-To be continued...
+When using MongoDB make sure you use the correct documentation, as there are important differences between implementations like Mongosh, Mongoose, etc. We are using the [MongoDB Node.js Driver](https://www.mongodb.com/docs/drivers/node/current/)
 :::
+
+
+
+
+
+## Publish on Vercel 
+
+<CustomAside type="newmaterialsingle" reference="Publish your project on Vercel for the world to see."></CustomAside>
+
+
+:::note 
+You do not need to install an integration in Vercel to connect your database. 
+:::
+
+### 1. Project Setup 
+
+Follow the process we described in [Module 9.4 Publish a Website with Vercel](/wiki/chapter-09/9-4-bad-password-api/#publish-a-website-with-vercel) to publish your website on Vercel.
+
+
+### 2. Add Environment Variable
+
+Add the `MONGODB_URI` [environment variable](https://vercel.com/docs/environment-variables) in your Vercel account.  
+
+1. Log in to your Vercel dashboard and select your project.
+1. Click on the Settings tab and select Environment Variables.
+1. Add the variable:
+    1. Environments: Choose "All Environments"
+    1. Name: Enter the key `MONGODB_URI`.
+    1. Value: Paste your MongoDB connection string from MongoDB Atlas. 
+1. Click the Save button.
+1. To ensure the new variable is applied, you must redeploy your project. 
+
+
+
+### 3. Enable IP Address
+
+This step is required to allow your API on Vercel to connect to your Atlast cluster.
+
+1. In [Atlas](https://cloud.mongodb.com/) go to the Database & Network Access page for your project.
+1. Navigate to the IP Access List tab.
+1. Click Add IP Address.
+1. Select Allow Access from Anywhere or manually enter 0.0.0.0/0.
+1. Republish your project!
+
+
+
+
+## References
+
+- [What is NoSQL?](https://www.mongodb.com/resources/basics/databases/nosql-explained)
+- MongoDB Guides: [MongoDB Atlas Tutorial](https://www.mongodb.com/resources/products/platform/mongodb-atlas-tutorial), [MongoDB Node.js Driver](https://www.mongodb.com/docs/drivers/node/current/), [Insert Documents](https://www.mongodb.com/developer/languages/javascript/node-crud-tutorial/), [Deploy a Free Cluster](https://www.mongodb.com/docs/atlas/tutorial/deploy-free-tier-cluster/)
+- [Connecting to a MongoDB database using Node.js](https://northflank.com/guides/connecting-to-a-mongo-db-database-using-node-js), 2021
+- Big Feelings [finished code](https://github.com/omundy/big-feelings)
+- [Deploy a Serverless Node.js application to Vercel in 5 minutes](https://dev.to/adafycheng/deploy-nodejs-application-to-vercel-in-5-minutes-171m), 2022
+
+
+
+{/* 
+OTHER NOTES 
+https://omundy.github.io/learn-javascript/topics/servers/slides.html#4
+There are notes in [Using Express.js with Vercel](https://vercel.com/guides/using-express-with-vercel#6.-run-your-application-locally)
+*/}
+
+
+
+
+
 
 
 

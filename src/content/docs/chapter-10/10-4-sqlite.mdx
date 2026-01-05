@@ -1,0 +1,98 @@
+---
+title: 10.4 Sqlite
+description: Use the command line and SQLite to create and insert information in a database using CRUD operations.
+draft: true
+---
+
+import CustomAside from '@/components/CustomAside.astro';
+
+<CustomAside type="newmaterial">{frontmatter.description}</CustomAside>
+
+
+
+## Create an SQLite Database
+
+In this exercise you will use the command line and SQLite to create and insert information in a database using CRUD operations. SQLite is simple to use because it requires no special software to be installed on the server and saves the data in a single file. 
+
+1. Remix our Big Feelings Starter https://github.com/criticalwebdesign/big-feelings-starter project. Open the Glitch Terminal and type the below and press return. This will open an SQLite session with a connection to a new SQLite database (test.db) inside a hidden folder called .data.
+
+```bash
+sqlite3 .data/test.db
+```
+
+2. Keywords with a period in front are special commands in SQLite. Type the following to see if there are any tables in the database. 
+
+```bash
+.tables
+```
+
+3. Commands without a preceding period are run as SQL queries. Run this query to add a table called people with three columns. Databases increase their storage efficiency by restricting the data type that can be stored in a column. 
+
+```bash
+CREATE TABLE people ( year INTEGER, first TEXT, last TEXT );
+```
+
+4. Insert a new row in the table using the below query. SQL requires a semicolon. If you forget and press return it will assume you are still typing the query. Simply type the semicolon and press return again.
+
+```bash
+INSERT INTO people VALUES ( 1838, "John", "Muir" );
+```
+
+5. Now you can query the database to retrieve the data. We’ll use the * symbol to select all entries from the people table.
+
+```bash
+SELECT * FROM people;
+```
+
+6. Add another row.
+
+```bash
+INSERT INTO people VALUES ( 1864, "Nellie", "Bly" );
+```
+
+7. Run the select query again but reverse sort the results by year.
+
+```bash
+SELECT * FROM people ORDER BY year DESC;
+```
+
+8. To exit the SQLite session, type the following.
+
+```bash
+.exit
+```
+
+9. List the contents of the .data directory and you will see your database file has been created. 
+
+```bash
+ls -la .data
+```
+
+<figure>
+
+![sqlite database console](../../../assets/images/10/10-19-database-console.png)
+The sqlite database console results
+
+</figure>
+
+
+
+
+
+
+
+{/* The original version of this tutorial was adapted for mongo in 10-4-big-feelings.mdx  */}
+
+{/* ## Use Node.js and SQLite
+
+Using SQLite and Node.js is similar to our use of MongoDB thanks to the modules we created. */}
+
+
+
+## SQLite Tips
+
+- [SQLite](Resources#json)
+- Check a database file exists (in .data directory) `ls -la .data`
+- Delete (reset) a database `rm .data/sqlite.db` 
+- Dump a table `sqlite3 .data/sqlite.db "select * from People"`
+- Dump a table into an html file `sqlite3 .data/sqlite.db "select * from People" > export.html`

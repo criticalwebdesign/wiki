@@ -1,0 +1,47 @@
+---
+title: 10.3 Data and Maps
+description: In this module you will learn about features of databases, then, continuing the tutorial on the wiki, use Node.js with MongoDB database to let users store information to display on a map.
+---
+
+import CustomAside from '@/components/CustomAside.astro';
+
+<CustomAside type="newmaterial">{frontmatter.description}</CustomAside>
+
+
+
+
+
+## Data Persistence
+
+<CustomAside type="excerpt" reference="10.3.1">Data persistence describes the practice of storing and using data beyond the life of a program or a web page. You encounter this every day when you save text to a file on your computer’s hard drive and view it again later, or an app remembers you have logged in because it saved a token inside a cookie, or when you post text or images on the internet for others to see. </CustomAside>
+
+
+
+
+
+<figure>
+
+![client server db](../../../assets/images/10/10-11-big-feelings-diagram.png)
+A diagram showing the relationship between client, server, and database for Big Feelings.
+
+</figure>
+
+
+
+## 10.3 Data and Maps
+
+```js
+async function main() {
+    let data = await fetchFeelings();
+    console.log(data);
+    await updateMap(data);
+}
+
+function updateMap(data) {
+    removeMarkers();
+    for (let i = 0; i < data.length; i++) {
+        console.log(data[i]);
+        markerLayer[i] = createMarker(data[i]);
+    }
+}
+```
