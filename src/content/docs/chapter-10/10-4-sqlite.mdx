@@ -81,17 +81,29 @@ The sqlite database console results
 
 
 
-{/* The original version of this tutorial was adapted for mongo in 10-4-big-feelings.mdx  */}
+{/* 
 
-{/* ## Use Node.js and SQLite
 
-Using SQLite and Node.js is similar to our use of MongoDB thanks to the modules we created. */}
+The original version of this tutorial was adapted for mongo in 10-4-big-feelings.mdx 
+
+## Use Node.js and SQLite
+
+Using SQLite and Node.js is similar to our use of MongoDB thanks to the modules we created. 
+
+
+## Production Notes
+
+- We first tried LowDB, which looks promising. However, Glitch [is currently @ Node 16](https://help.glitch.com/hc/en-us/articles/16287495688845-What-version-of-Node-can-I-use-and-how-do-I-change-update-upgrade-it) but the [latest Lowdb](https://github.com/typicode/lowdb/releases) (7.\*) doesn't support Node 16
+- Switched to Vercel + MongoDB (Atlas) after the [Glitch announcement](https://www.theverge.com/news/673457/glitch-coding-platform-shutting-down) but results have been mixed. Connections don't seem to be reliable.
+
+
+*/}
 
 
 
 ## SQLite Tips
 
-- [SQLite](Resources#json)
+- SQLite documentation: [Connect with Node.js](https://www.sqlitetutorial.net/sqlite-nodejs/connect/), [SQLite Codecademy Cheatsheet](https://www.codecademy.com/learn/connecting-javascript-and-sql/modules/learn-node-sqlite-module/cheatsheet)
 - Check a database file exists (in .data directory) `ls -la .data`
 - Delete (reset) a database `rm .data/sqlite.db` 
 - Dump a table `sqlite3 .data/sqlite.db "select * from People"`

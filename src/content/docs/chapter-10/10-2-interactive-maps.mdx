@@ -183,3 +183,31 @@ See this Codepen https://criticalwebdesign.github.io#leaflet
 - https://leafletjs.com/
 - https://geojson.io
 - https://jsonlint.com/
+
+
+
+
+## Leaflet Notes
+
+In order to make the circle sizes appear constant relative to the interface we used [`L.circleMarker()`](https://leafletjs.com/reference.html#circlemarker-option) where you can define the radius in pixels (regardless of the map zoom level).
+
+```js
+let marker = L.circleMarker([data[i].lat, data[i].lng], {
+  radius: 50,
+  stroke: false,
+  color: "red",
+  fillOpacity: 0.3,
+});
+```
+
+... instead of [`L.circle()`](https://leafletjs.com/reference.html#circle) which uses a static radius (meters).
+
+```js
+var circle = L.circle([data[i].lat, data[i].lng], {
+  radius: 350000,
+  stroke: false,
+  fillColor: "#f03",
+  color: "red",
+  fillOpacity: 0.3,
+});
+```
