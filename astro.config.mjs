@@ -19,7 +19,7 @@ export default defineConfig({
             sidebar: [
 
                 { label: 'Home', link: './' },
-                { label: '0. Introduction', autogenerate: { directory: 'chapter-00' }, collapsed: false },
+                { label: '0. Introduction', autogenerate: { directory: 'chapter-00' }, collapsed: true },
                 { label: '1. Networks', autogenerate: { directory: 'chapter-01' }, collapsed: true },
                 { label: '2. View Source', autogenerate: { directory: 'chapter-02' }, collapsed: true },
                 { label: '3. Critical Design', autogenerate: { directory: 'chapter-03' }, collapsed: true },
@@ -29,7 +29,7 @@ export default defineConfig({
                 { label: '7. Ethical by Design', autogenerate: { directory: 'chapter-07' }, collapsed: true },
                 { label: '8. Generative Design', autogenerate: { directory: 'chapter-08' }, collapsed: true },
                 { label: '9. Data Tracking', autogenerate: { directory: 'chapter-09' }, collapsed: true },
-                { label: '10. Design and Power', autogenerate: { directory: 'chapter-10' }, collapsed: false },
+                { label: '10. Design and Power', autogenerate: { directory: 'chapter-10' }, collapsed: true },
                 { label: '11. Distribution', autogenerate: { directory: 'chapter-11' }, collapsed: true },
 
 
@@ -42,6 +42,7 @@ export default defineConfig({
             components: {
                 // Override the default `Banner` component.
                 Banner: './src/components/Banner.astro',
+                SiteTitle: './src/components/SiteTitle.astro',
             },
         }),
     ],
