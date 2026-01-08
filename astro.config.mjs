@@ -1,7 +1,6 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
-// import relativeLinks from 'astro-relative-links'
 import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
@@ -40,13 +39,16 @@ export default defineConfig({
                 './src/styles/global.css', // tailwind CSS 
             ],
             components: {
-                // Override the default `Banner` component.
+                // Override the default components
                 Banner: './src/components/Banner.astro',
                 SiteTitle: './src/components/SiteTitle.astro',
             },
         }),
     ],
     vite: {
-        plugins: [tailwindcss()],
+        plugins: [
+            // @ts-ignore or as any
+            tailwindcss(),
+        ]
     },
 });
