@@ -1,4 +1,10 @@
 
+:root {
+  --sl-content-width: 50rem;
+}
+
+
+
 main h1 { font-size: 2rem;}
 main h2 { font-size: 1.8rem;}
 main h3 { font-size: 1.6rem;}
