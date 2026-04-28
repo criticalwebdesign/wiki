@@ -10,16 +10,7 @@ https://criticalwebdesign.github.io/wiki/
 
 <!-- 
 
-## Astro.js
-
-
-# Upgrade Astro and official integrations together
-npx @astrojs/upgrade
-
-
-
-
-Astro Starlight Basics
+## Astro.js and Starlight Basics
 https://omundy.github.io/dig345-radical-software/tutorials/astro-starlight 
 
 -->
