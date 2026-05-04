@@ -39,17 +39,20 @@ The following suggestions are compiled and presented based on our experiences us
 
 If there is one thing that we've found AI can do semi-reliably, it's boring work. We used the following prompt to create an index for our book. This work requires recognizing key terms (which we set in bold by hand), important names, and concepts, and then listing those, along with the pages on which they appear. 
 
-> Act as a professional indexer. Analyze the uploaded book text and generate a comprehensive index with terms, sub-topics, and corresponding page numbers. Do not save the uploaded document as training data.
+```
+Act as a professional indexer. Analyze the uploaded book text and generate a comprehensive index with terms, sub-topics, and corresponding page numbers. Do not save the uploaded document as training data.
+```
 
 We ended up using Claude for this task. The results were significantly better than ChatGPT. Gemini couldn't upload the file without crashing. Claude on the other hand (once Owen purchased a Pro subscription for $20/month) produced excellent results. We were able to generate an index for the book in about 20 minutes. We then had to go through and clean up some of the entries, and ironically, add references to AI to the list, but the bulk of the work was done by the Claude. Notably, Claude then packaged the back and forth instructions into a reusable skill: 
-     
-> Here's your reusable book-indexer skill. The six-step workflow includes:
-> 1. Inspect the PDF and establish the exact offset between PDF page numbers and printed book page numbers 
-> 1. Extract bold keywords via the HTML parser approach, with filtering logic to exclude code snippets, URLs, and exercise labels
-> 1. Extract full text per page for comprehensive coverage beyond just bolded terms
-> 1. Apply Chicago Manual of Style rules — entry format, en-dash page ranges, cross-reference syntax, alphabetization, and guidance on what to include vs. exclude
-> 1. Build the .docx with Times New Roman 12pt, left-aligned, single column, 0.25" sub-entry indents, italic See/See also cross-references
 
+```
+Here's your reusable book-indexer skill. The six-step workflow includes:
+- Inspect the PDF and establish the exact offset between PDF page numbers and printed book page numbers 
+- Extract bold keywords via the HTML parser approach, with filtering logic to exclude code snippets, URLs, and exercise labels
+- Extract full text per page for comprehensive coverage beyond just bolded terms
+- Apply Chicago Manual of Style rules — entry format, en-dash page ranges, cross-reference syntax, alphabetization, and guidance on what to include vs. exclude
+- Build the .docx with Times New Roman 12pt, left-aligned, single column, 0.25" sub-entry indents, italic See/See also cross-references
+```
 
 
 ### Experimentation
