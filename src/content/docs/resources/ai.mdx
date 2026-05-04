@@ -21,15 +21,35 @@ We can't stress enough how important it is that you read this book before you di
 
 ## AI Forwarning
 
-- Issues and forwarnings about AI
+- **AI is not a magic bullet**. It can be a powerful tool, but it is not a replacement for understanding the underlying technologies and principles of web development. It can generate code, but it may not always be correct or efficient. 
+- **AI can be a black box**. It can be difficult to understand how it generates code and what data it is trained on. This can lead to issues with bias, security, and intellectual property. It can also make it difficult to debug and troubleshoot issues with the generated code.
+- **AI can be expensive**. Many AI tools require a subscription or pay-per-use model, which can add up over time. Additionally, the cost of using AI can vary depending on the complexity of the task and the amount of code generated. It's important to consider the cost-benefit analysis of using AI for your projects and to be mindful of your budget.
+- **Environmental impact**. The training and operation of AI models can have a significant environmental impact due to the energy consumption of data centers and the computational resources required. It's important to be aware of this impact and to consider using AI tools that prioritize sustainability and energy efficiency.
 
-
-
-## Uses in the book
-
-- See chapter 8 for a discussion of experiements using Chat GPT https://criticalwebdesign.github.io#ai-albers
 
 
 ## Advice on using AI
 
-- Compiled advice
+The following suggestions are compiled and presented based on our experiences using various LLMs. Given that new tools and LLM models are being released and updated, your mileage may differ. We encourage you to experiment with different tools and approaches to find what works best for you.
+
+
+### Automation 
+
+If there is one thing that we've found AI can do semi-reliably, it's boring work. We used the following prompt to create an index for our book. This work requires recognizing key terms (which we set in bold by hand), important names, and concepts, and then listing those, along with the pages on which they appear. 
+
+> Act as a professional indexer. Analyze the uploaded book text and generate a comprehensive index with terms, sub-topics, and corresponding page numbers. Do not save the uploaded document as training data.
+
+We ended up using Claude for this task. The results were significantly better than ChatGPT. Gemini couldn't upload the file without crashing. Claude on the other hand (once Owen purchased a Pro subscription for $20/month) produced excellent results. We were able to generate an index for the book in about 20 minutes. We then had to go through and clean up some of the entries, and ironically, add references to AI to the list, but the bulk of the work was done by the Claude. Notably, Claude then packaged the back and forth instructions into a reusable skill: 
+     
+> Here's your reusable book-indexer skill. The six-step workflow includes:
+> 1. Inspect the PDF and establish the exact offset between PDF page numbers and printed book page numbers 
+> 1. Extract bold keywords via the HTML parser approach, with filtering logic to exclude code snippets, URLs, and exercise labels
+> 1. Extract full text per page for comprehensive coverage beyond just bolded terms
+> 1. Apply Chicago Manual of Style rules — entry format, en-dash page ranges, cross-reference syntax, alphabetization, and guidance on what to include vs. exclude
+> 1. Build the .docx with Times New Roman 12pt, left-aligned, single column, 0.25" sub-entry indents, italic See/See also cross-references
+
+
+
+### Experimentation
+
+See chapter 8 for a discussion of experiements using Chat GPT https://criticalwebdesign.github.io#ai-albers
