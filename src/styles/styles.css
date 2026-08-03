@@ -17,6 +17,11 @@ figure { font-size: .9rem; line-height: 1.2rem; display: block; margin-bottom: 2
 figure img { display: block; margin-bottom: .5rem;}
 
 
+/* Override Starlight to resize the homepage hero image */
+.hero {
+  grid-template-columns: 7fr 7fr;
+}
+
 
 
 
