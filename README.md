@@ -11,6 +11,7 @@ https://criticalwebdesign.github.io/wiki/
 <!-- 
 
 ## Astro.js and Starlight Basics
+https://omundy.github.io/dig345-radical-software/tutorials/astro/
 https://omundy.github.io/dig345-radical-software/tutorials/astro-starlight 
 
 -->
