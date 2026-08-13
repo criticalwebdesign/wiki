@@ -3,36 +3,59 @@
 
 // strong typing recommended
 interface Props {
-    type: string;
-    reference: string;
+  type: string;
+  reference: string;
+  oneline: boolean;
 }
-const { type, reference } = Astro.props;
+const { type, reference, oneline = true } = Astro.props;
 
 const titles: { [key: string]: any } = {
-    overview: "Overview",
-    excerpt: "Excerpt",
-    newmaterial: "New Material",
-    newmaterialsingle: "",
-    quote: "Quote",
+  overview: "Overview",
+  excerpt: "Excerpt",
+  newmaterial: "New Material",
+  newmaterialsingle: "",
+  quote: "Quote",
+  homework: "Homework",
+  discussion: "Discussion",
+  tech: "",
+  inclass: "In-class",
+  info: "",
+  none: "",
 };
 import Icon from "@/components/Icon.astro";
 ---
 
 <div class="not-content callout-intro">
-    <Icon {type}>
-        <!-- inject html -->
-        <Fragment set:html={titles[type]} /> 
-    </Icon>
+  {
+    type != "none" && (
+      <Icon {type} color="black" weight="600">
+        {/* inject html */}
+        <Fragment set:html={titles[type]} />
+      </Icon>
+    )
+  }
+  {reference && reference}
 
-    {reference && reference}
-
-    <div class="componenttext">
+  {
+    // NO REFERENCE = ONE LINE
+    oneline ? (
+      <span class="componenttext">
         <slot />
-    </div>
+      </span>
+    ) : (
+      <div class="componenttext">
+        <slot />
+      </div>
+    )
+  }
 </div>
 
-<style>
-    .componenttext {
-        margin-top: 0.3rem;
-    }
+<style is:global>
+  .componenttext {
+    margin-top: 0.3rem;
+  }
+  .componenttext ul {
+    margin-top: 0rem;
+    /* background-color: red; */
+  }
 </style>

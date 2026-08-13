@@ -89,6 +89,7 @@ export default defineConfig({
       customCss: [
         "./src/styles/starlight-overrides.css",
         "./src/styles/tailwind-overrides.css",
+        "./src/styles/custom.css",
       ],
       components: {
         // Override the default components
