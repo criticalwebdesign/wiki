@@ -1,31 +1,37 @@
-/* Import Tailwind CSS and modify */
-
-/* This file exists (and should stay consistent) on these builds
-https://omundy.github.io/dig345-radical-software/
-https://criticalwebdesign.github.io/wiki/
-https://omundy.github.io/dig245-critical-web-design/
-*/
+/**
+ * Tailwind CSS integration for the Starlight docs theme.
+ *
+ * Loaded via `customCss` in astro.config.mjs (registered after styles.css,
+ * so these rules take precedence on any overlapping selectors).
+ *
+ * This file exists (and should stay consistent) in these builds:
+ * https://omundy.github.io/dig345-radical-software/ - if there was a master this would be it
+ * https://criticalwebdesign.github.io/wiki/
+ * https://omundy.github.io/dig245-critical-web-design/
+ */
 
 /* @import "tailwindcss"; */
-/* same as below */
+/* Expanded manually (equivalent to the single import above) so the
+   theme/base/utilities layers are declared explicitly. This lets us control
+   how they interleave with Starlight's own `@layer starlight.*` styles,
+   rather than leaving layer order to whichever file Tailwind's import
+   resolves first. */
 @layer theme, base, components, utilities;
 @import "tailwindcss/theme.css" layer(theme);
 @import "tailwindcss/preflight.css" layer(base);
 @import "tailwindcss/utilities.css" layer(utilities);
 
-/* Add base styles that Tailwind removed in preflight */
-/* https://tailwindcss.com/docs/preflight#lists-are-unstyled */
-
-/* Fix Tailwind list reset */
+/* Tailwind's preflight strips default list styling (see
+   https://tailwindcss.com/docs/preflight#lists-are-unstyled), but Starlight's
+   docs content relies on it, so restore it scoped to `main` only —
+   Tailwind's reset should still apply everywhere else (e.g. nav, sidebar). */
 
 main ol,
 main ul:not([role='tablist']), /* don't affect tabs*/
 main menu {
   display: block;
-  /* margin-block-start: 1em;
-    margin-block-end: 1em; */
-  margin-block-start: 0.5rem;
-  margin-block-end: 0.5rem;
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
   padding-inline-start: 40px;
   unicode-bidi: isolate;
 }
@@ -40,6 +46,10 @@ main ol ol ol {
   list-style-type: lower-roman;
 }
 
+/* !important needed here since these nested lists also match the
+   `main ol` / `main ul:not([role='tablist'])` rule above, which sets the
+   same margin properties at equal specificity — source order alone isn't
+   reliable once Starlight/MDX renders lists in varying DOM depth. */
 main ol ol,
 main ol ol ol,
 main ol ol ol ol,
