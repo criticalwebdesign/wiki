@@ -36,7 +36,7 @@ export default defineConfig({
             ],
             customCss: [
                 './src/styles/styles.css', // relative path to custom CSS file
-                './src/styles/global.css', // tailwind CSS 
+                './src/styles/tailwind-overrides.css', // tailwind CSS 
             ],
             components: {
                 // Override the default components
