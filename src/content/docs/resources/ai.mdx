@@ -22,11 +22,11 @@ This document is in progress!
 
 As we acknowledge several times throughout this text, the technology and practices used to build websites are in constant flux. At present, in addition to the myriad technologies used to build front and backends, the emergence of code-enabled Large Language Models (LLMs) like ChatGPT, Gemini, and Claude add new questions and challenges.
 
-We can't stress enough how important it is that you read this book before you dive into AI tools. The more you let an AI write code for you, especially code you don't understand, the more you will become dependent upon those tools. Not only are you financially liable, unless you have an understanding of the foundational web technologies we present you will spend much more time attempting to fix and modify generated code from AI-slop into something that matches your vision. 
+We can't stress enough how important it is that you read this book before you dive into AI tools. The more you let an AI write code for you, especially code you don't understand, the more you will become dependent upon those tools. Not only are you financially liable for subscription costs, but unless you understand the foundational web technologies we present here, you'll spend far more time turning AI-slop into something that matches your vision than if you'd built it yourself. 
 
 Since the first edition of the book is now committed to paper, we provide the following suggestions and best practices around the use of AI below, on this page that allows us to update it. 
 
-## AI Forwarning
+## AI Forewarning
 
 - **AI is not a magic bullet**. It can be a powerful tool, but it is not a replacement for understanding the underlying technologies and principles of web development. It can generate code, but it may not always be correct, efficient, or secure. 
 - **AI can be a black box**. It can be difficult to understand how it generates code and what data it is trained on. This can lead to issues with bias, security, and intellectual property. It can also make it difficult to debug and troubleshoot issues with the generated code.
@@ -38,11 +38,11 @@ Since the first edition of the book is now committed to paper, we provide the fo
 
 ## Do's and Dont's 
 
-- **Do** Treate LLMs as development tools powered by very knowledgable collaborators—not a magic buttons.
+- **Do** treat LLMs as development tools powered by very knowledgeable collaborators—not a magic button.
  */}
 
 
-## Advice on using AI
+## Advice on Using AI
 
 The following outcomes and advice are presented based on our experiences using various LLMs. Given that new tools and models are being released and updated, your mileage may vary. We encourage you to experiment with different tools and approaches to find what works best for you. Jumping into AI, we found the following general categories can be useful:
 
@@ -59,7 +59,7 @@ If there is one thing that we've found AI can do semi-reliably, it's boring work
 Act as a professional indexer. Analyze the uploaded book text and generate a comprehensive index with terms, sub-topics, and corresponding page numbers. Do not save the uploaded document as training data.
 ```
 
-The results using Claude were significantly better than ChatGPT. Gemini couldn't even upload the file without crashing. Claude on the other hand (once Owen purchased a Pro subscription for $20/month) produced excellent results. We were able to generate an index for the book in about 20 minutes (**while it would have easily consumed 8-10 hours if we had done it manually**). We then had to go through and clean up some of the entries, and ironically, add references to AI to the list, but the bulk of the work was done by the Claude. Notably, Claude then packaged the back and forth instructions into a reusable skill: 
+The results using Claude were significantly better than ChatGPT's. Gemini couldn't even upload the file without crashing. Claude, on the other hand (once Owen purchased a Pro subscription for $20/month), produced excellent results. We were able to generate an index for the book in about 20 minutes (**while it would have easily consumed 8-10 hours if we had done it manually**). We then had to go through and clean up some of the entries, and ironically, add references to AI to the list, but the bulk of the work was done by Claude. Notably, Claude then packaged the back-and-forth instructions into a reusable skill: 
 
 ```
 Here's your reusable book-indexer skill. The six-step workflow includes:
@@ -73,7 +73,7 @@ Here's your reusable book-indexer skill. The six-step workflow includes:
 
 ### Iteration
 
-See chapter 8 where we include a discussion of experiments using Chat GPT to create an AI Albers https://criticalwebdesign.github.io#ai-albers
+See chapter 8, where we discuss experiments using ChatGPT to create an [AI Albers](https://criticalwebdesign.github.io#ai-albers).
 
 
 
@@ -82,14 +82,10 @@ See chapter 8 where we include a discussion of experiments using Chat GPT to cre
 
 ## AI in Practice
 
+### How to Write Effective Prompts
 
-
-
-
-#### How to write effective prompts
-
-- Course-correct early and often. You are the supervisor, the one with the vision. Treat the LLM as a skilled collaborator. Though they occasionally solves problems perfectly on the first attempt, [correcting it quickly generally produces better solutions faster](https://code.claude.com/docs/en/best-practices#course-correct-early-and-often)
-- Context is everything (e.g. I have one chat thread where I’ve given it access to my schedule so it knows a bit about the course and I just come back to that thread and it understands the context.) < THIS IS IN PROGRESS
+- Course-correct early and often. You are the supervisor, the one with the vision. Treat the LLM as a skilled collaborator. Though it occasionally solves problems perfectly on the first attempt, [correcting it quickly generally produces better solutions faster](https://code.claude.com/docs/en/best-practices#course-correct-early-and-often).
+- Context is everything. For example, Owen keeps one ongoing chat thread that already has his teaching schedule and course context loaded into it, so he returns to that thread instead of re-explaining the situation every time. {/* IN PROGRESS: expand with more examples */}
 
 
 
@@ -97,43 +93,13 @@ See chapter 8 where we include a discussion of experiments using Chat GPT to cre
 
 Claude Code is an agentic coding environment. Meaning, it can read, write, and test files on your computer with your guidance or on its own once you set it to a task.
 
-#### Best practices for Claude Code
+#### Best Practices for Claude Code
 
-- Create managable and efficient workflows. Claude is not well-equipped to help you edit Google Docs. A better flow is 
+- Create manageable and efficient workflows. Claude is not well-equipped to help you edit Google Docs. A better flow is:
   1. Make a folder on your computer
   2. Give it access to the folder and tell it to work inside a Markdown document (`.md`)
   3. Open the preview of the `.md` file to the side so you can see the outcome of your work
   4. If you need rich text then copy the preview to Google Docs or Word
-
-- Course-correct early and often. You are the supervisor, the one with the vision. Claude is a skilled collaborator. Though Claude occasionally solves problems perfectly on the first attempt, [correcting it quickly generally produces better solutions faster](https://code.claude.com/docs/en/best-practices#course-correct-early-and-often)
 - Create a `Claude.md` file [to make general knowledge about your project consistent across sessions](https://code.claude.com/docs/en/best-practices#write-an-effective-claude-md)
 - Create `SKILL.md` files in `.claude/skills/` [to give Claude domain knowledge and reusable workflows](https://code.claude.com/docs/en/best-practices#create-skills)
 - Check usage `/usage`. Longer sessions are more expensive even when cached. `/compact` mid-task, `/clear` when switching to new tasks.
-
-
-
-
-
-#### Unity + AI
-
-Unity is a popular game engine. This discussion is not about AI within game design (wandering scripts, enemy AI, etc.) but about using LLMs (ChatGPT, CoPilot, Claude, etc.) to develop games with Unity.
-
-
-Tutorial: [How to make a 3D Platformer with Unity MCP and Claude Code](https://www.youtube.com/watch?v=gSFHyso_uuI)
-
-1. [Install Unity MCP server](https://www.youtube.com/shorts/6tQFwWYyJrE)
-
-
-
-
-##### Unity + AI Best Practices
-
-- [Prompt guidelines for asset generation](https://docs.unity3d.com/Packages/com.unity.ai.assistant@2.9/manual/best-practice/prompts.html)
-
-
-
-Issues:
-- The MCP often loses connection
-- The scripts they create often are missing basic info. A PopupManager created does not contain listeners. The buttons in the popup are 0px wide so they can't be seen or clicked.
-
-
